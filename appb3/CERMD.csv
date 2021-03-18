@@ -1,0 +1,271 @@
+SCD,TelefonicaConfiguration,"Controlling node
+(SHU B1)",SupportSystemControl,ClimateSystem,ClimateControlMode ,"Ext Node 1
+(SHU A5)","Ext Node 2
+(SHU A6)","Ext Node 3
+(SHU A7)","Ext Node 4
+(SCU EC-B)","Ext Node 5
+(SHU A3 or SCU EC-E)",,Conrtolling node,SupportSystemControl,ClimateSystem,ClimateControlMode ,"Ext Node 1
+(SHU A5)","Ext Node 2
+(SHU A6)","Ext Node 3
+(SHU A7)","Ext Node 4
+(SCU EC-B)","Ext Node 5
+(SHU A3 or SCU EC-E)",,SupportSystemControl,ClimateSystem,ClimateControlMode ,SupportSystemControl,ClimateSystem,ClimateControlMode ,SupportSystemControl,ClimateSystem,ClimateControlMode 
+B2 28/5G (1.2) 05,RBS6201 3-Sector L1800 20W High Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 28/5G (1.2) 05,RBS6102 3-Sector L1800 20W High Capacity,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 28/5G (1.2) 05,20W-High-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 28/5G (1.2) 05,20W-High-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 30,20W-High-Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 30,20W-High-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 31/5G (1.2) 06,20W-High-Indoor-L800 RRU + U21 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 31/5G (1.2) 06,RBS6201 3-Sector L1800 20W High Capacity U2100 RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 31/5G (1.2) 06,RBS6102 3-Sector L1800 20W High Capacity U2100 RRU,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 32,RBS6201 3-Sector L1800 RRU 20W High Capacity U2100 RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 33/5G (1.2) 07,20W-Medium-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 33/5G (1.2) 07,20W-Medium-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 34,20W-Medium-Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 34,20W-Medium-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 35,RBS 6201 20W Medium U2100 RRU - 3 Sectors,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 36/5G (1.2) 10,20W-Network Rail-Indoor-L800 RRU-3 Sector,DUG-1,TRUE,Extended,Normal,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 38,20W-Network Rail-Indoor-L800 RRU-3 Sector No L1800,DUG-1,TRUE,Extended,Normal,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 36/5G (1.2) 10,20W-Network Rail-Outdoor-L800 RRU-3 Sector,DUG-1,TRUE,Extended,Battery_Life_Extension,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 38,20W-Network Rail-Outdoor-L800 RRU-3 Sector No L1800,DUG-1,TRUE,Extended,Battery_Life_Extension,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 40,20W-Network Rail-Indoor-L800 RRU-2 Sector,DUG-1,TRUE,Extended,Normal,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 41,20W-Network Rail-Indoor-L800 RRU-2 Sector No L1800,DUG-1,TRUE,Extended,Normal,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 40,20W-Network Rail-Outdoor-L800 RRU-2 Sector,DUG-1,TRUE,Extended,Battery_Life_Extension,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 41,20W-Network Rail-Outdoor-L800 RRU-2 Sector No L1800,DUG-1,TRUE,Extended,Battery_Life_Extension,DUG-2,N/A,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 42/5G (1.2) 08,20W-Small-Indoor-L800 RRU-3 Sector L1800,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 42/5G (1.2) 08,20W-Small-Outdoor-L800 RRU-3 Sector L1800,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 42/5G (1.2) 08,RBS6201 3-Sector L1800 20W Small Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 42/5G (1.2) 08,RBS6102 3-Sector L1800 20W Small Capacity,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 43/5G (1.2) 09,RBS6201 2-Sector L1800 20W Small Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 43/5G (1.2) 09,RBS6102 2-Sector L1800 20W Small Capacity,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 43/5G (1.2) 09,20W-Small-Indoor-L800 RRU-2 Sector L1800,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 43/5G (1.2) 09,20W-Small-Outdoor-L800 RRU-2 Sector L1800,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 42,RBS6201 3-Sector L1800 20W Small U2100 RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 44,RBS6201 3-Sector L1800 RRU 20W Small U2100 RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 44,RBS6102 3-Sector L1800 RRU 20W Small U2100 RRU,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 45/5G (1.2) 12,RBS6201 2-Sector L1800 RRU 20W Small U2100 RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 45/5G (1.2) 12,RBS6102 2-Sector L1800 RRU 20W Small U2100 RRU,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Removed(Orange),20W-Small-Indoor-L800 RRU-3 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Small-Outdoor-L800 RRU-3 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Small-Indoor-L800 RRU-2 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Small-Outdoor-L800 RRU-2 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Small-Indoor-L800 RRU-1 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Small-Outdoor-L800 RRU-1 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6201 3-Sector 20W Small Capacity (Radio 2217) No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6102 3-Sector 20W Small Capacity (Radio 2217) No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6201 2-Sector 20W Small Capacity (Radio 2217) No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6102 2-Sector 20W Small Capacity (Radio 2217) No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6201 1-Sector 20W Small Capacity (Radio 2217) No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6102 1-Sector 20W Small Capacity (Radio 2217) No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 46/5G (1.2) 11,20W-Small-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 46/5G (1.2) 11,20W-Small-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 47,20W-Small-Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 47,20W-Small-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 48,20W-Small-Indoor-L800 RRU-1 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,VFE LTE BB,U21 DUW,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 48,20W-Small-Outdoor-L800 RRU-1 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U21 DUW,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 46/5G (1.2) 11,RBS6201 3-Sector 20W Small Capacity (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 46/5G (1.2) 11,RBS6102 3-Sector 20W Small Capacity (Radio 2217),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 47,RBS6201 2-Sector 20W Small Capacity (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 47,RBS6102 2-Sector 20W Small Capacity (Radio 2217),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 48,RBS6201 1-Sector 20W Small Capacity (Radio 2217),TEF LTE BB,TRUE,Extended,Normal,DUG-1,VFE LTE BB,U21 DUW,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 48,RBS6102 1-Sector 20W Small Capacity (Radio 2217),TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U21 DUW,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 49/5G (1.2) 11,RBS 6201 20W Small U2100 RRU - 3 Sectors,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 49/5G (1.2) 11,RBS6201 3-Sector 20W Small U2100 RRU (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 49/5G (1.2) 11,RBS6102 3-Sector 20W Small U2100 RRU (Radio 2217),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 50,B2 Upgrade of Small SF 20W – 3 sectors Redesigned to ERS 2217,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 51,B2 Upgrade of Small SF 20W – 2 sectors Redesigned to ERS 2217,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Removed(Orange),20W-Small-Outdoor-Non-RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 52,RBS 6102 3-Sector 20W Small Non-RRU (SF) - Option 2 Lancaster Removal of 1 x 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+Removed(Orange),20W-Small-Outdoor-Non-RRU-2 Sector ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 53,RBS 6102 2-Sector 20W Small Non-RRU (SF) - Option 2 Lancaster Removal of 1 x 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 54,RBS 6102 3-Sector L1800 20W Small Non-RRU (SF),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 54,RBS 6102 3-Sector L1800 20W Small Non-RRU (SF) - Enclosure 6147,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 56,B2 Upgrade of Small SF 1800 20W – 2 sectors 2217 B1 in Lancaster,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Removed(Orange),RBS 6102 2-Sector L1800 20W Small Non-RRU (SF),,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS 6102 2-Sector L1800 20W Small Non-RRU (SF) - Enclosure 6147,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 57,RBS 6102 3-Sector L1800 20W Small Non-RRU (SF) - Option 2 Lancaster Removal of 1 x 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+Removed(Orange),20W-Small-Outdoor - Retro-Non-RRU-3 Sector - DUS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 58,20W-Small-Outdoor - Retro-Non-RRU-3 Sector - Baseband,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 60,RBS 6102 3-Sector L1800 20W Small Non-RRU Retrofit (SF),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 61,20W-Small-Outdoor-Retro-Non-RRU-3 Sector-Baseband-Single Cabinet,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,U21 DUW,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 62,20W-Small-Outdoor-Retro-Non-RRU-2 Sector-Baseband-Single Cabinet,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,U21 DUW,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 63,L1800 20W-Small-Outdoor-Retro-Non-RRU-3 Sector-Single Cabinet,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,U21 DUW,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 64,20W-Stealth-Indoor-Non-RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 67,20W-Stealth-Indoor-Non-RRU-3 Sector No L1800,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 64,20W-Stealth-Outdoor-Non-RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 65,20W-Stealth-Outdoor-Non-RRU-3 Sector - Option 2 Lancaster Removal of 1 x 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 67,20W-Stealth-Outdoor-Non-RRU-3 Sector No L1800,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 68,20W-Stealth-Outdoor-Non-RRU-3 Sector No L1800 - Option 2 Lancaster Removal of 1 x 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+Removed(Orange),20W-Stealth-Indoor-Non-RRU-1 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Stealth-Indoor-Non-RRU-1 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Stealth-Outdoor-Non-RRU-1 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),20W-Stealth-Outdoor-Non-RRU-1 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 69,RBS6201 3-Sector 20W Low Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 69,RBS6201 3-Sector 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 69,RBS6102 3-Sector 20W Low Capacity,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 69,RBS6102 3-Sector 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 70,RBS6201 2-Sector 20W Low Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 70,RBS6201 2-Sector 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 70,RBS6102 2-Sector 20W Low Capacity,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 70,RBS6102 2-Sector 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 71,RBS6201 1-Sector 20W Low Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 71,RBS6201 1-Sector 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 71,RBS6102 1-Sector 20W Low Capacity,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 71,RBS6102 1-Sector 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 72,RBS6201 2-Sector L1800 20W Low Capacity,U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 72,RBS6201 2-Sector L1800 20W Low Capacity (Radio 2217),U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Removed(Orange),RBS6102 2-Sector L1800 20W Low Capacity,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),RBS6102 2-Sector L1800 20W Low Capacity (Radio 2217),,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 73,RBS6201 3-Sector 20W Low Non-RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 73,RBS6102 3-Sector 20W Low Non-RRU,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 74,RBS6201 2-Sector 20W Low Non-RRU,U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 74,RBS6102 2-Sector 20W Low Non-RRU,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 75,RBS6202 3-Sector DUW31 U2100 Only Retrofit,TEF LTE DUS,TRUE,Standard,Normal,VFE LTE DUS,U21 DUW,N/A,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 76,RBS6601 3-Sector 20W Medium All RRU (Modular),,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 78,20W-Small UL-Indoor-L800-RRU-3 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,DUG-2,VFE LTE BB,U9 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 78,20W-Small UL-Outdoor-L800-RRU-3 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 78,20W-Small (2217) UL-Outdoor-L800-RRU-3 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 79,20W-Small UL-Indoor-L800-RRU-2 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,VFE LTE BB,U9 DUW,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 79,20W-Small UL-Outdoor-L800-RRU-2 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U9 DUW,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 80,20W-Small ULNR-Outdoor-Non-RRU (SF)-3 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 81,B2 Upgrade U2100 to B2 20W Small SF-3 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U9 BB,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 82,B2 Upgrade U2100 to B2 20W Stealth-3 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U9 BB,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 83/5G (1.2) 13,12W-High-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 83/5G (1.2) 13,12W-High-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 84/5G (1.2) 14,12W-High-Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 84/5G (1.2) 14,12W-High-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 85,12W-High-Indoor-L800 RRU-1 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,VFE LTE BB,U9 DUW,U21 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 85,12W-High-Outdoor-L800 RRU-1 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U9 DUW,U21 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 86/5G (1.2) 15,12W-Medium-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 86/5G (1.2) 15,12W-Medium-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 87/5G (1.2) 16,12W-Medium-Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 87/5G (1.2) 16,12W-Medium-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 88,12W-Medium-Indoor-L800 RRU-1 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,VFE LTE BB,U9 DUW,U21 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 88,12W-Medium-Outdoor-L800 RRU-1 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U9 DUW,U21 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 86/5G (1.2) 15,12W-Small-Indoor-L800 RRU-3 Sector L1800,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 86/5G (1.2) 15,12W-Small-Outdoor-L800 RRU-3 Sector L1800,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 87/5G (1.2) 16,12W-Small-Indoor-L800 RRU-2 Sector L1800,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 87/5G (1.2) 16,12W-Small-Outdoor-L800 RRU-2 Sector L1800,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 88,12W-Small-Indoor-L800 RRU-1 Sector L1800,TEF LTE BB,TRUE,Extended,Normal,DUG-1,VFE LTE BB,U9 DUW,U21 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 88,12W-Small-Outdoor-L800 RRU-1 Sector L1800,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,VFE LTE BB,U9 DUW,U21 DUW,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Removed(Orange),12W-Small-Indoor-L800 RRU-3 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),12W-Small-Outdoor-L800 RRU-3 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),12W-Small-Indoor-L800 RRU-2 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),12W-Small-Outdoor-L800 RRU-2 Sector No NB-IOT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 89/5G (1.2) 18,12W-Small-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 89/5G (1.2) 18,12W-Small-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 90,12W-Small-Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Normal,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 90,12W-Small-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,U21 DUW,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 91,B2 Upgrade of Small SF 12W – 3 sectors Redesigned to ERS 2217,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,U21 DUW,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+B2 92,B2 Upgrade of Small SF 12W – 2 sectors Redesigned to ERS 2217,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Removed(Orange),12W-Small-Outdoor-Non-RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 93,12W-Small-Outdoor-Non-RRU-3 Sector - Option 2 Lancaster Removal of RBS 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+Removed(Orange),12W-Small-Outdoor-Non-RRU-2 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 94,12W-Small-Outdoor-Non-RRU-2 Sector - Option 2 Lancaster Removal of RBS 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 95,12W-Small-Outdoor-Non-RRU-3 Sector L1800,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,,,,,,,,,
+B2 95,12W-Small-Outdoor-Non-RRU-3 Sector L1800 - Enclosure 6147,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,,,,,,,,,
+B2 96,B2 Upgrade of Small SF 1800 12W – 2 sectors 2217 B1 in Lancaster,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,U21 DUW,N/A,N/A,,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,VFE LTE BB,N/A,N/A,N/A,N/A,,,,,,,,,,
+Removed(Orange),12W-Small-Outdoor-Non-RRU-2 Sector L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),12W-Small-Outdoor-Non-RRU-2 Sector L1800 - Enclosure 6147,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 97,12W-Small-Outdoor-Non-RRU-3 Sector L1800 - Option 2 Lancaster Removal of 1 x 6102,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+Removed(Orange),12W-Small-Outdoor - Retro-Non-RRU-3 Sector - DUS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 98,12W-Small-Outdoor - Retro-Non-RRU-3 Sector - Baseband,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Removed(Orange),12W-Small-Outdoor - Retro-Non-RRU-2 Sector - DUS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 99,12W-Small-Outdoor - Retro-Non-RRU-2 Sector - Baseband,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 100,RBS 6102 3-Sector L1800 12W Small Non-RRU Retrofit (SF),U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,N/A,N/A,N/A,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,TRUE,Extended,Normal,TRUE,Extended,Normal,TRUE,Standard,Normal
+B2 101 / 5G (1.2) 17,12W-Small-Outdoor-Retro-Non-RRU-3 Sector-Baseband-Single Cabinet,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,U21 DUW,,,,,,,,,,,,,,,,,,,,
+B2 102,12W-Small-Outdoor-Retro-Non-RRU-2 Sector-Baseband-Single Cabinet,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,U21 DUW,,,,,,,,,,,,,,,,,,,,
+B2 103,L1800 12W-Small-Outdoor-Retro-Non-RRU-3 Sector-Single Cabinet,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,U9 DUW,U21 DUW,,,,,,,,,,,,,,,,,,,,
+B2 104,12W-Low-Indoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,DUG-3,TEF LTE DUS,VFE LTE DUS,,,,,,,,,,,,,,,,,,,,
+B2 104,12W-Low-Outdoor-L800 RRU-3 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,DUG-3,TEF LTE DUS,VFE LTE DUS,,,,,,,,,,,,,,,,,,,,
+B2 105,12W-Low Indoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,,,,,,,,,,,,,,,,,,,
+B2 105,12W-Low-Outdoor-L800 RRU-2 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,TEF LTE DUS,VFE LTE DUS,N/A,,,,,,,,,,,,,,,,,,,,
+B2 106,12W-Low-Indoor-L800 RRU-1 Sector,U900 DUW,TRUE,Extended,Normal,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 106,12W-Low-Outdoor-L800 RRU-1 Sector,U900 DUW,TRUE,Extended,Battery_Life_Extension,DUG-1,TEF LTE DUS,VFE LTE DUS,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 107,Indoor U2100 Infill-3 Sector,TEF LTE DUS,TRUE,Extended,Normal,LTE DUS VF,U21 DUW,N/A,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 107,Outdoor U2100 Infill-3 Sector,TEF LTE DUS,TRUE,Extended,Battery_Life_Extension,LTE DUS VF,U21 DUW,N/A,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 108,RBS6202 3-Sector U2100 Only Retrofit,TEF LTE DUS,TRUE,Standard,Normal,LTE DUS VF,U21 DUW,N/A,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 109,12W-Small UL-Indoor-L800-RRU-3 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,DUG-2,VFE LTE BB,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 109 / 5G (1.2) 19,12W-Small UL-Outdoor-L800-RRU-3 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 110,12W-Small UL-Indoor-L800-RRU-2 Sector,TEF LTE BB,TRUE,Extended,Normal,DUG-1,DUG-2,VFE LTE BB,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 110,12W-Small UL-Outdoor-L800-RRU-2 Sector,TEF LTE BB,TRUE,Extended,Battery_Life_Extension,DUG-1,DUG-2,VFE LTE BB,N/A,N/A,,,,,,,,,,,,,,,,,,,,
+B2 111,DUS to Baseband 6630 Upgrade,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 113,RBS 6102 2nd Power Subrack expansion,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Indoor-T34 8x8-3 Sector Northern Ireland,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Outdoor-T34 8x8-3 Sector Northern Ireland,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Indoor-T34 64M-3 Sector Northern Ireland,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Outdoor-T34 64M-3 Sector Northern Ireland,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5G (1.2) 21,Indoor-T34 64M-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5G (1.2) 21,Outdoor-T34 64M-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5G (1.2) 21,Indoor-T34 8x8 to 64M-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5G (1.2) 21,Outdoor-T34 8x8 to 64M-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2-CCR-116,B1 12W Low Capacity (CSR 68368),,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 06,20W-High-Indoor-L800_L900 RRU-3 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 06,20W-High-Outdoor-L800_L900 RRU-3 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 07,20W-High-Indoor-L800_L900 RRU-2 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 07,20W-High-Outdoor-L800_L900 RRU-2 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 08,20W-High-Indoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 08,20W-High-Outdoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 09,RBS6201 3-Sector 20W Small Capacity (Radio 2217) L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 09,RBS6102 3-Sector 20W Small Capacity (Radio 2217) L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 10,20W-Small-Indoor-L800_L900 RRU-2 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 10,20W-Small-Outdoor-L800_L900 RRU-2 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 11,RBS6201 3-Sector 20W Low Capacity L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 11,RBS6102 3-Sector 20W Low Capacity L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 12,RBS6201 3-Sector 20W Low Capacity (Radio 2217) L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 12,RBS6102 3-Sector 20W Low Capacity (Radio 2217) L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 13,RBS6201 2-Sector 20W Low Capacity L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 13,RBS6102 2-Sector 20W Low Capacity L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 14,RBS 6201 3-Sector L1800 20W GSM Low Capacity L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 14,RBS 6102 3-Sector L1800 20W GSM Low Capacity L900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 15,12W-High-Indoor-L800_L900 RRU-3 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 15,12W-High-Outdoor-L800_L900 RRU-3 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 16,12W-High-Indoor-L800_L900 RRU-2 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 16,12W-High-Outdoor-L800_L900 RRU-2 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 17,12W-High-Indoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 17,12W-High-Outdoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 18,12W-Medium-Indoor-L800_L900 RRU-3 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 18,12W-Medium-Outdoor-L800_L900 RRU-3 Sector No L1800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 18,12W-Small-Indoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 18,12W-Small-Outdoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 19,12W-Low-Indoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L9 19,12W-Low-Outdoor-L800_L900 RRU-3 Sector,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2-CCR-132 (3),CSR 18667 Edinburgh Waverley,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 28/5G (1.2) 20,RBS6201 3-Sector L1800 20W High Capacity 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 28/5G (1.2) 22,RBS6201 3-Sector L1800 20W High Capacity 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 28/5G (1.2) 20,20W-High-Indoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 28/5G (1.2) 22,20W-High-Indoor-L800 RRU-3 Sector 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 31/5G (1.2) 20,20W-High-Indoor-L800 RRU + U21 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 31/5G (1.2) 22,20W-High-Indoor-L800 RRU + U21 RRU-3 Sector 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 31/5G (1.2) 20,RBS6201 3-Sector L1800 20W High Capacity U2100 RRU 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 31/5G (1.2) 22,RBS6201 3-Sector L1800 20W High Capacity U2100 RRU 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 42/5G (1.2) 20,20W-Small-Indoor-L800 RRU-3 Sector L1800 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 42/5G (1.2) 20,20W-Small-Outdoor-L800 RRU-3 Sector L1800 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 42/5G (1.2) 22,20W-Small-Outdoor-L800 RRU-3 Sector L1800 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 42/5G (1.2) 20,RBS6201 3-Sector L1800 20W Small Capacity 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 42/5G (1.2) 20,RBS6102 3-Sector L1800 20W Small Capacity 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 42/5G (1.2) 22,RBS6102 3-Sector L1800 20W Small Capacity 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 46/5G (1.2) 20,20W-Small-Indoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 46/5G (1.2) 20,20W-Small-Outdoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 46/5G (1.2) 20,RBS6201 3-Sector 20W Small Capacity (Radio 2217) 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 46/5G (1.2) 20,RBS6102 3-Sector 20W Small Capacity (Radio 2217) 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 49/5G (1.2) 20,RBS 6201 20W Small U2100 RRU - 3 Sectors 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 49/5G (1.2) 20,RBS6201 3-Sector 20W Small U2100 RRU (Radio 2217) 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 49/5G (1.2) 20,RBS6102 3-Sector 20W Small U2100 RRU (Radio 2217) 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 45/5G (1.2) 20,RBS6102 2-Sector L1800 RRU 20W Small U2100 RRU 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 83/5G (1.2) 20,12W-High-Indoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 83/5G (1.2) 22,12W-High-Indoor-L800 RRU-3 Sector 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 83/5G (1.2) 20,12W-High-Outdoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 83/5G (1.2) 22,12W-High-Outdoor-L800 RRU-3 Sector 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 84/5G (1.2) 20,12W-High-Indoor-L800 RRU-2 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 84/5G (1.2) 20,12W-High-Outdoor-L800 RRU-2 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 86/5G (1.2) 20,12W-Medium-Indoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 86/5G (1.2) 22,12W-Medium-Indoor-L800 RRU-3 Sector 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 86/5G (1.2) 20,12W-Small-Indoor-L800 RRU-3 Sector L1800 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 86/5G (1.2) 22,12W-Small-Indoor-L800 RRU-3 Sector L1800 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 86/5G (1.2) 20,12W-Small-Outdoor-L800 RRU-3 Sector L1800 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 86/5G (1.2) 22,12W-Small-Outdoor-L800 RRU-3 Sector L1800 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 89/5G (1.2) 20,12W-Small-Indoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 89/5G (1.2) 22,12W-Small-Indoor-L800 RRU-3 Sector 5G MoRAN64M8x8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B2 89/5G (1.2) 20,12W-Small-Outdoor-L800 RRU-3 Sector 5G MoRAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
