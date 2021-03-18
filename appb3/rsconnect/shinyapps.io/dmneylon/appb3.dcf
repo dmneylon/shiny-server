@@ -1,0 +1,12 @@
+name: appb3
+title:
+username:
+account: dmneylon
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3490239
+bundleId: 4348732
+url: https://dmneylon.shinyapps.io/appb3/
+when: 1615827951.57466
+asMultiple: FALSE
+asStatic: FALSE
