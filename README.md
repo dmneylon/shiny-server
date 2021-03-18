@@ -1,5 +1,5 @@
 # shiny-server
-This repository contains the setup of my Shiny server. It is a git repo under /srv/shiny-server on my server.
+This repository contains the setup of my Shiny server. It is a git repository under /srv/shiny-server on my server.
 
 To learn how you can get your own Shiny Server in a similar way, read my tutorial about how to set up Shiny Server.
 
