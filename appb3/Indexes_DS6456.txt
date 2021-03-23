@@ -1,0 +1,83 @@
+## Rendering Q-codes ##
+  
+ # Column Header Indexes #
+  # 1: B3 SCD Slide no. B3-CCR (Pg) no.
+  # 2: Telefonica Configuration
+  # 3: GSM 12W/20W
+  # 4: 2G Q-Code
+  # 5: 3G Q-Code
+  # 6: 4G (L8 / L9 / L18 / L21) Q-Code
+  # 7: 4G (L18 4x4) Q-Code
+  # 8: 4G (L21 4415) Q-Code
+  # 9: 1. Baseline B3 Ordering Code
+  # 10: Comments Relating to 'B3' Upgrade
+  # 11: 1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code
+  # 12: 4G L9 + L26 Q-Code
+  # 13: 4G L9 + L26 (L18 4x4) Q-Code
+  # 14: 4G L9 + L26 (L21 4415) Q-Code
+  # 15: 4. L26 UG Ordering Code
+  # 16: 4G L9 + T23 4x4 (No N7/N21) Q-Code
+  # 17: 4G L9 + T23 4x4 (L18 4x4) (No N7/N21) Q-Code
+  # 18: 4G L9 + T23 4x4 (L21 4415) (No N7/N21) Q-Code
+  # 19: 4G L9 + T23 4x4 (N7/N21) Q-Code
+  # 20: 4G L9 + T23 4x4 (L18 4x4) (N7/N21) Q-Code
+  # 21: 4G L9 + T23 4x4 (L21 4415) (N7/N21) Q-Code
+  # 22: 3. 4x4 T23 UG Ordering Code (Macro / Orion)
+  # 23: 4G L9 + L26 + T23 4x4 (No N7/N21) Q-Code
+  # 24: 4G L9 + L26 + T23 4x4 (L18 4x4) (No N7/N21) Q-Code
+  # 25: 4G L9 + L26 + T23 4x4 (L21 4415) (No N7/N21) Q-Code
+  # 26: 4G L9 + L26 + T23 4x4 (N7/N21) Q-Code
+  # 27: 4G L9 + L26 + T23 4x4 (L18 4x4) (N7/N21) Q-Code
+  # 28: 4G L9 + L26 + T23 4x4 (L21 4415) (N7/N21) Q-Code
+  # 29: 2a. L1800 UG Ordering Code
+  # 30: 2b. 4415 L2100 UG Ordering
+  # 31: TEF Only 5G T34 8x8 Q-Code
+  # 32: 5. TEF Only 5G T34 8x8 UG Ordering Code
+  # 33: TEF Only 5G T34 M-MiMo Q-Code
+  # 34: 6. TEF Only 5G T34 M-MiMo UG Ordering Code
+  # 35: TEF & VF 5G MoRAN T34 8x8 Q-Code
+  # 36: 7. VF 5G T34 8x8 MoRAN UG Ordering Code
+  # 37: TEF & VF 5G MoRAN T34 M-MiMo Q-Code
+  # 38: 8. VF 5G T34 M-MiMo MoRAN UG Ordering Code
+  # 39: TEF Only 5G N21 4x4 Q-Code
+  # 40: TEF Only 5G N21 4x4 (4415) Q-Code
+  # 41: TEF Only 5G T34 8x8 + N21 4x4 Q-Code
+  # 42: TEF Only 5G T34 8x8 + N21 4x4 (4415) Q-Code
+  # 43: TEF Only 5G T34 M-MiMo + N21 4x4 Q-Code
+  # 44: TEF Only 5G T34 M-MiMo + N21 4x4 (4415) Q-Code
+  # 45: TEF & VF 5G MoRAN T34 8x8 + TEF Only N21 4x4 Q-Code
+  # 46: TEF & VF 5G MoRAN T34 8x8 + TEF Only N21 4x4 (4415) Q-Code
+  # 47: TEF & VF 5G MoRAN T34 M-MiMo + TEF Only N21 4x4 Q-Code
+  # 48: TEF & VF 5G MoRAN T34 M-MiMo + TEF Only N21 4x4 (4415) Q-Code
+  # 49: 9. ESS 5G N21 4x4 UG Ordering Code
+  # 50: 10. T23 BB + ESS 5G N21 4x4 UG Ordering Code
+  # 51: TEF Only 5G N7 2x2 Q-Code
+  # 52: TEF Only 5G N21 4x4 + TEF Only N7 2x2 Q-Code
+  # 53: TEF Only 5G N21 4x4 (4415) + TEF Only N7 2x2 Q-Code
+  # 54: TEF Only 5G T34 8x8 + TEF Only N7 2x2 Q-Code
+  # 55: TEF Only 5G T34 M-MiMo + TEF Only N7 2x2 Q-Code
+  # 56: TEF Only 5G T34 8x8 + TEF Only N21 4x4 + TEF Only N7 2x2 Q-Code
+  # 57: TEF Only 5G T34 8x8 + TEF Only N21 4x4 (4415) + TEF Only N7 2x2 Q-Code
+  # 58: TEF Only 5G T34 M-MiMo + TEF Only N21 4x4 + TEF Only N7 2x2 Q-Code
+  # 59: TEF Only 5G T34 M-MiMo + TEF Only N21 4x4 (4415) + TEF Only N7 2x2 Q-Code
+  # 60: TEF & VF 5G MoRAN T34 8x8 + TEF Only N7 2x2 Q-Code
+  # 61: TEF & VF 5G MoRAN T34 M-MiMo + TEF Only N7 2x2 Q-Code
+  # 62: TEF & VF 5G MoRAN T34 8x8 + TEF Only N21 4x4 + TEF Only N7 2x2 Q-Code
+  # 63: TEF & VF 5G MoRAN T34 8x8 + TEF Only N21 4x4 (4415) + TEF Only N7 2x2 Q-Code
+  # 64: TEF & VF 5G MoRAN T34 M-MiMo + TEF Only N21 4x4 + TEF Only N7 2x2 Q-Code
+  # 65: TEF & VF 5G MoRAN T34 M-MiMo + TEF Only N21 4x4 (4415) + TEF Only N7 2x2 Q-Code
+  # 66: 11.  5G N7 2x2 + 4G/5G MM BB UG Ordering Code
+  # 67: 12. 5G N7 2x2 + T23 BB + 4G/5G MM BB UG Ordering Code
+  # 68:
+  # 69:
+  # 70:
+  # 71:
+  # 72:
+  # 73:
+  # 74:
+  # 75:
+  # 76:
+  # 77:
+  # 78:
+  # 79:
+  # 80:
