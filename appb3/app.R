@@ -6,6 +6,8 @@
 ##############################################################################################################################################################
 ## Libraries ##
 
+library(testthat)
+library(assertive, warn.conflicts = FALSE)
 library(shiny)
 library(shinydashboard)
 library(DT)
