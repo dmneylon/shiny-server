@@ -1447,14 +1447,34 @@ server <- function(input, output, session) {
      input$GO
   
      isolate({
+       # if(v5() == 0 | v6() == 0)
+       # {
+       #   output$LteNR_Qcode_pattern <- renderText({
+       #     paste("Review Upgrade option selection until matching Q-code pattern displayed here, then press Generator button again")
+       #   })
+       #   return (NULL)
+       # }
+       # else
+       # {
        QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)
        QCselect$NR_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$NR_Qcode_pattern, ignore.case = T)), 1, 0)
        return(QCselect)
+      # }
      })
    })
   
   v5 <- reactive({  
+    if(!(1 %in% vQ()$LTE_Qcode_Match))
+    {
+      LTE_Qcode_Index <- 0
+      output$LteNR_Qcode_pattern <- renderText({
+        paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+      })
+    }
+    else
+    {
   LTE_Qcode_Index <- vQ()[which(vQ()$LTE_Qcode_Match == 1),5]
+    }
   return(LTE_Qcode_Index)
   })
   observe({print(paste("LTE_Qcode_Index: ",v5()))})
@@ -1462,10 +1482,13 @@ server <- function(input, output, session) {
   
   
   v5Z <- reactive({
+  
     as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),v5()])
+    
   })
   
   v5Apre <- reactive({
+    
     if(nchar(toString(v5Z())) == 16)
     {
       paste(substr(v5Z(),1,12),"000000000",substr(v5Z(),13,16),sep = "")
@@ -1493,6 +1516,7 @@ server <- function(input, output, session) {
   
   # first a variable to handle the downsizing of quantity of L2300 Radio 8808 B40Y in Apollo/Elara pole Street Furniture sites #
   vApolloElara <- reactive({
+    
     if(input$Config == "")                                  #  this condition is the starting point so function has something to return before any site configuration is given
     {
       multiplier <- 1
@@ -1562,6 +1586,9 @@ server <- function(input, output, session) {
     if(!(1 %in% vQ()$NR_Qcode_Match))
     {
       NR_Qcode_Index <- 0
+      output$LteNR_Qcode_pattern <- renderText({
+        paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+      })
     }
     else
     {
