@@ -1467,9 +1467,9 @@ server <- function(input, output, session) {
     if(!(1 %in% vQ()$LTE_Qcode_Match))
     {
       LTE_Qcode_Index <- 0
-      output$LteNR_Qcode_pattern <- renderText({
-        paste("Not a valid Upgrade option selection, no matching Q-code pattern")
-      })
+      #  output$LteNR_Qcode_pattern <- renderText({
+      #    paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+      # })
     }
     else
     {
@@ -1586,9 +1586,9 @@ server <- function(input, output, session) {
     if(!(1 %in% vQ()$NR_Qcode_Match))
     {
       NR_Qcode_Index <- 0
-      output$LteNR_Qcode_pattern <- renderText({
-        paste("Not a valid Upgrade option selection, no matching Q-code pattern")
-      })
+      # output$LteNR_Qcode_pattern <- renderText({
+      #   paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+      #})
     }
     else
     {
