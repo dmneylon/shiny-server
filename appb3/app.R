@@ -7,6 +7,7 @@
 ## Libraries ##
 
 library(shiny)
+library(shinyjs)
 suppressPackageStartupMessages(library(shinydashboard))
 suppressPackageStartupMessages(library(DT))
 library(tabulizer)
@@ -378,6 +379,7 @@ ui <- dashboardPage(
                               #selectInput("N7_2x2_MMBB_T23BB", "12. 5G N7 2x2 + T23 BB + 4G/5G MM BB UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
                               , width = 12, background = "orange")
                           ),
+						  useShinyjs(),
 						  actionButton("GO", "Generate Q-Code lookup pattern", icon("paper-plane"), 
 						               style="color: #fff; background-color: #337ab7; border-color: #2e6da4"),
 						  #selectInput("QCgen", "Generate Q-Code lookup pattern:", choices = c("Yes", "No", ""), selected = ""),
@@ -1403,6 +1405,12 @@ server <- function(input, output, session) {
     {
       paste("B.NNNNNNNNNNNN")
     }
+    # else if(!(1 %in% vQ()$LTE_Qcode_Match))
+    # {
+    #   output$LteNR_Qcode_pattern <- renderText({
+    #    paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+    #   })
+   # }
     else
     {
     paste("B",                                                                    # "B" for Baseline                                                            
@@ -1425,9 +1433,9 @@ server <- function(input, output, session) {
   observe({print(v4())})
   
   
-  output$LteNR_Qcode_pattern <- renderText({
-    paste(as.character(v4()))
-  })
+  # output$LteNR_Qcode_pattern <- renderText({
+  #   paste(as.character(v4()))
+  # })
   
    # vQ <- reactive({  
    #   if(input$QCgen != "Yes")
@@ -1441,25 +1449,40 @@ server <- function(input, output, session) {
    #   return(QCselect)
    #     }
    # })
-   
+
+  
+# Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched   
+  actbutcontrol <- reactive({
+    QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)  
+    return(QCselect$LTE_Qcode_Match)
+  })
+  
+  observeEvent(actbutcontrol(), {
+    
+    if(!(1 %in% actbutcontrol())){
+      output$LteNR_Qcode_pattern <- renderText({
+           paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+           })
+      disable("GO")
+    }
+    else{
+      output$LteNR_Qcode_pattern <- renderText({
+        paste(as.character(v4()))
+      })
+      enable("GO")
+    }
+  })
+
    vQ <- reactive({
      
      input$GO
   
      isolate({
-       # if(v5() == 0 | v6() == 0)
-       # {
-       #   output$LteNR_Qcode_pattern <- renderText({
-       #     paste("Review Upgrade option selection until matching Q-code pattern displayed here, then press Generator button again")
-       #   })
-       #   return (NULL)
-       # }
-       # else
-       # {
+       
        QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)
        QCselect$NR_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$NR_Qcode_pattern, ignore.case = T)), 1, 0)
        return(QCselect)
-      # }
+
      })
    })
   
@@ -1467,9 +1490,6 @@ server <- function(input, output, session) {
     if(!(1 %in% vQ()$LTE_Qcode_Match))
     {
       LTE_Qcode_Index <- 0
-      #  output$LteNR_Qcode_pattern <- renderText({
-      #    paste("Not a valid Upgrade option selection, no matching Q-code pattern")
-      # })
     }
     else
     {
@@ -1586,9 +1606,6 @@ server <- function(input, output, session) {
     if(!(1 %in% vQ()$NR_Qcode_Match))
     {
       NR_Qcode_Index <- 0
-      # output$LteNR_Qcode_pattern <- renderText({
-      #   paste("Not a valid Upgrade option selection, no matching Q-code pattern")
-      #})
     }
     else
     {
