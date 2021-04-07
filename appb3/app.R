@@ -5665,6 +5665,11 @@ v21 <- reactive({
   
   
   # Download SID report
+  # first disable downloading of report and only make available for download after the "GO" button has been pressed
+  
+  disable("report")
+  observeEvent(input$GO,{
+    enable("report")
   output$report <- downloadHandler(
     # For HTML output, change this to "report.html"
     filename = function(){
@@ -5747,6 +5752,7 @@ v21 <- reactive({
       )
     }
   )
+  })
 
 # params:
 #   vc: NA
