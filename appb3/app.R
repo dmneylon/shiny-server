@@ -605,7 +605,8 @@ ui <- dashboardPage(
       # 8th tab content
       tabItem(tabName = "bom",
               mainPanel(
-                DT::dataTableOutput("bom", width = "100%", height = "auto")
+                DT::dataTableOutput("bom", width = "100%", height = "auto"),
+                downloadButton('BOMdl',"Download the BOM")
               )
       ),
 
@@ -5654,6 +5655,13 @@ v21 <- reactive({
 ##############################################################################################################################################################
 ## Generating Reports ##
   
+  # Download BOM report
+  output$BOMdl <- downloadHandler(
+    filename = function(){"BOM.csv"}, 
+    content = function(fname){
+      write.csv(bomlist_subset(), fname)
+    }
+  )
   
   # Download Bulk Generator report
   output$download <- downloadHandler(

@@ -1,4 +1,6 @@
 Version,Author,Modified by,Date,Change Description,Comments
+v8,Donnie Neylon,Donnie Neylon,07/04/2021,BOM report,Functionality to download BOM report in .csv format
+v7.9,Donnie Neylon,Donnie Neylon,07/04/2021,No L18 mapping,"Updated mapping logic for sites that have no L18, included lookup for ""0"" in L182x2 variable vector for position 33 of concatenated Q-code"
 v7.8,Donnie Neylon,Donnie Neylon,07/04/2021,Download Button behaviour,"Disable downloading of report and only make available for download after the ""GO"" button has been pressed generating the Q-code lookup pattern"
 v7.7,Donnie Neylon,Donnie Neylon,06/04/2021,Action Button behaviour,"Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched."
 v7.6,Donnie Neylon,Donnie Neylon,01/04/2021,BOM update,BOM list updated to PA5
