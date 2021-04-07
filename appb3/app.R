@@ -1453,12 +1453,12 @@ server <- function(input, output, session) {
   
 # Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched   
   actbutcontrol <- reactive({
-    QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)  
+    QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)
     return(QCselect$LTE_Qcode_Match)
   })
-  
+
   observeEvent(actbutcontrol(), {
-    
+
     if(!(1 %in% actbutcontrol())){
       output$LteNR_Qcode_pattern <- renderText({
            paste("Not a valid Upgrade option selection, no matching Q-code pattern")
@@ -2289,7 +2289,7 @@ server <- function(input, output, session) {
   # variable to get CD1 page number #  
   v1Dpre <- reactive({
     L184x4 <- c("v", "y")
-    L182x2 <- c("a", "b", "t")
+    L182x2 <- c("a", "b", "t","0")
     if(CD() == CDNB)
     {
       return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),166])   # column FJ
@@ -2432,9 +2432,9 @@ server <- function(input, output, session) {
   # variable to get CD4 page number #  
   v1Ebpre <- reactive({
     L184x4 <- c("v", "y")
-    L182x2 <- c("a", "b", "t")
+    L182x2 <- c("a", "b", "t","0")
     L214415 <- c("v", "y")
-    L212217 <- c("a", "b", "t")
+    L212217 <- c("a", "b", "t","0")
     if(input$SFtype != "Orion" & (substr(v6A2(),50,54)=="56E21" | substr(v6A2(),50,53)=="56E7") & substr(v6A2(), 33,33) %in% L182x2 & substr(v6A2(), 36,36) %in% L212217 
        & substr(v6A1(),nchar(toString(v6A1()))-1,nchar(toString(v6A1()))-1)=="0")
     {
