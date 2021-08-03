@@ -24,6 +24,7 @@ params:
  saddr: NA
  postcode: NA
  sacc: NA
+ sidnotes: NA
  asp: NA
  img: NA
  hw: NA
@@ -64,6 +65,24 @@ params:
  NR21T23BB4x4oc: NA
  NR72x2oc: NA
  NR7T23BB2x2oc: NA 
+ AddUGDGopt1: NA
+ AddUGDGopt2: NA
+ AddUGDGopt3: NA
+ AddUGDGopt4: NA
+ AddUG1oc: NA
+ AddUG2oc: NA
+ AddUG3oc: NA
+ AddUG4oc: NA
+ 
+ cmts1: NA
+ cmts2: NA
+ cmts3: NA
+ cmts4: NA
+ cmts5: NA
+ cmts6: NA
+ cmts7: NA
+ cmts8: NA
+ cmts9: NA
   
  cabs: NA
  dubb: NA
@@ -78,6 +97,7 @@ params:
  cab2label: NA
  
  bom: NA
+ dg: NA
  hld: NA
  cab1: NA
  cab2: NA
@@ -87,6 +107,9 @@ params:
  cd3: NA
  cd4: NA
  cd5: NA
+ cd6: NA
+ cd7: NA
+ cd8: NA
 
  cpri1: NA
  cpri2: NA
@@ -153,6 +176,7 @@ if(params$img == "No image uploaded"){paste("No image uploaded")}else{knitr::inc
 ## `r paste("Site Address: ", text_spec(params$saddr, color = "blue"))`<br>
 ## `r paste0("Google Maps: ", text_spec("https://www.google.com/maps/place/", color = "blue"), text_spec(gsub(" ", "", params$postcode, fixed = TRUE), color = "green"))`<br>
 ## `r paste("Access Details: ", text_spec(params$sacc, color = "blue"))`<br>
+## `r paste("SID review notes: ", text_spec(params$sidnotes, color = "blue"))`<br>
 &nbsp;
 
 
@@ -162,6 +186,10 @@ if(params$img == "No image uploaded"){paste("No image uploaded")}else{knitr::inc
 ## `r paste("Street Furniture Pole: ", text_spec(params$SFpole, color = "red"))`<br>
 ## `r paste("Decision Tree: ", text_spec(params$dtm, color = ifelse(params$dtm == "Matched", "green", "red")))`<br>
 ## `r paste("Build Type: ", text_spec(params$build, color = "blue"))`<br>
+## `r paste("Downgrade: ", text_spec(params$AddUGDGopt1, color = "blue"))`<br>
+## `r paste("Additional UG: ", text_spec(params$AddUGDGopt2, color = "blue"))`<br>
+## `r paste("Additional UG: ", text_spec(params$AddUGDGopt3, color = "blue"))`<br>
+## `r paste("Additional UG: ", text_spec(params$AddUGDGopt4, color = "blue"))`<br>
 ## `r paste("L26 UG Option: ", text_spec(params$l26, color = "blue"))`<br>
 ## `r paste("L23 UG Option: ", text_spec(params$l23, color = "blue"))`<br>
 ## `r paste("L18 4x4 UG Option: ", text_spec(params$l184x4, color = "blue"))`<br>
@@ -194,7 +222,11 @@ if(params$img == "No image uploaded"){paste("No image uploaded")}else{knitr::inc
 ## `r paste("NR21 4x4 ESS Ordering code: ", text_spec(params$NR214x4oc, color = "blue"))`<br>
 ## `r paste("NR21 4x4 ESS + T23BB Ordering code: ", text_spec(params$NR21T23BB4x4oc, color = "blue"))`<br>
 ## `r paste("NR7 2x2 MMBB Swap Ordering code: ", text_spec(params$NR72x2oc, color = "blue"))`<br>
-## `r paste("NR7 2x2 MMBB + T23BB Ordering code: ", text_spec(params$NR7T23BB2x2oc, color = "blue"))`
+## `r paste("NR7 2x2 MMBB + T23BB Ordering code: ", text_spec(params$NR7T23BB2x2oc, color = "blue"))`<br>
+## `r paste("Downgrade Ordering code: ", text_spec(params$AddUG1oc, color = "blue"))`<br>
+## `r paste("Additional UG Ordering code: ", text_spec(params$AddUG2oc, color = "blue"))`<br>
+## `r paste("Additional UG Ordering code: ", text_spec(params$AddUG3oc, color = "blue"))`<br>
+## `r paste("Additional UG Ordering code: ", text_spec(params$AddUG4oc, color = "blue"))`
 &nbsp;
 
 
@@ -209,10 +241,41 @@ if(params$img == "No image uploaded"){paste("No image uploaded")}else{knitr::inc
 \newpage
 
 
+# 6. Comments relating to Solution
 
-# 6. Hardware
+## `r paste(text_spec("Comments and Instructions Relating to B3 Upgrade: ", background = "green", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts1, color = "blue"))`<br>
 
-## 6.1 Cabinets and Enclosures
+## `r paste(text_spec("Comments and Instructions Relating to Tech Adds: ", background = "blue", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts2, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Tech Adds: ", background = "blue", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts6, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Tech Adds: ", background = "blue", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts7, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Tech Adds: ", background = "blue", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts8, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Downgrade: ", background = "orange", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts3, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Additional Upgrade: ", background = "purple", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts4, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Additional Upgrade: ", background = "purple", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts5, color = "blue"))`<br>
+
+## `r paste(text_spec("Comments and Instructions Relating to Additional Upgrade: ", background = "purple", color = "white", bold = TRUE))`<br>
+## `r paste(text_spec(params$cmts9, color = "blue"))`<br>
+
+\newpage
+
+
+# 7. Hardware
+
+## 7.1 Cabinets and Enclosures
 ```{r, echo=FALSE}
 kable(params$cabs, "latex", longtable = F, caption = "Cabinets/Enclosures", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = T) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% column_spec(1, width = "6cm")
 
@@ -222,7 +285,7 @@ kable(params$cabs, "latex", longtable = F, caption = "Cabinets/Enclosures", book
 
 
 
-## 6.2 Digital Units and Basebands
+## 7.2 Digital Units and Basebands
 ```{r, echo=FALSE}
 kable(params$dubb, "latex", longtable = F, caption = "Digital Units/Basebands", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = T) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% column_spec(1, width = "6cm")
 
@@ -232,7 +295,7 @@ kable(params$dubb, "latex", longtable = F, caption = "Digital Units/Basebands", 
 
 
 
-## 6.3 Radio Units
+## 7.3 Radio Units
 ```{r, echo=FALSE}
 kable(params$radio, "latex", longtable = F, caption = "Radio Units", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = T) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% column_spec(1, width = "6cm")
 
@@ -242,7 +305,7 @@ kable(params$radio, "latex", longtable = F, caption = "Radio Units", booktabs = 
 \newpage
 
 
-# 7. Power Consumption data
+# 8. Power Consumption data
 
 ```{r, echo=FALSE}
 kable(params$pca, "latex", longtable = F, caption = "Radio Power Consumption data", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(2, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
@@ -294,10 +357,10 @@ kable(params$pcf, "latex", longtable = F, caption = params$cab2label, booktabs =
 \newpage
 
 
-# 8. Bill of Materials
+# 9. Bill of Materials
 
-```{r, echo=FALSE}
-kable(params$bom, "latex", longtable = T, caption = "BOM", booktabs = T, row.names = FALSE) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = F) %>% column_spec(1, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+```{r, echo=FALSE, warning = FALSE}
+kable(params$bom, "latex", longtable = T, caption = "BOM", booktabs = T, row.names = FALSE) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = F, font_size = 7) %>% column_spec(1, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
 
 #{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
@@ -306,7 +369,16 @@ kable(params$bom, "latex", longtable = T, caption = "BOM", booktabs = T, row.nam
 \newpage
 
 
-# 9. HLD reference
+# 10. Downgrade HLD reference
+
+```{r, echo=FALSE, out.width = "100%", fig.align='center', fig.cap='HLD reference', fig.show='HOLD_position' }
+knitr::include_graphics(params$dg)
+
+```
+\newpage
+
+
+# 11. B3 HLD reference
 
 ```{r, echo=FALSE, out.width = "100%", fig.align='center', fig.cap='HLD reference', fig.show='HOLD_position' }
 knitr::include_graphics(params$hld)
@@ -316,9 +388,9 @@ knitr::include_graphics(params$hld)
 
 
 
-# 10. Cabinet Layout
+# 12. Cabinet Layout
 
-## 10.1 Cabinet 1
+## 12.1 Cabinet 1
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Cabinet 1 Layout', fig.show='HOLD_position'}
 knitr::include_graphics(params$cab1)
 
@@ -326,7 +398,7 @@ knitr::include_graphics(params$cab1)
 \newpage
 
 
-## 10.2 Cabinet 2
+## 12.2 Cabinet 2
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Cabinet 2 Layout', fig.show='HOLD_position'}
 knitr::include_graphics(params$cab2)
 
@@ -334,7 +406,7 @@ knitr::include_graphics(params$cab2)
 \newpage
 
 
-<!-- ## 11.3 Cabinet 3 -->
+<!-- ## 12.3 Cabinet 3 -->
 <!-- ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Cabinet 3 Layout', fig.show='HOLD_position'} -->
 <!-- knitr::include_graphics(params$cab3) -->
 
@@ -342,68 +414,88 @@ knitr::include_graphics(params$cab2)
 
 
 
-# 11. Connectivity Diagrams
+# 13. Connectivity Diagrams
 
-## 11.1 Connectivity Diagram Baseline
+## 13.1 Connectivity Diagram Baseline
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram Baseline', fig.show='HOLD_position'}
 knitr::include_graphics(params$cd1)
 
 ```
 \newpage
 
-## 11.2 Connectivity Diagram GU900
+## 13.2 Connectivity Diagram GU900
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram GU900', fig.show='HOLD_position'}
 knitr::include_graphics(params$cd2)
 
 ```
 \newpage
 
-## 11.3 Connectivity Diagram NR34
+## 13.3 Connectivity Diagram NR34
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram NR34', fig.show='HOLD_position'}
 knitr::include_graphics(params$cd3)
 
 ```
 \newpage
 
-## 11.4 Connectivity Diagram NR21/NR7
+## 13.4 Connectivity Diagram NR21/NR7
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram NR21/NR7', fig.show='HOLD_position'}
 knitr::include_graphics(params$cd4)
 
 ```
 \newpage
 
-## 11.5 Connectivity Diagram TX
+## 13.5 Connectivity Diagram TX
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram TX', fig.show='HOLD_position'}
 knitr::include_graphics(params$cd5)
 
 ```
 \newpage
 
+## 13.6 Connectivity Diagram SIU
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram TX', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd6)
 
-# 12. CPRI allocation
+```
+\newpage
 
-## 12.1 CPRI Baseline
+## 13.7 2nd Power Subrack Internal Power Cabling
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Internal Power Cabling', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd7)
+
+```
+\newpage
+
+## 13.8 2nd Power Subrack SHU Cabling and Port Configuration
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='SHU Cabling and Port Configuration', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd8)
+
+```
+\newpage
+
+# 14. CPRI allocation
+
+## 14.1 CPRI Baseline
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI Baseline', fig.show='HOLD_position'}
 knitr::include_graphics(params$cpri1)
 
 ```
 \newpage
 
-## 12.2 CPRI GU900
+## 14.2 CPRI GU900
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI GU900', fig.show='HOLD_position'}
 knitr::include_graphics(params$cpri2)
 
 ```
 \newpage
 
-## 12.3 CPRI NR34
+## 14.3 CPRI NR34
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI NR34', fig.show='HOLD_position'}
 knitr::include_graphics(params$cpri3)
 
 ```
 \newpage
 
-## 12.4 CPRI NR21/NR7
+## 14.4 CPRI NR21/NR7
 ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI NR21/NR7', fig.show='HOLD_position'}
 knitr::include_graphics(params$cpri4)
 
@@ -411,9 +503,9 @@ knitr::include_graphics(params$cpri4)
 \newpage
 
 
-# 13. Cabinet Environment Settings
+# 15. Cabinet Environment Settings
 
-## 13.1 Cabinet 1
+## 15.1 Cabinet 1
 ```{r, echo=FALSE}
 kable(params$ce1, "latex", longtable = F, caption = "Cabinet 1 Environment", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% add_header_above(c("CAB 1" = 9), bold = T)
 
@@ -422,7 +514,7 @@ kable(params$ce1, "latex", longtable = F, caption = "Cabinet 1 Environment", boo
 ```
 
 
-## 13.2 Cabinet 2
+## 15.2 Cabinet 2
 ```{r, echo=FALSE}
 kable(params$ce2, "latex", longtable = F, caption = "Cabinet 2 Environment", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% add_header_above(c("CAB 2" = 9), bold = T)
 
@@ -431,7 +523,7 @@ kable(params$ce2, "latex", longtable = F, caption = "Cabinet 2 Environment", boo
 ```
 
 
-## 13.3 3rd Part Cabinet (3PP Cab)
+## 15.3 3rd Part Cabinet (3PP Cab)
 ```{r, echo=FALSE}
 kable(params$ce3, "latex", longtable = F, caption = "3PP Cab Environment", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% add_header_above(c("TEF LTE BB" = 3, "VFE LTE BB" = 3, "U21 DUW + 6601" = 3), bold = T) %>% add_header_above(c("3PP Cab" = 9), bold = T)
 
@@ -449,7 +541,7 @@ kable(params$ce3, "latex", longtable = F, caption = "3PP Cab Environment", bookt
 
 # Appendix.  Data Sources
 
-- DRAFT DS6456 Ericsson Beacon 3 New Build and Upgrade Configurations Issue 1.0 PA7 LLD
+- DRAFT DS6456 Ericsson Beacon 3 New Build and Upgrade Configurations Issue 1.1 LLD
 - UKRE_19_143 Ericsson B3 New Build SCD
 - UKRE_19_141 Ericsson B1 to B3 Site Upgrades SCD
 - UKRE_19_142 Ericsson B2 to B3 Site Upgrades SCD

@@ -1,41 +1,67 @@
 Version,Author,Modified by,Date,Change Description,Comments
-v8.1,Donnie Neylon,Donnie Neylon,19/04/2021,BOM update,BOM list updated to PA6
-v8,Donnie Neylon,Donnie Neylon,07/04/2021,BOM report,Functionality to download BOM report in .csv format
-v7.9,Donnie Neylon,Donnie Neylon,07/04/2021,No L18 mapping,"Updated mapping logic for sites that have no L18, included lookup for ""0"" in L182x2 variable vector for position 33 of concatenated Q-code"
-v7.8,Donnie Neylon,Donnie Neylon,07/04/2021,Download Button behaviour,"Disable downloading of report and only make available for download after the ""GO"" button has been pressed generating the Q-code lookup pattern"
-v7.7,Donnie Neylon,Donnie Neylon,06/04/2021,Action Button behaviour,"Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched."
-v7.6,Donnie Neylon,Donnie Neylon,01/04/2021,BOM update,BOM list updated to PA5
-v7.5,Donnie Neylon,Donnie Neylon,11/03/2021,Data refresh,Source data reviewed and transformed and redeployed
-v7.4,Donnie Neylon,Donnie Neylon,12/02/2021,BOM update,BOM list updated to PA3
-v7.3,Donnie Neylon,Donnie Neylon,11/02/2021,Hardware Indexes,Hardware reporting section updated to refer to column indexes instead of column names. Errors had been indentified when bulk reporting CCR power consumption data.
-v7.2,Donnie Neylon,Donnie Neylon,08/02/2021,DS6451 update,Data file DS6451 updated with instructions changes relating to Draft PA12
-v7.1,Donnie Neylon,Donnie Neylon,04/02/2021,Definition updates,Function to calculate number of BB6630 updated considering Mixed Mode should not be counted twice
-v7,Donnie Neylon,Donnie Neylon,03/02/2021,NR7 updates,Cab layout mapping functions updated for configurations with NR7 upgrade option selected
-v6.2,Donnie Neylon,Donnie Neylon,28/01/2021,Data refresh,Source data reviewed and transformed and redeployed
-v6.1,Donnie Neylon,Donnie Neylon,19/01/2021,Bulk Generator Report,Added the facility to download the data to csv format
-v6,Donnie Neylon,Donnie Neylon,13/01/2021,Bulk Generator Report,Including Bulk Generator mode to enable bulk generation of data. Presently just used for reporting LLD Power Consumption data but expected to have increased functionality in the future.
-v5.2,Donnie Neylon,Donnie Neylon,22/12/2020,Data refresh,Source data reviewed and transformed and redeployed
-v5.1,Donnie Neylon,Donnie Neylon,15/12/2020,HLD outputs,Updated to make sure not applicable outputs report blank page
-v5,Donnie Neylon,Donnie Neylon,14/12/2020,uiOutput selects,Changing Upgrade options from selectInputs to uiOutputs as a means to reduce applicable drop down options
-v4.2,Donnie Neylon,Donnie Neylon,28/11/2020,Data refresh,Source data reviewed and transformed and redeployed
-v4.1,Donnie Neylon,Donnie Neylon,15/11/2020,Q-code translator update,Return only the matching configurations as opposed to full list with a Match column
-v4,Donnie Neylon,Donnie Neylon,07/11/2020,Q-code translator,Reverse engineering Q-code input to matching configurations
-v3.5,Donnie Neylon,Donnie Neylon,28/10/2020,Data refresh,Source data reviewed and transformed and redeployed
-v3.4,Donnie Neylon,Donnie Neylon,26/10/2020,Generate Q-code lookup pattern,Introducing an GO button with isolated functionality
-v3.3,Donnie Neylon,Donnie Neylon,23/10/2020,User Interface updates,General enhancement of user interface
-v3.2,Donnie Neylon,Donnie Neylon,19/10/2020,Street Furniture,Street Furniture pole type selection added
-v3.1,Donnie Neylon,Donnie Neylon,08/10/2020,Proposed Build modes,Comments and Instructions section added to assist certain configurations that require Preparatory mode
-v3,Donnie Neylon,Donnie Neylon,07/10/2020,Build Type/Mode,Build Type updated to Build Type/Mode to include Tech Add only and Preparatory modes
-v2.6,Donnie Neylon,Donnie Neylon,28/09/2020,Data refresh,Source data reviewed and transformed and redeployed
-v2.5,Donnie Neylon,Donnie Neylon,24/09/2020,Street Furniture,Street Furniture configuration identification added
-v2.4,Donnie Neylon,Donnie Neylon,21/09/2020,Configuration Decision Tree,Decision Tree split terminology updated
-v2.3,Donnie Neylon,Donnie Neylon,19/09/2020,Hardware definitons,Definitions updated as testing of output showed errors in enclosure type reporting (York/Shire)
-v2.2,Donnie Neylon,Donnie Neylon,15/09/2020,SID layout,Numbering of sections of SID document
-v2.1,Donnie Neylon,Donnie Neylon,12/09/2020,SID presentation,Updating SID with Ericsson logo
-v2,Donnie Neylon,Donnie Neylon,09/09/2020,Reports,RMD completed and knit to PDF for SID automation
-v1.5,Donnie Neylon,Donnie Neylon,28/08/2020,Data refresh,Source data reviewed and transformed and redeployed
-v1.4,Donnie Neylon,Donnie Neylon,25/08/2020,User Interface updates,Q-Codes & Ordering Codes - general layout updated
-v1.3,Donnie Neylon,Donnie Neylon,17/08/2020,User Interface updates,Proposed Build - added scroll bars to main panel
-v1.2,Donnie Neylon,Donnie Neylon,14/08/2020,Google Maps,Added Google Maps hyperlink based on user supplied Postcode
-v1.1,Donnie Neylon,Donnie Neylon,11/08/2020,User Interface updates,Site Overview - sidebar and main panel size alterations
-v1,Donnie Neylon,Donnie Neylon,06/08/2020,Version 1,First application instance
+v10.1,Donnie Neylon,Donnie Neylon,02/08/2021,Connectivty HLDs updated,"B1-B3 updated to PA7, B2-B3 updated to PA7, New Build updatd to PA5. SFP type changed for L8/L9 radios."
+v10,Donnie Neylon,Donnie Neylon,29/07/2021,2nd Power Subrack tabs added,"Additional tabs created to illustrate internal power cabling, SHU cabling and port configuration for 2nd power subrack introduction."
+v9.18,Donnie Neylon,Donnie Neylon,16/07/2021,BOM update,BOM updated as per BOMList_PA13.
+v9.17,Donnie Neylon,Donnie Neylon,08/07/2021,BOM update,Blanking plates added to 20W Small and 12W Small configurations.
+v9.16,Donnie Neylon,Donnie Neylon,01/07/2021,DS6456 update,Additional Upgrade Order Codes added for DUW 31 and IDLe cable requirement.
+v9.15,Donnie Neylon,Donnie Neylon,23/06/2021,Mapping update,"Connectivity Diagram mapping for NR34 updated, needs to map in a priority manner with MORAN given prority over TEF only."
+v9.14,Donnie Neylon,Donnie Neylon,16/06/2021,BOM update,"Additional Upgrade Ordering Codes added to LLD 3-Sector ande 2-Sector Radio 2238 Existing B3 Upgrade, Power Upgrade 6102 NR7 demand."
+v9.13,Donnie Neylon,Donnie Neylon,09/06/2021,Comments update,TechAdd2 comment output updated.
+v9.12,Donnie Neylon,Donnie Neylon,08/06/2021,Q-Code Selector update,Pattern update for NR7 options.
+v9.11,Donnie Neylon,Donnie Neylon,28/05/2021,New Additional UG,RBS 6102 Power Upgrade OC added for scenario when outdoor sites have a demand for NR700 but there is no existing 5G on site.
+v9.10,Donnie Neylon,Donnie Neylon,28/05/2021,BOM update,Removing duplicate entries for 5G order codes.
+v9.9,Donnie Neylon,Donnie Neylon,26/05/2021,Cab Layout HLD update,Cab 1 layouts updated for B1-B3 and B2-B3 upgrades.
+v9.8,Donnie Neylon,Donnie Neylon,26/05/2021,SID report updates,Adding fields to display Downgrade and Additional Upgrade ordering codes.
+v9.7,Donnie Neylon,Donnie Neylon,25/05/2021,DS6456 update,"Updated to Draft Issue 1.3_PA1, connectivity mapping for SF sites updated."
+v9.6,Donnie Neylon,Donnie Neylon,25/05/2021,Cab Layout HLD update,Cab 1 layouts updated for B1-B3 and B2-B3 upgrades (RBSERS diagrams updated to reflect 2nd power sub rack). Font size of BOM table reduced to fit table within pdf page limits.
+v9.5,Donnie Neylon,Donnie Neylon,17/05/2021,New Build SCD update,New Build SCD updated to Issue 1.2
+v9.4,Donnie Neylon,Donnie Neylon,11/05/2021,Radio Definitions updated,BOM list updated to PA8. Mappings for NR21 and NR7 updated.
+v9.3,Donnie Neylon,Donnie Neylon,11/05/2021,BOM update,B1 - B3 and B2 - B3 Connectvity HLDs updated to PA5
+v9.2,Donnie Neylon,Donnie Neylon,07/05/2021,Connectivty HLD update,Tabs for Downgrade HLD and SIU Connectivity added
+v9.1,Donnie Neylon,Donnie Neylon,06/05/2021,New tabs,Additional UG/DG functionality added to allow for one complete SID and BOM report. Denomination column added to BOM report.
+v9,Donnie Neylon,Donnie Neylon,04/05/2021,Additional UG/DG functionality,B1 - B3 and B2 - B3 Connectvity HLDs updated for NR7
+v8.6,Donnie Neylon,Donnie Neylon,04/05/2021,Connectivty HLD update,"Q-code selection updated for upgrade options requiring all T23 + NR7 + NR21. Q-Code selection also updated for NR34 MoRAN, Tef only NR34 8x8/M-MIMO must all be included."
+v8.5,Donnie Neylon,Donnie Neylon,30/04/2021,Q-Code Selector update,BOM list updated to PA7. Connectivity Diagrams and CPRI Ref updated as per latest LLD updates to New Build.
+v8.4,Donnie Neylon,Donnie Neylon,30/04/2021,BOM update,Definition updates required for Radio 2238 in GSM only mode
+v8.3,Donnie Neylon,Donnie Neylon,29/04/2021,Radio definition updates,LLD updates
+v8.2,Donnie Neylon,Donnie Neylon,28/04/2021,DS6456 update,BOM list updated to PA6
+v8.1,Donnie Neylon,Donnie Neylon,19/04/2021,BOM update,Functionality to download BOM report in .csv format
+v8,Donnie Neylon,Donnie Neylon,07/04/2021,BOM report,"Updated mapping logic for sites that have no L18, included lookup for ""0"" in L182x2 variable vector for position 33 of concatenated Q-code"
+v7.9,Donnie Neylon,Donnie Neylon,07/04/2021,No L18 mapping,"Disable downloading of report and only make available for download after the ""GO"" button has been pressed generating the Q-code lookup pattern"
+v7.8,Donnie Neylon,Donnie Neylon,07/04/2021,Download Button behaviour,"Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched."
+v7.7,Donnie Neylon,Donnie Neylon,06/04/2021,Action Button behaviour,BOM list updated to PA5
+v7.6,Donnie Neylon,Donnie Neylon,01/04/2021,BOM update,Source data reviewed and transformed and redeployed
+v7.5,Donnie Neylon,Donnie Neylon,11/03/2021,Data refresh,BOM list updated to PA3
+v7.4,Donnie Neylon,Donnie Neylon,12/02/2021,BOM update,Hardware reporting section updated to refer to column indexes instead of column names. Errors had been indentified when bulk reporting CCR power consumption data.
+v7.3,Donnie Neylon,Donnie Neylon,11/02/2021,Hardware Indexes,Data file DS6451 updated with instructions changes relating to Draft PA12
+v7.2,Donnie Neylon,Donnie Neylon,08/02/2021,DS6451 update,Function to calculate number of BB6630 updated considering Mixed Mode should not be counted twice
+v7.1,Donnie Neylon,Donnie Neylon,04/02/2021,Definition updates,Cab layout mapping functions updated for configurations with NR7 upgrade option selected
+v7,Donnie Neylon,Donnie Neylon,03/02/2021,NR7 updates,Source data reviewed and transformed and redeployed
+v6.2,Donnie Neylon,Donnie Neylon,28/01/2021,Data refresh,Added the facility to download the data to csv format
+v6.1,Donnie Neylon,Donnie Neylon,19/01/2021,Bulk Generator Report,Including Bulk Generator mode to enable bulk generation of data. Presently just used for reporting LLD Power Consumption data but expected to have increased functionality in the future.
+v6,Donnie Neylon,Donnie Neylon,13/01/2021,Bulk Generator Report,Source data reviewed and transformed and redeployed
+v5.2,Donnie Neylon,Donnie Neylon,22/12/2020,Data refresh,Updated to make sure not applicable outputs report blank page
+v5.1,Donnie Neylon,Donnie Neylon,15/12/2020,HLD outputs,Changing Upgrade options from selectInputs to uiOutputs as a means to reduce applicable drop down options
+v5,Donnie Neylon,Donnie Neylon,14/12/2020,uiOutput selects,Source data reviewed and transformed and redeployed
+v4.2,Donnie Neylon,Donnie Neylon,28/11/2020,Data refresh,Return only the matching configurations as opposed to full list with a Match column
+v4.1,Donnie Neylon,Donnie Neylon,15/11/2020,Q-code translator update,Reverse engineering Q-code input to matching configurations
+v4,Donnie Neylon,Donnie Neylon,07/11/2020,Q-code translator,Source data reviewed and transformed and redeployed
+v3.5,Donnie Neylon,Donnie Neylon,28/10/2020,Data refresh,Introducing an GO button with isolated functionality
+v3.4,Donnie Neylon,Donnie Neylon,26/10/2020,Generate Q-code lookup pattern,General enhancement of user interface
+v3.3,Donnie Neylon,Donnie Neylon,23/10/2020,User Interface updates,Street Furniture pole type selection added
+v3.2,Donnie Neylon,Donnie Neylon,19/10/2020,Street Furniture,Comments and Instructions section added to assist certain configurations that require Preparatory mode
+v3.1,Donnie Neylon,Donnie Neylon,08/10/2020,Proposed Build modes,Build Type updated to Build Type/Mode to include Tech Add only and Preparatory modes
+v3,Donnie Neylon,Donnie Neylon,07/10/2020,Build Type/Mode,Source data reviewed and transformed and redeployed
+v2.6,Donnie Neylon,Donnie Neylon,28/09/2020,Data refresh,Street Furniture configuration identification added
+v2.5,Donnie Neylon,Donnie Neylon,24/09/2020,Street Furniture,Decision Tree split terminology updated
+v2.4,Donnie Neylon,Donnie Neylon,21/09/2020,Configuration Decision Tree,Definitions updated as testing of output showed errors in enclosure type reporting (York/Shire)
+v2.3,Donnie Neylon,Donnie Neylon,19/09/2020,Hardware definitons,Numbering of sections of SID document
+v2.2,Donnie Neylon,Donnie Neylon,15/09/2020,SID layout,Updating SID with Ericsson logo
+v2.1,Donnie Neylon,Donnie Neylon,12/09/2020,SID presentation,RMD completed and knit to PDF for SID automation
+v2,Donnie Neylon,Donnie Neylon,09/09/2020,Reports,Source data reviewed and transformed and redeployed
+v1.5,Donnie Neylon,Donnie Neylon,28/08/2020,Data refresh,Q-Codes & Ordering Codes - general layout updated
+v1.4,Donnie Neylon,Donnie Neylon,25/08/2020,User Interface updates,Proposed Build - added scroll bars to main panel
+v1.3,Donnie Neylon,Donnie Neylon,17/08/2020,User Interface updates,Added Google Maps hyperlink based on user supplied Postcode
+v1.2,Donnie Neylon,Donnie Neylon,14/08/2020,Google Maps,Site Overview - sidebar and main panel size alterations
+v1.1,Donnie Neylon,Donnie Neylon,11/08/2020,User Interface updates,First application instance
+v1,Donnie Neylon,Donnie Neylon,06/08/2020,Version 1,

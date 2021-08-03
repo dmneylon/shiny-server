@@ -179,6 +179,7 @@ ui <- dashboardPage(
       menuItem("Power Consumption", tabName = "PC", icon = icon("info")),
       menuItem("Bill of Materials BOM", tabName = "bom", icon = icon("boxes")),
       # min:1 max:1 HLD slide #
+      menuItem("Downgrade HLD", tabName = "hlddg", icon = icon("file-pdf")),
       menuItem("HLD", tabName = "hld", icon = icon("file-pdf")),
       # min:1 max:3 Cab Layout slide #
       menuItem("Cabinet 1 Layout", tabName = "c1l", icon = icon("file-pdf")),
@@ -190,6 +191,9 @@ ui <- dashboardPage(
       menuItem("Connectivity Diagram NR34", tabName = "conndiag3", icon = icon("file-pdf")),
       menuItem("Connectivity Diagram NR21/NR7", tabName = "conndiag4", icon = icon("file-pdf")),
       menuItem("Connectivity Diagram TX MoRAN", tabName = "conndiag5", icon = icon("file-pdf")),
+      menuItem("Connectivity Diagram SIU", tabName = "conndiag6", icon = icon("file-pdf")),
+      menuItem("2nd Power Subrack Internal", tabName = "conndiag7", icon = icon("file-pdf")),
+      menuItem("2nd Power Subrack SHU", tabName = "conndiag8", icon = icon("file-pdf")),
       # min:1 max:4 CPRI Connectivity slide #
       menuItem("CPRI Connectivity Baseline", tabName = "CPRI1", icon = icon("file-pdf")),
       menuItem("CPRI Connectivity GU900", tabName = "CPRI2", icon = icon("file-pdf")),
@@ -229,6 +233,7 @@ ui <- dashboardPage(
                     textInput("ASP", "ASP"),
                     #textInput("SiteAddr", "Site Address"),
                     textAreaInput("Access", "Access Details", width = "100%", height = "55px"),
+                    textAreaInput("sidnotes", "Comments for SID review", width = "100%", height = "55px"),
                     fileInput("myFile", "Select site photo to upload, .jpg or .png File",
                               multiple = FALSE,
                               accept = c('image/png', 'image/jpeg'))
@@ -253,140 +258,204 @@ ui <- dashboardPage(
                                       selected = ""),
                           h5(tags$strong("Comments and Instructions Relating to B3 Upgrade:")),
                           box(verbatimTextOutput("Comments"),background = "red", width = 100),
-                          h5(tags$strong("Comments and Instructions Relating to Tech Adds:")),
-                          box(verbatimTextOutput("TechAdd"),background = "red", width = 100),
+                          # h5(tags$strong("Comments and Instructions Relating to Tech Adds:")),
+                          # box(verbatimTextOutput("TechAdd"),background = "red", width = 100),
                           box(textOutput("Capacity"),background = "aqua", width = 100),
                           box(textOutput("SF"),background = "purple", width = 100),
                           selectInput("SFtype", "Street Furniture Pole type:", choices = c("Apollo", "Elara", "Orion", "-"), selected = "-"),
                           h5(tags$strong("Beacon 3 SCD:")),
                           box(textOutput("SCD"),background = "orange", width = 100),
-                          selectInput("BuildType", "Build Type/Mode:", choices = c("New Build", "B1 - B3 Upgrade", "B2 - B3 Upgrade", "Tech Add only", "Preparatory", "Transition", "Bulk Generator", "CCR", ""), selected = ""),
-                          
-                          # h5(tags$strong("Baseline 4G Q-code:")),
-                          # box(
-                          #   textOutput("Base_4G_Qcode"),background="lime",width = 50),
-                          # 
-                          # h5(tags$strong("LTE Upgrade options already existing for chosen configuration:")),
-                          # fluidRow(
-                          # column(2,
-                          # h5("UG Option 1a."),
-                          #   box(textOutput("UG1a_exist"),width = 20)),
-                          # column(2,
-                          # h5("UG Option 2a."),
-                          #   box(textOutput("UG2a_exist"),width = 20)),
-                          # column(2,
-                          # h5("UG Option 2b."),
-                          #   box(textOutput("UG2b_exist"),width = 20)),
-                          # column(2,
-                          # h5("UG Option 3."),
-                          #   box(textOutput("UG3_exist"),width = 20)),
-                          # column(2,
-                          # h5("UG Option 4."),
-                          #   box(textOutput("UG4_exist"),width = 20))
-                          # ),
-                          
-                          # column(3,
-                          # h5("UG Option 5."),
-                          #   box(textOutput("UG5_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 6."),
-                          #   box(textOutput("UG6_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 7."),
-                          #   box(textOutput("UG7_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 8."),
-                          #   box(textOutput("UG8_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 9."),
-                          #   box(textOutput("UG9_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 10."),
-                          #   box(textOutput("UG10_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 11."),
-                          #   box(textOutput("UG11_exist"),width = 25)),
-                          # column(3,
-                          # h5("UG Option 12."),
-                          #   box(textOutput("UG12_exist"),width = 25))
-
-                          
-                       
-
-                          h5(tags$strong("Select 4G Upgrade options:")),
-                          fluidRow(
-                            box(
-                              uiOutput("L8_swapSelection")
-                              #selectInput("L8_swap", "1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-							              box(
-							                uiOutput("L18_4x4Selection")
-                              #selectInput("L18_4x4", "2a. L1800 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-							              box(
-							                uiOutput("L21_4415Selection")
-                              #selectInput("L21_4415", "2b. 4415 L2100 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE)
-							              ),
-
-                          fluidRow(
-                            box(
-                              uiOutput("T23Selection")
-                              #selectInput("T23", "3. 4x4 T23 UG Ordering Code (Macro / Orion)", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-                            box(
-                              uiOutput("L26Selection")
-                              #selectInput("L26", "4. L26 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE)
-                          ),
-						  
-						  h5(tags$strong("Select 5G Upgrade options:")),
-                          fluidRow(
-                            box(
-                              uiOutput("TEF_5G_T34_8x8Selection")
-                              #selectInput("TEF_5G_T34_8x8", "5. TEF Only 5G T34 8x8 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-                            box(
-                              uiOutput("TEF_5G_T34_64MSelection")
-                              #selectInput("TEF_5G_T34_64M", "6. TEF Only 5G T34 M-MiMo UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-                            box(
-                              uiOutput("MORAN_5G_T34_8x8Selection")
-                              #selectInput("MORAN_5G_T34_8x8", "7. VF 5G T34 8x8 MoRAN UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE)
-                          ),
-                          fluidRow(
-                            box(
-                              uiOutput("MORAN_5G_T34_64MSelection")
-                              #selectInput("MORAN_5G_T34_64M", "8. VF 5G T34 M-MiMo MoRAN UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-                            box(
-                              uiOutput("ESS_5G_N21_4x4Selection")
-                              #selectInput("ESS_5G_N21_4x4", "9. ESS 5G N21 4x4 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-                            box(
-                              uiOutput("T23BB_ESS_5G_N21_4x4Selection")
-                              #selectInput("T23BB_ESS_5G_N21_4x4", "10. T23 BB + ESS 5G N21 4x4 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, background = "orange")
-                          ),
-						  fluidRow(
-                            box(
-                              uiOutput("N7_2x2_MMBBSelection")
-                              #selectInput("N7_2x2_MMBB", "11. 5G N7 2x2 + 4G/5G MM BB UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, solidHeader = TRUE),
-                            box(
-                              uiOutput("N7_2x2_MMBB_T23BBSelection")
-                              #selectInput("N7_2x2_MMBB_T23BB", "12. 5G N7 2x2 + T23 BB + 4G/5G MM BB UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
-                              , width = 12, background = "orange")
-                          ),
-						  useShinyjs(),
-						  actionButton("GO", "Generate Q-Code lookup pattern", icon("paper-plane"), 
-						               style="color: #fff; background-color: #337ab7; border-color: #2e6da4"),
-						  #selectInput("QCgen", "Generate Q-Code lookup pattern:", choices = c("Yes", "No", ""), selected = ""),
-						  h5(tags$strong("Lookup pattern for 4G & 5G Q-codes:")),
-						  box(
-						    textOutput("LteNR_Qcode_pattern"),background="lime",width = 50),style = "overflow-y:scroll; max-height: 1250px"
-                          ))),
+                          selectInput("BuildType", "Build Type/Mode:", choices = c("New Build", "B1 - B3 Upgrade", "B2 - B3 Upgrade", "Tech Add only", "Preparatory", "Transition", "Bulk Generator", "CCR", ""), selected = "")),
+                
+                # h5(tags$strong("Baseline 4G Q-code:")),
+                # box(
+                #   textOutput("Base_4G_Qcode"),background="lime",width = 50),
+                # 
+                # h5(tags$strong("LTE Upgrade options already existing for chosen configuration:")),
+                # fluidRow(
+                # column(2,
+                # h5("UG Option 1a."),
+                #   box(textOutput("UG1a_exist"),width = 20)),
+                # column(2,
+                # h5("UG Option 2a."),
+                #   box(textOutput("UG2a_exist"),width = 20)),
+                # column(2,
+                # h5("UG Option 2b."),
+                #   box(textOutput("UG2b_exist"),width = 20)),
+                # column(2,
+                # h5("UG Option 3."),
+                #   box(textOutput("UG3_exist"),width = 20)),
+                # column(2,
+                # h5("UG Option 4."),
+                #   box(textOutput("UG4_exist"),width = 20))
+                # ),
+                
+                # column(3,
+                # h5("UG Option 5."),
+                #   box(textOutput("UG5_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 6."),
+                #   box(textOutput("UG6_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 7."),
+                #   box(textOutput("UG7_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 8."),
+                #   box(textOutput("UG8_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 9."),
+                #   box(textOutput("UG9_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 10."),
+                #   box(textOutput("UG10_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 11."),
+                #   box(textOutput("UG11_exist"),width = 25)),
+                # column(3,
+                # h5("UG Option 12."),
+                #   box(textOutput("UG12_exist"),width = 25))
+                
+                
+                wellPanel(
+                  h5(tags$strong("Select Downgrade option if applicable:")),
+                  fluidRow(
+                    box(
+                      selectInput("AddUGDG_opt1", 
+                                  label = "Downgrade option:",
+                                  choices = DS6456$TelefonicaConfiguration[275:285],
+                                  selected = ""
+                                  ))),
+                    h5(tags$strong("Comments and Instructions Relating to Downgrade:")),
+                    box(verbatimTextOutput("CommentsDG"),background = "red", width = 100)),
+                  
+                 
+                
+                wellPanel( 
+                  h5(tags$strong("Select Additional Upgrade options if applicable:")),
+                  fluidRow(
+                    box(
+                      selectInput("AddUGDG_opt2", 
+                                  label = "Additional Upgrade option 1:",
+                                  choices = DS6456$TelefonicaConfiguration[c(251:274, 286:300)],
+                                  selected = ""
+                                  ))),
+                    h5(tags$strong("Comments and Instructions Relating to Additional Upgrade:")),
+                    box(verbatimTextOutput("CommentsAddUG1"),background = "red", width = 100),
+                   
+                    
+                  fluidRow(
+                     box(
+                      selectInput("AddUGDG_opt3", 
+                                  label = "Additional Upgrade option 2:",
+                                  choices = DS6456$TelefonicaConfiguration[c(251:274, 286:300)],
+                                  selected = ""
+                                  ))),
+                    h5(tags$strong("Comments and Instructions Relating to Additional Upgrade:")),
+                    box(verbatimTextOutput("CommentsAddUG2"),background = "red", width = 100),
+                  
+                
+                
+                fluidRow(
+                  box(
+                    selectInput("AddUGDG_opt4", 
+                                label = "Additional Upgrade option 3:",
+                                choices = DS6456$TelefonicaConfiguration[c(251:274, 286:300)],
+                                selected = ""
+                    ))),
+                h5(tags$strong("Comments and Instructions Relating to Additional Upgrade:")),
+                box(verbatimTextOutput("CommentsAddUG3"),background = "red", width = 100)
+              ),
+                
+                
+                
+                wellPanel(
+                  h5(tags$strong("Select 4G Upgrade options:")),
+                  fluidRow(
+                    box(
+                      uiOutput("L8_swapSelection")
+                      #selectInput("L8_swap", "1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("L18_4x4Selection")
+                      #selectInput("L18_4x4", "2a. L1800 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("L21_4415Selection")
+                      #selectInput("L21_4415", "2b. 4415 L2100 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE)
+                  ),
+                  
+                  fluidRow(
+                    box(
+                      uiOutput("T23Selection")
+                      #selectInput("T23", "3. 4x4 T23 UG Ordering Code (Macro / Orion)", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("L26Selection")
+                      #selectInput("L26", "4. L26 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE)
+                  )),
+                
+                
+                wellPanel(		  
+                  h5(tags$strong("Select 5G Upgrade options:")),
+                  fluidRow(
+                    box(
+                      uiOutput("TEF_5G_T34_8x8Selection")
+                      #selectInput("TEF_5G_T34_8x8", "5. TEF Only 5G T34 8x8 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("TEF_5G_T34_64MSelection")
+                      #selectInput("TEF_5G_T34_64M", "6. TEF Only 5G T34 M-MiMo UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("MORAN_5G_T34_8x8Selection")
+                      #selectInput("MORAN_5G_T34_8x8", "7. VF 5G T34 8x8 MoRAN UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE)
+                  ),
+                  fluidRow(
+                    box(
+                      uiOutput("MORAN_5G_T34_64MSelection")
+                      #selectInput("MORAN_5G_T34_64M", "8. VF 5G T34 M-MiMo MoRAN UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("ESS_5G_N21_4x4Selection")
+                      #selectInput("ESS_5G_N21_4x4", "9. ESS 5G N21 4x4 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("T23BB_ESS_5G_N21_4x4Selection")
+                      #selectInput("T23BB_ESS_5G_N21_4x4", "10. T23 BB + ESS 5G N21 4x4 UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, background = "orange")
+                  ),
+                  fluidRow(
+                    box(
+                      uiOutput("N7_2x2_MMBBSelection")
+                      #selectInput("N7_2x2_MMBB", "11. 5G N7 2x2 + 4G/5G MM BB UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, solidHeader = TRUE),
+                    box(
+                      uiOutput("N7_2x2_MMBB_T23BBSelection")
+                      #selectInput("N7_2x2_MMBB_T23BB", "12. 5G N7 2x2 + T23 BB + 4G/5G MM BB UG Ordering Code", choices = c("Yes", "No", "Yes existing", "-"), selected = "-")
+                      , width = 12, background = "orange")
+                  ),
+                  br(),
+                  h5(tags$strong("Comments and Instructions Relating to Tech Adds and UG Option combinations:")),
+                  box(verbatimTextOutput("TechAdd"),background = "red", width = 100),
+                  box(verbatimTextOutput("TechAdd2"),background = "red", width = 100),
+                  box(verbatimTextOutput("TechAdd3"),background = "red", width = 100),
+                  box(verbatimTextOutput("TechAdd4"),background = "red", width = 100)
+                  
+                  ),
+                
+                
+                wellPanel(		  
+                  useShinyjs(),
+                  actionButton("GO", "Generate Q-Code lookup pattern", icon("paper-plane"), 
+                               style="color: #fff; background-color: #337ab7; border-color: #2e6da4"),
+                  #selectInput("QCgen", "Generate Q-Code lookup pattern:", choices = c("Yes", "No", ""), selected = ""),
+                  h5(tags$strong("Lookup pattern for 4G & 5G Q-codes:")),
+                  box(
+                    textOutput("LteNR_Qcode_pattern"),background="lime",width = 50)
+                ),style = "overflow-y:scroll; max-height: 1250px")),
 						  
       
       
@@ -568,8 +637,24 @@ ui <- dashboardPage(
                   column(12,
                   h4("12. 5G N7 2x2 + T23 BB + 4G/5G MM BB UG Ordering Code"),
                   box(
-                  textOutput("N7_2x2_MMBB_T23BB_OC"),width = 25))
-                ), style = "overflow-y:scroll; max-height: 900px")
+                  textOutput("N7_2x2_MMBB_T23BB_OC"),width = 25)),
+				          column(12,
+				          h4("Additional UG/DG option 1"),
+				          box(
+				          textOutput("AddUGDG_opt1_OC"),width = 25)),
+				          column(12,
+				          h4("Additional UG/DG option 2"),
+				          box(
+				          textOutput("AddUGDG_opt2_OC"),width = 25)),
+				          column(12,
+				          h4("Additional UG/DG option 3"),
+				          box(
+				          textOutput("AddUGDG_opt3_OC"),width = 25)),
+				          column(12,
+				          h4("Additional UG/DG option 4"),
+				          box(
+				          textOutput("AddUGDG_opt4_OC"),width = 25))
+                  ), style = "overflow-y:scroll; max-height: 900px")
       )),
       
       # 6th tab content
@@ -609,8 +694,16 @@ ui <- dashboardPage(
                 downloadButton('BOMdl',"Download the BOM")
               )
       ),
+      
+      # 9ath tab content
+      tabItem(tabName = "hlddg",
+              mainPanel(
+                br(),
+                uiOutput("HLDDGpage")
+              )
+      ),
 
-      # 9th tab content
+      # 9bth tab content
       tabItem(tabName = "hld",
               mainPanel(
                 br(),
@@ -674,11 +767,36 @@ ui <- dashboardPage(
               )
       ),
       
-      # 17th tab content
+      # 17ath tab content
       tabItem(tabName = "conndiag5",
               mainPanel(
                 br(),
                 uiOutput("CDTX")
+              )
+      ),
+    
+      
+      # 17bth tab content
+      tabItem(tabName = "conndiag6",
+              mainPanel(
+                br(),
+                uiOutput("CDSIU")
+              )
+      ),
+      
+      # 17cth tab content
+      tabItem(tabName = "conndiag7",
+              mainPanel(
+                br(),
+                uiOutput("CDPowSubInt")
+              )
+      ),
+      
+      # 17dth tab content
+      tabItem(tabName = "conndiag8",
+              mainPanel(
+                br(),
+                uiOutput("CDPowSubSHU")
               )
       ),
 
@@ -1056,7 +1174,20 @@ server <- function(input, output, session) {
   
   
   
-# output comments and instructions relating to B3 Upgrade #
+  
+  # First variable for params list then output comments and instructions relating to B3 Upgrade #
+  vCom1 <- reactive({ 
+    if(input$Config =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),156]))
+    }
+  })
+  
+  
   output$Comments <- renderText({ 
     if(input$Config =="")
       {
@@ -1068,7 +1199,30 @@ server <- function(input, output, session) {
     }
   })
   
-# output comments and instructions relating to Tech Adds #
+  
+# First variable for params list then output comments and instructions relating to TechAdd #
+  vCom2 <- reactive({ 
+    
+    if (input$BuildType == "Tech Add only" & (input$ESS_5G_N21_4x4 == "Yes existing" | input$N7_2x2_MMBB == "Yes existing") & input$T23 == "Yes")
+    {
+      return (as.character(DS6456[270,156]))
+    }
+    else if ((input$ESS_5G_N21_4x4 == "Yes" | input$N7_2x2_MMBB == "Yes") & (input$T23 == "No" | input$T23 == "-") & (input$TEF_5G_T34_8x8 == "No" | input$TEF_5G_T34_8x8 == "-")
+             & (input$TEF_5G_T34_64M == "No" | input$TEF_5G_T34_64M == "-") & (input$MORAN_5G_T34_8x8 == "No" | input$MORAN_5G_T34_8x8 == "-") & (input$MORAN_5G_T34_64M == "No" | input$MORAN_5G_T34_64M == "-"))
+    {
+      return (as.character(DS6456[271,156]))
+    }
+    else if ((input$N7_2x2_MMBB_T23BB == "Yes" | input$N7_2x2_MMBB == "Yes") & (input$TEF_5G_T34_64M == "Yes" | input$TEF_5G_T34_64M == "Yes existing" | input$MORAN_5G_T34_64M == "Yes" | input$MORAN_5G_T34_64M == "Yes existing"))
+    {
+      return (as.character(DS6456[273,156]))
+    }
+    else
+    {
+      #return (NULL)
+      paste("")
+    }
+  })
+  
   output$TechAdd <- renderText({ 
     
     if (input$BuildType == "Tech Add only" & (input$ESS_5G_N21_4x4 == "Yes existing" | input$N7_2x2_MMBB == "Yes existing") & input$T23 == "Yes")
@@ -1090,6 +1244,238 @@ server <- function(input, output, session) {
       paste("")
     }
   })
+
+  
+  
+  # First variable for params list then output comments and instructions relating to TechAdd2 #
+  vCom6 <- reactive({
+    if (input$Config == "B1 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config == "B1 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)" | 
+        input$Config == "B2 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config == "B2 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)")
+    {
+      paste("")
+    }
+    else if ((input$N7_2x2_MMBB_T23BB == "Yes" | input$N7_2x2_MMBB == "Yes") & (input$TEF_5G_T34_64M == "No" | input$TEF_5G_T34_64M == "-")
+             & (input$TEF_5G_T34_8x8 == "No" | input$TEF_5G_T34_8x8 == "-") & (input$MORAN_5G_T34_8x8 == "No" | input$MORAN_5G_T34_8x8 == "-")
+             & (input$MORAN_5G_T34_64M == "No" | input$MORAN_5G_T34_64M == "-") & (input$ESS_5G_N21_4x4 == "No" | input$ESS_5G_N21_4x4 == "-")
+             & (input$T23BB_ESS_5G_N21_4x4 == "No" | input$T23BB_ESS_5G_N21_4x4 == "-"))
+    {
+      paste("If enclosure type is RBS 6102 then Additional UG required for this configuration and option combination, please select Additional UG - Power UG 6102 NR7 where no existing 5G")
+    }
+    else
+    {
+      paste("")
+    }
+  })
+  
+  
+  output$TechAdd2 <- renderText({
+    if (input$Config == "B1 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config == "B1 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)" | 
+        input$Config == "B2 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config == "B2 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)")
+    {
+      paste("")
+    }
+    else if ((input$N7_2x2_MMBB_T23BB == "Yes" | input$N7_2x2_MMBB == "Yes") & (input$TEF_5G_T34_64M == "No" | input$TEF_5G_T34_64M == "-")
+             & (input$TEF_5G_T34_8x8 == "No" | input$TEF_5G_T34_8x8 == "-") & (input$MORAN_5G_T34_8x8 == "No" | input$MORAN_5G_T34_8x8 == "-")
+             & (input$MORAN_5G_T34_64M == "No" | input$MORAN_5G_T34_64M == "-") & (input$ESS_5G_N21_4x4 == "No" | input$ESS_5G_N21_4x4 == "-")
+             & (input$T23BB_ESS_5G_N21_4x4 == "No" | input$T23BB_ESS_5G_N21_4x4 == "-"))
+    {
+      paste("If enclosure type is RBS 6102 then Additional UG required for this configuration and option combination, please select Additional UG - Power UG 6102 NR7 where no existing 5G")
+    }
+    else
+    {
+      paste("")
+    }
+  })
+  
+  
+  # IDLe cable requirement
+  # First variable for params list then output comments and instructions relating to TechAdd3 #
+  vCom7 <- reactive({ 
+    
+    if (input$TEF_5G_T34_8x8 == "Yes existing" & input$MORAN_5G_T34_8x8 == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 2x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else if (input$TEF_5G_T34_64M == "Yes existing" & input$MORAN_5G_T34_64M == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 2x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else if (input$TEF_5G_T34_8x8 == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 1x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else if (input$TEF_5G_T34_64M == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 1x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else
+    {
+      #return (NULL)
+      paste("")
+    }
+  })
+  
+  
+  output$TechAdd3 <- renderText({ 
+    
+    if (input$TEF_5G_T34_8x8 == "Yes existing" & input$MORAN_5G_T34_8x8 == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 2x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else if (input$TEF_5G_T34_64M == "Yes existing" & input$MORAN_5G_T34_64M == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 2x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else if (input$TEF_5G_T34_8x8 == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 1x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else if (input$TEF_5G_T34_64M == "Yes existing")
+    {
+      paste ("Select Additional Upgrade - 1x IDLe cable - to fulfill IDLe cable requirement")
+    }
+    else
+    {
+      #return (NULL)
+      paste("")
+    }
+  })
+  
+  
+  
+  # DUW 31 requirement
+  # First variable for params list then output comments and instructions relating to TechAdd4 #
+  vCom8 <- reactive({ 
+    
+    if ((stri_detect_fixed(input$Config, "Medium") == TRUE | stri_detect_fixed(input$Config, "Small") == TRUE | stri_detect_fixed(input$Config, "Low") == TRUE) 
+        & stri_detect_fixed(input$Config, "B1 to B3") == TRUE 
+        & stri_detect_fixed(input$Config, "12W") == TRUE)
+    {
+      paste ("Review PIV to check if DUW 31 is existing on site pre-upgrade, if Not, Select Additional Upgrade - DUW 31 Upgrade - to fulfill DUW 31 U9 SC requirement")
+    }
+    else
+    {
+      #return (NULL)
+      paste("")
+    }
+  })
+  
+  
+  output$TechAdd4 <- renderText({ 
+    
+    if ((stri_detect_fixed(input$Config, "Medium") == TRUE | stri_detect_fixed(input$Config, "Small") == TRUE | stri_detect_fixed(input$Config, "Low") == TRUE) 
+        & stri_detect_fixed(input$Config, "B1 to B3") == TRUE 
+        & stri_detect_fixed(input$Config, "12W") == TRUE)
+    {
+      paste ("Review PIV to check if DUW 31 is existing on site pre-upgrade, if Not, Select Additional Upgrade - DUW 31 Upgrade - to fulfill DUW 31 U9 SC requirement")
+    }
+    else
+    {
+      #return (NULL)
+      paste("")
+    }
+  })
+  
+  
+  
+  # First variable for params list then output comments and instructions relating to Downgrade #
+  vCom3 <- reactive({ 
+    if(input$AddUGDG_opt1 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),156]))
+    }
+  })
+  
+  output$CommentsDG <- renderText({ 
+    if(input$AddUGDG_opt1 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),156]))
+    }
+  })
+  
+  
+  
+  # First variable for params list then output comments and instructions relating to Additional Upgrade 1 #
+  vCom4 <- reactive({ 
+    if(input$AddUGDG_opt2 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt2),156]))
+    }
+  })
+  
+  output$CommentsAddUG1 <- renderText({ 
+    if(input$AddUGDG_opt2 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt2),156]))
+    }
+  })
+  
+  
+  # First variable for params list then output comments and instructions relating to Additional Upgrade 2 #
+  vCom5 <- reactive({ 
+    if(input$AddUGDG_opt3 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt3),156]))
+    }
+  })
+  
+  
+  output$CommentsAddUG2 <- renderText({ 
+    if(input$AddUGDG_opt3 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt3),156]))
+    }
+  })
+  
+  
+  # First variable for params list then output comments and instructions relating to Additional Upgrade 3 #
+  vCom9 <- reactive({ 
+    if(input$AddUGDG_opt4 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt4),156]))
+    }
+  })
+  
+  
+  output$CommentsAddUG3 <- renderText({ 
+    if(input$AddUGDG_opt4 =="")
+    {
+      return (NULL)
+    }
+    else
+    {
+      return (as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt4),156]))
+    }
+  })
+  
   
 
 # variable to identify capacity model #    
@@ -1452,27 +1838,52 @@ server <- function(input, output, session) {
    # })
 
   
-# Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched   
-  actbutcontrol <- reactive({
-    QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)
-    return(QCselect$LTE_Qcode_Match)
-  })
+# # Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code pattern is matched   
+#   actbutcontrol <- reactive({
+#     QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)
+#     return(QCselect$LTE_Qcode_Match)
+#   })
+#   
+#   observeEvent(actbutcontrol(), {
+#     
+#     if(!(1 %in% actbutcontrol())){
+#       output$LteNR_Qcode_pattern <- renderText({
+#         paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+#       })
+#       disable("GO")
+#     }
+#     else{
+#       output$LteNR_Qcode_pattern <- renderText({
+#         paste(as.character(v4()))
+#       })
+#       enable("GO")
+#     }
+#   })  
+  
 
-  observeEvent(actbutcontrol(), {
-
-    if(!(1 %in% actbutcontrol())){
-      output$LteNR_Qcode_pattern <- renderText({
-           paste("Not a valid Upgrade option selection, no matching Q-code pattern")
-           })
-      disable("GO")
-    }
-    else{
-      output$LteNR_Qcode_pattern <- renderText({
-        paste(as.character(v4()))
-      })
-      enable("GO")
-    }
-  })
+  # Control behaviour of action button GO, disabling when invalid UG Option selection. The enable/disable behaviour is managed by whether or not a LTE Q-code and NR Q-code pattern is matched   
+   actbutcontrol <- reactive({
+     QCselect$LTE_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$LTE_Qcode_pattern, ignore.case = T)), 1, 0)
+     QCselect$NR_Qcode_Match <- ifelse(str_detect(v4(), regex(QCselect$NR_Qcode_pattern, ignore.case = T)), 1, 0)
+     #return(QCselect$LTE_Qcode_Match)
+     return(QCselect)
+   })
+ 
+   observeEvent(actbutcontrol(), {
+ 
+     if((substr(v4(),7,14) != "NNNNNNNN") & (!(1 %in% actbutcontrol()$LTE_Qcode_Match) | !(1 %in% actbutcontrol()$NR_Qcode_Match))){
+       output$LteNR_Qcode_pattern <- renderText({
+            paste("Not a valid Upgrade option selection, no matching Q-code pattern")
+            })
+       disable("GO")
+     }
+     else{
+       output$LteNR_Qcode_pattern <- renderText({
+         paste(as.character(v4()))
+       })
+       enable("GO")
+     }
+   })
 
    vQ <- reactive({
      
@@ -2005,8 +2416,82 @@ server <- function(input, output, session) {
   
   
   
+  # Rendering Additional UG/DG Order Codes
+  
+  vAddUG1 <- reactive({
+    if(input$AddUGDG_opt1 == "")
+    {
+      paste("")
+    }
+    else
+    {
+      as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),9])
+    }
+  })
+  
+  vAddUG2 <- reactive({
+    if(input$AddUGDG_opt2 == "")
+    {
+      paste("")
+    }
+    else
+    {
+      as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt2),9])
+    }
+  })
+  
+  vAddUG3 <- reactive({
+    if(input$AddUGDG_opt3 == "")
+    {
+      paste("")
+    }
+    else
+    {
+      as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt3),9])
+    }
+  })
+  
+  vAddUG4 <- reactive({
+    if(input$AddUGDG_opt4 == "")
+    {
+      paste("")
+    }
+    else
+    {
+      as.character(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt4),9])
+    }
+  })
+  
+  
+  output$AddUGDG_opt1_OC <- renderText({ 
+    
+    paste(vAddUG1())
+    
+  })
+  
+  output$AddUGDG_opt2_OC <- renderText({ 
+    
+    paste(vAddUG2())
+    
+  })
+  
+  output$AddUGDG_opt3_OC <- renderText({ 
+    
+    paste(vAddUG3())
+    
+  })
+  
+  output$AddUGDG_opt4_OC <- renderText({ 
+    
+    paste(vAddUG4())
+    
+  })
+  
+  
+  
 ##############################################################################################################################################################
 ## Mappings section ##  
+  
   
   # variable to return HLD based on SCD identified #
   HLD <- reactive({
@@ -2031,7 +2516,7 @@ server <- function(input, output, session) {
   # variable to get HLD page number #
   # substring insertion of "00" or "0" or "" is dependent of number of pages in a document, greater than 100, greater than 10 but less than 100, less than 10
   v1 <- reactive({
-    if(HLD() == HLDB2B3)
+    if(HLD() == HLDB2B3 | HLD() == HLDB1B3)
     {
       if(nchar(toString(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1])) == 1)
       {
@@ -2046,7 +2531,7 @@ server <- function(input, output, session) {
         paste(substr(HLD(), 5, nchar(HLD())-4),DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1],".pdf",sep="")  
       }
     }
-    else if(HLD() == HLDB1B3 | HLD() == HLDNB)
+    else if(HLD() == HLDNB)
     {
       if(nchar(toString(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1])) == 1)
       {
@@ -2070,6 +2555,38 @@ server <- function(input, output, session) {
   # rendering HLD page #  
   output$HLDpage <- renderUI({
     tags$iframe(style="height:900px; width:100%; scrolling=yes",src=v1())
+  })
+  
+  
+  
+  
+  
+  # variable to return HLD DG page number(will always be B1 - B3 for downgrades) based on downgrade selected #
+  
+  vDGpage <- reactive({
+    if(input$Config == "" | input$AddUGDG_opt1 == "")
+    {
+      paste(substring(BLANK, 5),sep="")
+    }
+    else if(nchar(toString(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),1])) == 1)
+    {
+      paste(substr(HLD(), 5, nchar(HLD())-4),"00",DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),1],".pdf",sep="")      
+    }
+    else if(nchar(toString(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),1])) == 2)
+    {
+      paste(substr(HLD(), 5, nchar(HLD())-4),"0",DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),1],".pdf",sep="")
+    }
+    else if(nchar(toString(DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),1])) == 3)
+    {
+      paste(substr(HLD(), 5, nchar(HLD())-4),DS6456[which(DS6456$TelefonicaConfiguration == input$AddUGDG_opt1),1],".pdf",sep="")  
+    }
+    
+  })
+  
+  
+  # rendering HLD downgrade page #  
+  output$HLDDGpage <- renderUI({
+    tags$iframe(style="height:900px; width:100%; scrolling=yes",src=vDGpage())
   })
   
   
@@ -2384,14 +2901,6 @@ server <- function(input, output, session) {
     {
       paste(0)
     }
-    else if(substr(input$TEF_5G_T34_8x8,1,1)=="Y")
-    {
-      return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),169])   # column FM
-    }
-    else if(substr(input$TEF_5G_T34_64M,1,1)=="Y")
-    {
-      return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),170])   # column FN
-    }
     else if(substr(input$MORAN_5G_T34_8x8,1,1)=="Y")
     {
       return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),171])   # column FO
@@ -2399,6 +2908,14 @@ server <- function(input, output, session) {
     else if(substr(input$MORAN_5G_T34_64M,1,1)=="Y")
     {
       return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),172])   # column FP
+    }
+    else if(substr(input$TEF_5G_T34_8x8,1,1)=="Y")
+    {
+      return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),169])   # column FM
+    }
+    else if(substr(input$TEF_5G_T34_64M,1,1)=="Y")
+    {
+      return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),170])   # column FN
     }
     else
     {
@@ -2432,12 +2949,12 @@ server <- function(input, output, session) {
    
   # variable to get CD4 page number #  
   v1Ebpre <- reactive({
-    L184x4 <- c("v", "y")
+    L184x4 <- c("v", "y", "0")
     L182x2 <- c("a", "b", "t","0")
-    L214415 <- c("v", "y")
+    L214415 <- c("v", "y", "0")
     L212217 <- c("a", "b", "t","0")
     if(input$SFtype != "Orion" & (substr(v6A2(),50,54)=="56E21" | substr(v6A2(),50,53)=="56E7") & substr(v6A2(), 33,33) %in% L182x2 & substr(v6A2(), 36,36) %in% L212217 
-       & substr(v6A1(),nchar(toString(v6A1()))-1,nchar(toString(v6A1()))-1)=="0")
+       & substr(v6A1(),nchar(toString(v6A1()))-1,nchar(toString(v6A1()))-1)=="0")    # if the second last digit of the 5G Q-code is 0 then it won't be MORAN, MORAN will need R503
     {
       return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),173])   # column FQ
     }
@@ -2558,6 +3075,133 @@ server <- function(input, output, session) {
   output$CDTX <- renderUI({
     tags$iframe(style="height:900px; width:100%; scrolling=yes",src=v1Ec())
   })
+  
+  
+  # variable to get CDSIU page number #  
+  vCDSIUpre <- reactive({
+    if(input$Config=="" | DS6456[which(DS6456$TelefonicaConfiguration == input$Config),191]==0)
+    {
+      paste(0)
+    }
+    else
+    {
+      return(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),191])   # column GI  
+    }
+  })
+  
+  vCDSIU <- reactive({
+    if(vCDSIUpre()==0)
+    {
+      paste(substring(BLANK, 5),sep="")
+    }
+    else if(vCDSIUpre()!=0 & nchar(toString(vCDSIUpre()))==1)
+    {
+      paste(substr(CD(), 5, nchar(toString(CD()))-4), "0", vCDSIUpre(),".pdf",sep="")
+    }
+    else if(vCDSIUpre()!=0 & nchar(toString(vCDSIUpre()))==2)
+    {
+      paste(substr(CD(), 5, nchar(toString(CD()))-4), "", vCDSIUpre(),".pdf",sep="")    
+    }
+  })  
+  
+  
+  # rendering CDSIU page #  
+  output$CDSIU <- renderUI({
+    tags$iframe(style="height:900px; width:100%; scrolling=yes",src=vCDSIU())
+  })
+  
+  
+  
+  
+  
+  
+  
+  # variable to get CDPowSubInt page number #  
+  vCDPowSubIntpre <- reactive({
+    if(input$Config=="")
+    {
+      paste(0)
+    }
+    else if(input$Config=="B1 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config=="B1 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)")
+    {
+      paste(44) 
+    }
+    else if(input$Config=="B2 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config=="B2 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)")
+    {
+      paste(62) 
+    }
+    else
+    {
+      paste(0)
+    }
+  })
+  
+  vCDPowSubInt <- reactive({
+    if(vCDPowSubIntpre()==0)
+    {
+      paste(substring(BLANK, 5),sep="")
+    }
+    else if(vCDPowSubIntpre()!=0 & nchar(toString(vCDPowSubIntpre()))==1)
+    {
+      paste(substr(CD(), 5, nchar(toString(CD()))-4), "0", vCDPowSubIntpre(),".pdf",sep="")
+    }
+    else if(vCDPowSubIntpre()!=0 & nchar(toString(vCDPowSubIntpre()))==2)
+    {
+      paste(substr(CD(), 5, nchar(toString(CD()))-4), "", vCDPowSubIntpre(),".pdf",sep="")    
+    }
+  })  
+  
+  
+  # rendering CDPowSubInt page #  
+  output$CDPowSubInt <- renderUI({
+    tags$iframe(style="height:900px; width:100%; scrolling=yes",src=vCDPowSubInt())
+  })
+  
+  
+  
+  
+  # variable to get CDPowSubSHU page number #  
+  vCDPowSubSHUpre <- reactive({
+    if(input$Config=="")
+    {
+      paste(0)
+    }
+    else if(input$Config=="B1 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config=="B1 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)")
+    {
+      paste(45) 
+    }
+    else if(input$Config=="B2 to B3 Upgrade - Outdoor 20W RBSERS Small SF - 3 Sector (York)" | input$Config=="B2 to B3 Upgrade - Outdoor 20W RBSERS L18 Small SF - 3 Sector (York)")
+    {
+      paste(63) 
+    }
+    else
+    {
+      paste(0)
+    }
+  })
+  
+  vCDPowSubSHU <- reactive({
+    if(vCDPowSubSHUpre()==0)
+    {
+      paste(substring(BLANK, 5),sep="")
+    }
+    else if(vCDPowSubSHUpre()!=0 & nchar(toString(vCDPowSubSHUpre()))==1)
+    {
+      paste(substr(CD(), 5, nchar(toString(CD()))-4), "0", vCDPowSubSHUpre(),".pdf",sep="")
+    }
+    else if(vCDPowSubSHUpre()!=0 & nchar(toString(vCDPowSubSHUpre()))==2)
+    {
+      paste(substr(CD(), 5, nchar(toString(CD()))-4), "", vCDPowSubSHUpre(),".pdf",sep="")    
+    }
+  })  
+  
+  
+  # rendering CDPowSubSHU page #  
+  output$CDPowSubSHU <- renderUI({
+    tags$iframe(style="height:900px; width:100%; scrolling=yes",src=vCDPowSubSHU())
+  })
+  
+  
   
   
   
@@ -2744,7 +3388,7 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
 
 
 
-# When match found, calculate quantity, Radios rows 2-99, DU/BB 100-124, Cabinets 125-136, remember starts at ProdInv$Qty[1] as this is the first row, header row not counted #  
+# When match found, calculate quantity, Radios rows 2-99 & 140-150, DU/BB 100-124, Cabinets 125-136, remember starts at ProdInv$Qty[1] as this is the first row, header row not counted #  
     v6B <- reactive({
       
       if(input$BuildType == "Bulk Generator")
@@ -2851,18 +3495,29 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$Qty[67]<- ProdInv$Match[67]* 2
         
         
-        # 5G NR & GSM MM Radios                                                           # have to be careful that these radios are counted twice Radio 2238 B8 B20 B28B, needs further testing using applicable configurations
+        # 5G NR & GSM MM Radios / 5G NR & GSM & UMTS MM Radios                            # have to be careful that these radios are counted twice Radio 2238 B8 B20 B28B, needs further testing using applicable configurations
         ProdInv$Qty[68]<- ProdInv$Match[68]* 3
         ProdInv$Qty[69]<- ProdInv$Match[69]* 2
         ProdInv$Qty[70]<- ProdInv$Match[70]* 3
         ProdInv$Qty[71]<- ProdInv$Match[71]* 2
         
         
-        # 5G NR & GSM & UMTS MM Radios                                                    # have to be careful that these radios are counted twice Radio 2238 B8 B20 B28B, needs further testing using applicable configurations
-        ProdInv$Qty[72]<- ProdInv$Match[72]* 3
-        ProdInv$Qty[73]<- ProdInv$Match[73]* 2
-        ProdInv$Qty[74]<- ProdInv$Match[74]* 3
-        ProdInv$Qty[75]<- ProdInv$Match[75]* 2
+        # GSM & UMTS MM Radios                                                           # have to be careful that these radios are counted twice Radio 2238 B8 B20 B28B, needs further testing using applicable configurations
+        if(ProdInv$Match[68] == 1 | ProdInv$Match[69] == 1 | ProdInv$Match[70] == 1 | ProdInv$Match[71] == 1)
+        {
+          ProdInv$Qty[73] == 0
+          ProdInv$Qty[74] == 0
+        }
+        else
+        {
+          ProdInv$Qty[73]<- ProdInv$Match[73]* as.numeric(substr(bulkvar,5,5)) 
+          ProdInv$Qty[74]<- ProdInv$Match[74]* as.numeric(substr(bulkvar,5,5))
+        }
+         
+        
+        # GSM only Radio 2238
+        ProdInv$Qty[72]<- ProdInv$Match[72]* as.numeric(substr(bulkvar,5,5))
+        ProdInv$Qty[75]<- ProdInv$Match[75]* as.numeric(substr(bulkvar,5,5))
         
         
         # LTE & UMTS MM Radios
@@ -2884,8 +3539,20 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$Qty[88]<- ProdInv$Match[88]* 4
         ProdInv$Qty[89]<- ProdInv$Match[89]* 4
         ProdInv$Qty[90]<- ProdInv$Match[90]* 4
-        ProdInv$Qty[91]<- ProdInv$Match[91]* 2
-        ProdInv$Qty[92]<- ProdInv$Match[92]* 2
+        ProdInv$Qty[91]<- ProdInv$Match[91]* 3
+        ProdInv$Qty[92]<- ProdInv$Match[92]* 3
+        
+        ProdInv$Qty[139]<- ProdInv$Match[139]* 3
+        ProdInv$Qty[140]<- ProdInv$Match[140]* 3
+        ProdInv$Qty[141]<- ProdInv$Match[141]* 3
+        ProdInv$Qty[142]<- ProdInv$Match[142]* 4
+        ProdInv$Qty[143]<- ProdInv$Match[143]* 4
+        ProdInv$Qty[144]<- ProdInv$Match[144]* 2
+        ProdInv$Qty[145]<- ProdInv$Match[145]* 2
+        ProdInv$Qty[146]<- ProdInv$Match[146]* 3
+        ProdInv$Qty[147]<- ProdInv$Match[147]* 3
+        ProdInv$Qty[148]<- ProdInv$Match[148]* 2
+        ProdInv$Qty[149]<- ProdInv$Match[149]* 2
         
         # Reserved additional radio dataframe row positions, set to zero for now #
         ProdInv$Qty[93]<- 0
@@ -2951,6 +3618,7 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$Qty[108] <- if(substr(bulkvar,nchar(toString(bulkvar))-1,nchar(toString(bulkvar))-1) == "*")     # that is no 5G
         {
           sum(ifelse(substr(bulkvar,11,11) == "A", 0, 0),   # count as 0 as thhis Mixed Mode Baseband will be counted in the 3G Q-code
+              ifelse(substr(bulkvar,11,11) == "B", 1, 0),
               ifelse(substr(bulkvar,23,23) == "R" | substr(bulkvar,23,23) == 8, 1, 0),
               ifelse(substr(bulkvar,48,48) == "B" | substr(bulkvar,48,48) == "C" | substr(bulkvar,48,48) == "D", 1, 0),
               ifelse(substr(bulkvar,48,48) == 7 | substr(bulkvar,48,48) == "A", 2, 0),
@@ -2959,6 +3627,7 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         else
         {
           sum(ifelse(substr(bulkvar,11,11) == "A", 0, 0),   # count as 0 as thhis Mixed Mode Baseband will be counted in the 3G Q-code
+              ifelse(substr(bulkvar,11,11) == "B", 1, 0),
               ifelse(substr(bulkvar,23,23) == "R" | substr(bulkvar,23,23) == 8, 1, 0),
               ifelse(substr(bulkvar,48,48) == "B" | substr(bulkvar,48,48) == "C" | substr(bulkvar,48,48) == "D", 1, 0),
               ifelse(substr(bulkvar,48,48) == 7 | substr(bulkvar,48,48) == "A", 2, 0),
@@ -3032,7 +3701,8 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
                                                  ifelse((substr(bulkvar,8,9) == "oa" | substr(bulkvar,20,21) == "oa" | substr(bulkvar,20,21) == "oc" | substr(bulkvar,20,21) == "of" | substr(bulkvar,46,47) == "oa") &
                                                           vSCD() == "B1-B3" & !(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B1B3), 1,
                                                         ifelse((substr(bulkvar,8,9) == "oa" | substr(bulkvar,20,21) == "oa" | substr(bulkvar,20,21) == "oc" | substr(bulkvar,20,21) == "of" | substr(bulkvar,46,47) == "oa") &
-                                                                 vSCD() == "B2-B3" & !(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B2B3), 1,0)))))
+                                                                 vSCD() == "B2-B3" & !(DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B2B3), 1,
+                                                        ifelse((substr(bulkvar,8,9) == "oy" | substr(bulkvar,20,21) == "oy" | substr(bulkvar,46,47) == "oy"),1,0))))))
         
         
         
@@ -3218,6 +3888,20 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$IdlePCtotal[133]<- ProdInv$Qty[133] *  ProdInv$IdlePCunit[133]
         ProdInv$IdlePCtotal[134]<- ProdInv$Qty[134] *  ProdInv$IdlePCunit[134]
         
+        ProdInv$IdlePCtotal[139]<- ProdInv$Qty[139] * ProdInv$IdlePCunit[139]
+        ProdInv$IdlePCtotal[140]<- ProdInv$Qty[140] * ProdInv$IdlePCunit[140]
+        ProdInv$IdlePCtotal[141]<- ProdInv$Qty[141] * ProdInv$IdlePCunit[141]
+        ProdInv$IdlePCtotal[142]<- ProdInv$Qty[142] * ProdInv$IdlePCunit[142]
+        ProdInv$IdlePCtotal[143]<- ProdInv$Qty[143] * ProdInv$IdlePCunit[143]
+        ProdInv$IdlePCtotal[144]<- ProdInv$Qty[144] * ProdInv$IdlePCunit[144]
+        ProdInv$IdlePCtotal[145]<- ProdInv$Qty[145] * ProdInv$IdlePCunit[145]
+        ProdInv$IdlePCtotal[146]<- ProdInv$Qty[146] * ProdInv$IdlePCunit[146]
+        ProdInv$IdlePCtotal[147]<- ProdInv$Qty[147] * ProdInv$IdlePCunit[147]
+        ProdInv$IdlePCtotal[148]<- ProdInv$Qty[148] * ProdInv$IdlePCunit[148]
+        ProdInv$IdlePCtotal[149]<- ProdInv$Qty[149] * ProdInv$IdlePCunit[149]
+        
+        
+        
         ProdInv$IdleOPtotal[1]<- ProdInv$Qty[1] *  ProdInv$IdleOPunit[1]
         ProdInv$IdleOPtotal[2]<- ProdInv$Qty[2] *  ProdInv$IdleOPunit[2]
         ProdInv$IdleOPtotal[3]<- ProdInv$Qty[3] *  ProdInv$IdleOPunit[3]
@@ -3352,6 +4036,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$IdleOPtotal[132]<- ProdInv$Qty[132] *  ProdInv$IdleOPunit[132]
         ProdInv$IdleOPtotal[133]<- ProdInv$Qty[133] *  ProdInv$IdleOPunit[133]
         ProdInv$IdleOPtotal[134]<- ProdInv$Qty[134] *  ProdInv$IdleOPunit[134]
+        
+        ProdInv$IdleOPtotal[139]<- ProdInv$Qty[139] * ProdInv$IdleOPunit[139]
+        ProdInv$IdleOPtotal[140]<- ProdInv$Qty[140] * ProdInv$IdleOPunit[140]
+        ProdInv$IdleOPtotal[141]<- ProdInv$Qty[141] * ProdInv$IdleOPunit[141]
+        ProdInv$IdleOPtotal[142]<- ProdInv$Qty[142] * ProdInv$IdleOPunit[142]
+        ProdInv$IdleOPtotal[143]<- ProdInv$Qty[143] * ProdInv$IdleOPunit[143]
+        ProdInv$IdleOPtotal[144]<- ProdInv$Qty[144] * ProdInv$IdleOPunit[144]
+        ProdInv$IdleOPtotal[145]<- ProdInv$Qty[145] * ProdInv$IdleOPunit[145]
+        ProdInv$IdleOPtotal[146]<- ProdInv$Qty[146] * ProdInv$IdleOPunit[146]
+        ProdInv$IdleOPtotal[147]<- ProdInv$Qty[147] * ProdInv$IdleOPunit[147]
+        ProdInv$IdleOPtotal[148]<- ProdInv$Qty[148] * ProdInv$IdleOPunit[148]
+        ProdInv$IdleOPtotal[149]<- ProdInv$Qty[149] * ProdInv$IdleOPunit[149]
         
         
         ProdInv$IdleHDtotal[1]<- ProdInv$Qty[1] *  ProdInv$IdleHDunit[1]
@@ -3488,6 +4184,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$IdleHDtotal[132]<- ProdInv$Qty[132] *  ProdInv$IdleHDunit[132]
         ProdInv$IdleHDtotal[133]<- ProdInv$Qty[133] *  ProdInv$IdleHDunit[133]
         ProdInv$IdleHDtotal[134]<- ProdInv$Qty[134] *  ProdInv$IdleHDunit[134]
+        
+        ProdInv$IdleHDtotal[139]<- ProdInv$Qty[139] * ProdInv$IdleHDunit[139]
+        ProdInv$IdleHDtotal[140]<- ProdInv$Qty[140] * ProdInv$IdleHDunit[140]
+        ProdInv$IdleHDtotal[141]<- ProdInv$Qty[141] * ProdInv$IdleHDunit[141]
+        ProdInv$IdleHDtotal[142]<- ProdInv$Qty[142] * ProdInv$IdleHDunit[142]
+        ProdInv$IdleHDtotal[143]<- ProdInv$Qty[143] * ProdInv$IdleHDunit[143]
+        ProdInv$IdleHDtotal[144]<- ProdInv$Qty[144] * ProdInv$IdleHDunit[144]
+        ProdInv$IdleHDtotal[145]<- ProdInv$Qty[145] * ProdInv$IdleHDunit[145]
+        ProdInv$IdleHDtotal[146]<- ProdInv$Qty[146] * ProdInv$IdleHDunit[146]
+        ProdInv$IdleHDtotal[147]<- ProdInv$Qty[147] * ProdInv$IdleHDunit[147]
+        ProdInv$IdleHDtotal[148]<- ProdInv$Qty[148] * ProdInv$IdleHDunit[148]
+        ProdInv$IdleHDtotal[149]<- ProdInv$Qty[149] * ProdInv$IdleHDunit[149]
         
         # Typical #
         
@@ -3626,6 +4334,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$TypPCtotal[133]<- ProdInv$Qty[133] *  ProdInv$TypPCunit[133]
         ProdInv$TypPCtotal[134]<- ProdInv$Qty[134] *  ProdInv$TypPCunit[134]
         
+        ProdInv$TypPCtotal[139]<- ProdInv$Qty[139] * ProdInv$TypPCunit[139]
+        ProdInv$TypPCtotal[140]<- ProdInv$Qty[140] * ProdInv$TypPCunit[140]
+        ProdInv$TypPCtotal[141]<- ProdInv$Qty[141] * ProdInv$TypPCunit[141]
+        ProdInv$TypPCtotal[142]<- ProdInv$Qty[142] * ProdInv$TypPCunit[142]
+        ProdInv$TypPCtotal[143]<- ProdInv$Qty[143] * ProdInv$TypPCunit[143]
+        ProdInv$TypPCtotal[144]<- ProdInv$Qty[144] * ProdInv$TypPCunit[144]
+        ProdInv$TypPCtotal[145]<- ProdInv$Qty[145] * ProdInv$TypPCunit[145]
+        ProdInv$TypPCtotal[146]<- ProdInv$Qty[146] * ProdInv$TypPCunit[146]
+        ProdInv$TypPCtotal[147]<- ProdInv$Qty[147] * ProdInv$TypPCunit[147]
+        ProdInv$TypPCtotal[148]<- ProdInv$Qty[148] * ProdInv$TypPCunit[148]
+        ProdInv$TypPCtotal[149]<- ProdInv$Qty[149] * ProdInv$TypPCunit[149]
+        
         ProdInv$TypOPtotal[1]<- ProdInv$Qty[1] *  ProdInv$TypOPunit[1]
         ProdInv$TypOPtotal[2]<- ProdInv$Qty[2] *  ProdInv$TypOPunit[2]
         ProdInv$TypOPtotal[3]<- ProdInv$Qty[3] *  ProdInv$TypOPunit[3]
@@ -3760,6 +4480,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$TypOPtotal[132]<- ProdInv$Qty[132] *  ProdInv$TypOPunit[132]
         ProdInv$TypOPtotal[133]<- ProdInv$Qty[133] *  ProdInv$TypOPunit[133]
         ProdInv$TypOPtotal[134]<- ProdInv$Qty[134] *  ProdInv$TypOPunit[134]
+        
+        ProdInv$TypOPtotal[139]<- ProdInv$Qty[139] * ProdInv$TypOPunit[139]
+        ProdInv$TypOPtotal[140]<- ProdInv$Qty[140] * ProdInv$TypOPunit[140]
+        ProdInv$TypOPtotal[141]<- ProdInv$Qty[141] * ProdInv$TypOPunit[141]
+        ProdInv$TypOPtotal[142]<- ProdInv$Qty[142] * ProdInv$TypOPunit[142]
+        ProdInv$TypOPtotal[143]<- ProdInv$Qty[143] * ProdInv$TypOPunit[143]
+        ProdInv$TypOPtotal[144]<- ProdInv$Qty[144] * ProdInv$TypOPunit[144]
+        ProdInv$TypOPtotal[145]<- ProdInv$Qty[145] * ProdInv$TypOPunit[145]
+        ProdInv$TypOPtotal[146]<- ProdInv$Qty[146] * ProdInv$TypOPunit[146]
+        ProdInv$TypOPtotal[147]<- ProdInv$Qty[147] * ProdInv$TypOPunit[147]
+        ProdInv$TypOPtotal[148]<- ProdInv$Qty[148] * ProdInv$TypOPunit[148]
+        ProdInv$TypOPtotal[149]<- ProdInv$Qty[149] * ProdInv$TypOPunit[149]
         
         
         ProdInv$TypHDtotal[1]<- ProdInv$Qty[1] *  ProdInv$TypHDunit[1]
@@ -3896,6 +4628,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$TypHDtotal[132]<- ProdInv$Qty[132] *  ProdInv$TypHDunit[132]
         ProdInv$TypHDtotal[133]<- ProdInv$Qty[133] *  ProdInv$TypHDunit[133]
         ProdInv$TypHDtotal[134]<- ProdInv$Qty[134] *  ProdInv$TypHDunit[134]
+        
+        ProdInv$TypHDtotal[139]<- ProdInv$Qty[139] * ProdInv$TypHDunit[139]
+        ProdInv$TypHDtotal[140]<- ProdInv$Qty[140] * ProdInv$TypHDunit[140]
+        ProdInv$TypHDtotal[141]<- ProdInv$Qty[141] * ProdInv$TypHDunit[141]
+        ProdInv$TypHDtotal[142]<- ProdInv$Qty[142] * ProdInv$TypHDunit[142]
+        ProdInv$TypHDtotal[143]<- ProdInv$Qty[143] * ProdInv$TypHDunit[143]
+        ProdInv$TypHDtotal[144]<- ProdInv$Qty[144] * ProdInv$TypHDunit[144]
+        ProdInv$TypHDtotal[145]<- ProdInv$Qty[145] * ProdInv$TypHDunit[145]
+        ProdInv$TypHDtotal[146]<- ProdInv$Qty[146] * ProdInv$TypHDunit[146]
+        ProdInv$TypHDtotal[147]<- ProdInv$Qty[147] * ProdInv$TypHDunit[147]
+        ProdInv$TypHDtotal[148]<- ProdInv$Qty[148] * ProdInv$TypHDunit[148]
+        ProdInv$TypHDtotal[149]<- ProdInv$Qty[149] * ProdInv$TypHDunit[149]
         
         # High Load #
         
@@ -4034,6 +4778,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$HighPCtotal[133]<- ProdInv$Qty[133] *  ProdInv$HighPCunit[133]
         ProdInv$HighPCtotal[134]<- ProdInv$Qty[134] *  ProdInv$HighPCunit[134]
         
+        ProdInv$HighPCtotal[139]<- ProdInv$Qty[139] * ProdInv$HighPCunit[139]
+        ProdInv$HighPCtotal[140]<- ProdInv$Qty[140] * ProdInv$HighPCunit[140]
+        ProdInv$HighPCtotal[141]<- ProdInv$Qty[141] * ProdInv$HighPCunit[141]
+        ProdInv$HighPCtotal[142]<- ProdInv$Qty[142] * ProdInv$HighPCunit[142]
+        ProdInv$HighPCtotal[143]<- ProdInv$Qty[143] * ProdInv$HighPCunit[143]
+        ProdInv$HighPCtotal[144]<- ProdInv$Qty[144] * ProdInv$HighPCunit[144]
+        ProdInv$HighPCtotal[145]<- ProdInv$Qty[145] * ProdInv$HighPCunit[145]
+        ProdInv$HighPCtotal[146]<- ProdInv$Qty[146] * ProdInv$HighPCunit[146]
+        ProdInv$HighPCtotal[147]<- ProdInv$Qty[147] * ProdInv$HighPCunit[147]
+        ProdInv$HighPCtotal[148]<- ProdInv$Qty[148] * ProdInv$HighPCunit[148]
+        ProdInv$HighPCtotal[149]<- ProdInv$Qty[149] * ProdInv$HighPCunit[149]
+        
         ProdInv$HighOPtotal[1]<- ProdInv$Qty[1] *  ProdInv$HighOPunit[1]
         ProdInv$HighOPtotal[2]<- ProdInv$Qty[2] *  ProdInv$HighOPunit[2]
         ProdInv$HighOPtotal[3]<- ProdInv$Qty[3] *  ProdInv$HighOPunit[3]
@@ -4168,6 +4924,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$HighOPtotal[132]<- ProdInv$Qty[132] *  ProdInv$HighOPunit[132]
         ProdInv$HighOPtotal[133]<- ProdInv$Qty[133] *  ProdInv$HighOPunit[133]
         ProdInv$HighOPtotal[134]<- ProdInv$Qty[134] *  ProdInv$HighOPunit[134]
+        
+        ProdInv$HighOPtotal[139]<- ProdInv$Qty[139] * ProdInv$HighOPunit[139]
+        ProdInv$HighOPtotal[140]<- ProdInv$Qty[140] * ProdInv$HighOPunit[140]
+        ProdInv$HighOPtotal[141]<- ProdInv$Qty[141] * ProdInv$HighOPunit[141]
+        ProdInv$HighOPtotal[142]<- ProdInv$Qty[142] * ProdInv$HighOPunit[142]
+        ProdInv$HighOPtotal[143]<- ProdInv$Qty[143] * ProdInv$HighOPunit[143]
+        ProdInv$HighOPtotal[144]<- ProdInv$Qty[144] * ProdInv$HighOPunit[144]
+        ProdInv$HighOPtotal[145]<- ProdInv$Qty[145] * ProdInv$HighOPunit[145]
+        ProdInv$HighOPtotal[146]<- ProdInv$Qty[146] * ProdInv$HighOPunit[146]
+        ProdInv$HighOPtotal[147]<- ProdInv$Qty[147] * ProdInv$HighOPunit[147]
+        ProdInv$HighOPtotal[148]<- ProdInv$Qty[148] * ProdInv$HighOPunit[148]
+        ProdInv$HighOPtotal[149]<- ProdInv$Qty[149] * ProdInv$HighOPunit[149]
         
         
         ProdInv$HighHDtotal[1]<- ProdInv$Qty[1] *  ProdInv$HighHDunit[1]
@@ -4304,6 +5072,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$HighHDtotal[132]<- ProdInv$Qty[132] *  ProdInv$HighHDunit[132]
         ProdInv$HighHDtotal[133]<- ProdInv$Qty[133] *  ProdInv$HighHDunit[133]
         ProdInv$HighHDtotal[134]<- ProdInv$Qty[134] *  ProdInv$HighHDunit[134]
+        
+        ProdInv$HighHDtotal[139]<- ProdInv$Qty[139] * ProdInv$HighHDunit[139]
+        ProdInv$HighHDtotal[140]<- ProdInv$Qty[140] * ProdInv$HighHDunit[140]
+        ProdInv$HighHDtotal[141]<- ProdInv$Qty[141] * ProdInv$HighHDunit[141]
+        ProdInv$HighHDtotal[142]<- ProdInv$Qty[142] * ProdInv$HighHDunit[142]
+        ProdInv$HighHDtotal[143]<- ProdInv$Qty[143] * ProdInv$HighHDunit[143]
+        ProdInv$HighHDtotal[144]<- ProdInv$Qty[144] * ProdInv$HighHDunit[144]
+        ProdInv$HighHDtotal[145]<- ProdInv$Qty[145] * ProdInv$HighHDunit[145]
+        ProdInv$HighHDtotal[146]<- ProdInv$Qty[146] * ProdInv$HighHDunit[146]
+        ProdInv$HighHDtotal[147]<- ProdInv$Qty[147] * ProdInv$HighHDunit[147]
+        ProdInv$HighHDtotal[148]<- ProdInv$Qty[148] * ProdInv$HighHDunit[148]
+        ProdInv$HighHDtotal[149]<- ProdInv$Qty[149] * ProdInv$HighHDunit[149]
         
         # Momentary Max #
         
@@ -4442,6 +5222,19 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$MaxPCtotal[133]<- ProdInv$Qty[133] *  ProdInv$MaxPCunit[133]
         ProdInv$MaxPCtotal[134]<- ProdInv$Qty[134] *  ProdInv$MaxPCunit[134]
         
+        ProdInv$MaxPCtotal[139]<- ProdInv$Qty[139] * ProdInv$MaxPCunit[139]
+        ProdInv$MaxPCtotal[140]<- ProdInv$Qty[140] * ProdInv$MaxPCunit[140]
+        ProdInv$MaxPCtotal[141]<- ProdInv$Qty[141] * ProdInv$MaxPCunit[141]
+        ProdInv$MaxPCtotal[142]<- ProdInv$Qty[142] * ProdInv$MaxPCunit[142]
+        ProdInv$MaxPCtotal[143]<- ProdInv$Qty[143] * ProdInv$MaxPCunit[143]
+        ProdInv$MaxPCtotal[144]<- ProdInv$Qty[144] * ProdInv$MaxPCunit[144]
+        ProdInv$MaxPCtotal[145]<- ProdInv$Qty[145] * ProdInv$MaxPCunit[145]
+        ProdInv$MaxPCtotal[146]<- ProdInv$Qty[146] * ProdInv$MaxPCunit[146]
+        ProdInv$MaxPCtotal[147]<- ProdInv$Qty[147] * ProdInv$MaxPCunit[147]
+        ProdInv$MaxPCtotal[148]<- ProdInv$Qty[148] * ProdInv$MaxPCunit[148]
+        ProdInv$MaxPCtotal[149]<- ProdInv$Qty[149] * ProdInv$MaxPCunit[149]
+        
+        
         ProdInv$MaxOPtotal[1]<- ProdInv$Qty[1] *  ProdInv$MaxOPunit[1]
         ProdInv$MaxOPtotal[2]<- ProdInv$Qty[2] *  ProdInv$MaxOPunit[2]
         ProdInv$MaxOPtotal[3]<- ProdInv$Qty[3] *  ProdInv$MaxOPunit[3]
@@ -4576,6 +5369,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$MaxOPtotal[132]<- ProdInv$Qty[132] *  ProdInv$MaxOPunit[132]
         ProdInv$MaxOPtotal[133]<- ProdInv$Qty[133] *  ProdInv$MaxOPunit[133]
         ProdInv$MaxOPtotal[134]<- ProdInv$Qty[134] *  ProdInv$MaxOPunit[134]
+        
+        ProdInv$MaxOPtotal[139]<- ProdInv$Qty[139] * ProdInv$MaxOPunit[139]
+        ProdInv$MaxOPtotal[140]<- ProdInv$Qty[140] * ProdInv$MaxOPunit[140]
+        ProdInv$MaxOPtotal[141]<- ProdInv$Qty[141] * ProdInv$MaxOPunit[141]
+        ProdInv$MaxOPtotal[142]<- ProdInv$Qty[142] * ProdInv$MaxOPunit[142]
+        ProdInv$MaxOPtotal[143]<- ProdInv$Qty[143] * ProdInv$MaxOPunit[143]
+        ProdInv$MaxOPtotal[144]<- ProdInv$Qty[144] * ProdInv$MaxOPunit[144]
+        ProdInv$MaxOPtotal[145]<- ProdInv$Qty[145] * ProdInv$MaxOPunit[145]
+        ProdInv$MaxOPtotal[146]<- ProdInv$Qty[146] * ProdInv$MaxOPunit[146]
+        ProdInv$MaxOPtotal[147]<- ProdInv$Qty[147] * ProdInv$MaxOPunit[147]
+        ProdInv$MaxOPtotal[148]<- ProdInv$Qty[148] * ProdInv$MaxOPunit[148]
+        ProdInv$MaxOPtotal[149]<- ProdInv$Qty[149] * ProdInv$MaxOPunit[149]
         
         ProdInv$MaxHDtotal[1]<- ProdInv$Qty[1] *  ProdInv$MaxHDunit[1]
         ProdInv$MaxHDtotal[2]<- ProdInv$Qty[2] *  ProdInv$MaxHDunit[2]
@@ -4712,6 +5517,18 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         ProdInv$MaxHDtotal[133]<- ProdInv$Qty[133] *  ProdInv$MaxHDunit[133]
         ProdInv$MaxHDtotal[134]<- ProdInv$Qty[134] *  ProdInv$MaxHDunit[134]
         
+        ProdInv$MaxHDtotal[139]<- ProdInv$Qty[139] * ProdInv$MaxHDunit[139]
+        ProdInv$MaxHDtotal[140]<- ProdInv$Qty[140] * ProdInv$MaxHDunit[140]
+        ProdInv$MaxHDtotal[141]<- ProdInv$Qty[141] * ProdInv$MaxHDunit[141]
+        ProdInv$MaxHDtotal[142]<- ProdInv$Qty[142] * ProdInv$MaxHDunit[142]
+        ProdInv$MaxHDtotal[143]<- ProdInv$Qty[143] * ProdInv$MaxHDunit[143]
+        ProdInv$MaxHDtotal[144]<- ProdInv$Qty[144] * ProdInv$MaxHDunit[144]
+        ProdInv$MaxHDtotal[145]<- ProdInv$Qty[145] * ProdInv$MaxHDunit[145]
+        ProdInv$MaxHDtotal[146]<- ProdInv$Qty[146] * ProdInv$MaxHDunit[146]
+        ProdInv$MaxHDtotal[147]<- ProdInv$Qty[147] * ProdInv$MaxHDunit[147]
+        ProdInv$MaxHDtotal[148]<- ProdInv$Qty[148] * ProdInv$MaxHDunit[148]
+        ProdInv$MaxHDtotal[149]<- ProdInv$Qty[149] * ProdInv$MaxHDunit[149]
+        
         
         bulkgen$IdlePCtotal[looper] <- sum(ProdInv$IdlePCtotal)
         bulkgen$IdleOPtotal[looper] <- sum(ProdInv$IdleOPtotal)
@@ -4770,7 +5587,9 @@ cabsx2_B2B3_RBS_YL <- c(19,22,23,24,25,28,29,30,31,32,33,34,48,50,64,65,66,67,68
         # Radio 8823 B42G
         bulkgen[looper,82] <-  ProdInv$Qty[62] + ProdInv$Qty[82] + ProdInv$Qty[83] + ProdInv$Qty[84] + ProdInv$Qty[85] + ProdInv$Qty[86] + ProdInv$Qty[87] + ProdInv$Qty[88] + ProdInv$Qty[89] + ProdInv$Qty[90] + ProdInv$Qty[91] + ProdInv$Qty[92]
         # AIR 6488 B42G
-        bulkgen[looper,83] <-  ProdInv$Qty[63]
+        bulkgen[looper,83] <-  ProdInv$Qty[63] + ProdInv$Qty[139] + ProdInv$Qty[140] + ProdInv$Qty[141] + ProdInv$Qty[142] + ProdInv$Qty[143] + ProdInv$Qty[144] + ProdInv$Qty[145]
+        # AIR 3278 B78K
+        bulkgen[looper,114] <-  ProdInv$Qty[146] + ProdInv$Qty[147] + ProdInv$Qty[148] + ProdInv$Qty[149]
         # Radio 2238 B8 B20
         bulkgen[looper,75] <-  ProdInv$Qty[27] + ProdInv$Qty[28] + ProdInv$Qty[68] + ProdInv$Qty[69] + ProdInv$Qty[70] + ProdInv$Qty[71] + ProdInv$Qty[72] + ProdInv$Qty[73] + ProdInv$Qty[74] + ProdInv$Qty[75]
         # Radio 2203 B3
@@ -4898,13 +5717,19 @@ v6C <- reactive({
   # Radio 8823 B42G
   RadioHW[25] <- v6B()$Qty[62] + v6B()$Qty[82] + v6B()$Qty[83] + v6B()$Qty[84] + v6B()$Qty[85] + v6B()$Qty[86] + v6B()$Qty[87] + v6B()$Qty[88] + v6B()$Qty[89] + v6B()$Qty[90] + v6B()$Qty[91] + v6B()$Qty[92]
   # AIR 6488 B42G
-  RadioHW[26] <- v6B()$Qty[63]
+  RadioHW[26] <- v6B()$Qty[63] + v6B()$Qty[139] + v6B()$Qty[140] + v6B()$Qty[141] + v6B()$Qty[142] + v6B()$Qty[143] + v6B()$Qty[144] + v6B()$Qty[145]
+  # AIR 3278 B78K
+  RadioHW[27] <- v6B()$Qty[146] + v6B()$Qty[147] + v6B()$Qty[148] + v6B()$Qty[149]
   # Radio 2238 B8 B20
   RadioHW[18] <- v6B()$Qty[27] + v6B()$Qty[28] + v6B()$Qty[68] + v6B()$Qty[69] + v6B()$Qty[70] + v6B()$Qty[71] + v6B()$Qty[72] + v6B()$Qty[73] + v6B()$Qty[74] + v6B()$Qty[75]
   # Radio 2203 B3
   RadioHW[16] <- v6B()$Qty[54]
   # Radio 4480 B1 B3
   RadioHW[22] <- v6B()$Qty[42] + v6B()$Qty[43]
+  # Radio 4499 44B1 44B3 C
+  RadioHW[23] <- v6B()$Qty[40] + v6B()$Qty[41]
+  # Radio 2217 B28B
+  RadioHW[15] <- v6B()$Qty[64] + v6B()$Qty[65] + v6B()$Qty[66] + v6B()$Qty[67]
   
   return (RadioHW)
   }
@@ -5131,11 +5956,11 @@ vF1 <- reactive({
 ##############################################################################################################################################################  
 ## Updating and rendering the PC data ##
 
-v21 <- reactive({
-    PCoverview$RadioIdlePC[1] <- sum(v6B()$IdlePCtotal[1:81])
-    PCoverview$RadioTypPC[1] <- sum(v6B()$TypPCtotal[1:81])
-    PCoverview$RadioHighPC[1] <- sum(v6B()$HighPCtotal[1:81])
-    PCoverview$RadioMaxPC[1] <- sum(v6B()$MaxPCtotal[1:81])
+  v21 <- reactive({
+    PCoverview$RadioIdlePC[1] <- sum(v6B()$IdlePCtotal[1:92],v6B()$IdlePCtotal[139:149])
+    PCoverview$RadioTypPC[1] <- sum(v6B()$TypPCtotal[1:92],v6B()$TypPCtotal[139:149])
+    PCoverview$RadioHighPC[1] <- sum(v6B()$HighPCtotal[1:92],v6B()$HighPCtotal[139:149])
+    PCoverview$RadioMaxPC[1] <- sum(v6B()$MaxPCtotal[1:92],v6B()$MaxPCtotal[139:149])
     PCoverview$BasebandIdlePC[1] <- sum(v6B()$IdlePCtotal[99:114])
     PCoverview$BasebandTypPC[1] <- sum(v6B()$TypPCtotal[99:114])
     PCoverview$BasebandHighPC[1] <- sum(v6B()$HighPCtotal[99:114])
@@ -5149,10 +5974,10 @@ v21 <- reactive({
     PCoverview$TotalHighPC[1] <- sum(v6B()$HighPCtotal)
     PCoverview$TotalMaxPC[1] <- sum(v6B()$MaxPCtotal)
     
-    PCoverview$RadioIdleOP[1] <- sum(v6B()$IdleOPtotal[1:81])
-    PCoverview$RadioTypOP[1] <- sum(v6B()$TypOPtotal[1:81])
-    PCoverview$RadioHighOP[1] <- sum(v6B()$HighOPtotal[1:81])
-    PCoverview$RadioMaxOP[1] <- sum(v6B()$MaxOPtotal[1:81])
+    PCoverview$RadioIdleOP[1] <- sum(v6B()$IdleOPtotal[1:92],v6B()$IdleOPtotal[139:149])
+    PCoverview$RadioTypOP[1] <- sum(v6B()$TypOPtotal[1:92],v6B()$TypOPtotal[139:149])
+    PCoverview$RadioHighOP[1] <- sum(v6B()$HighOPtotal[1:92],v6B()$HighOPtotal[139:149])
+    PCoverview$RadioMaxOP[1] <- sum(v6B()$MaxOPtotal[1:92],v6B()$MaxOPtotal[139:149])
     PCoverview$BasebandIdleOP[1] <- sum(v6B()$IdleOPtotal[99:114])
     PCoverview$BasebandTypOP[1] <- sum(v6B()$TypOPtotal[99:114])
     PCoverview$BasebandHighOP[1] <- sum(v6B()$HighOPtotal[99:114])
@@ -5166,10 +5991,10 @@ v21 <- reactive({
     PCoverview$TotalHighOP[1] <- sum(v6B()$HighOPtotal)
     PCoverview$TotalMaxOP[1] <- sum(v6B()$MaxOPtotal)
     
-    PCoverview$RadioIdleHD[1] <- sum(v6B()$IdleHDtotal[1:81])
-    PCoverview$RadioTypHD[1] <- sum(v6B()$TypHDtotal[1:81])
-    PCoverview$RadioHighHD[1] <- sum(v6B()$HighHDtotal[1:81])
-    PCoverview$RadioMaxHD[1] <- sum(v6B()$MaxHDtotal[1:81])
+    PCoverview$RadioIdleHD[1] <- sum(v6B()$IdleHDtotal[1:92],v6B()$IdleHDtotal[139:149])
+    PCoverview$RadioTypHD[1] <- sum(v6B()$TypHDtotal[1:92],v6B()$TypHDtotal[139:149])
+    PCoverview$RadioHighHD[1] <- sum(v6B()$HighHDtotal[1:92],v6B()$HighHDtotal[139:149])
+    PCoverview$RadioMaxHD[1] <- sum(v6B()$MaxHDtotal[1:92],v6B()$MaxHDtotal[139:149])
     PCoverview$BasebandIdleHD[1] <- sum(v6B()$IdleHDtotal[99:114])
     PCoverview$BasebandTypHD[1] <- sum(v6B()$TypHDtotal[99:114])
     PCoverview$BasebandHighHD[1] <- sum(v6B()$HighHDtotal[99:114])
@@ -5186,7 +6011,7 @@ v21 <- reactive({
     return(PCoverview)
     
   }) 
-  observe({print(v21())})    
+  observe({print(v21())})
 
   
 # rendering Total Hardware Output #  
@@ -5221,10 +6046,10 @@ v21 <- reactive({
     
 # Power Tables for rmarkdown #
     v21a <- reactive({
-      RadioPCoverview$RadioIdlePC[1] <- sum(v6B()$IdlePCtotal[1:81])
-      RadioPCoverview$RadioTypPC[1] <- sum(v6B()$TypPCtotal[1:81])
-      RadioPCoverview$RadioHighPC[1] <- sum(v6B()$HighPCtotal[1:81])
-      RadioPCoverview$RadioMaxPC[1] <- sum(v6B()$MaxPCtotal[1:81])
+      RadioPCoverview$RadioIdlePC[1] <- sum(v6B()$IdlePCtotal[1:92],v6B()$IdlePCtotal[139:149])
+      RadioPCoverview$RadioTypPC[1] <- sum(v6B()$TypPCtotal[1:92],v6B()$TypPCtotal[139:149])
+      RadioPCoverview$RadioHighPC[1] <- sum(v6B()$HighPCtotal[1:92],v6B()$HighPCtotal[139:149])
+      RadioPCoverview$RadioMaxPC[1] <- sum(v6B()$MaxPCtotal[1:92],v6B()$MaxPCtotal[139:149])
       return(RadioPCoverview)
     })
     
@@ -5438,18 +6263,18 @@ v21 <- reactive({
      else if((vSCD() == "B1-B3" & DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B1B3)
              | (vSCD() == "B2-B3" & DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B2B3))
      {
-       CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$IdlePCtotal[124:135]/2)
-       CabPCoverview$Cab1_TypPC[1] = sum(v6B()$TypPCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$TypPCtotal[124:135]/2)
-       CabPCoverview$Cab1_HighPC[1] = sum(v6B()$HighPCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$HighPCtotal[124:135]/2)
-       CabPCoverview$Cab1_MaxPC[1] = sum(v6B()$MaxPCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$MaxPCtotal[124:135]/2)
-       CabPCoverview$Cab1_IdleOP[1] = sum(v6B()$IdleOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$IdleOPtotal[124:135]/2)
-       CabPCoverview$Cab1_TypOP[1] = sum(v6B()$TypOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$TypOPtotal[124:135]/2)
-       CabPCoverview$Cab1_HighOP[1] = sum(v6B()$HighOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$HighOPtotal[124:135]/2)
-       CabPCoverview$Cab1_MaxOP[1] = sum(v6B()$MaxOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$MaxOPtotal[124:135]/2)
-       CabPCoverview$Cab1_IdleHD[1] = sum(v6B()$IdleHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$IdleHDtotal[124:135]/2)
-       CabPCoverview$Cab1_TypHD[1] = sum(v6B()$TypHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$TypHDtotal[124:135]/2)
-       CabPCoverview$Cab1_HighHD[1] = sum(v6B()$HighHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$HighHDtotal[124:135]/2)
-       CabPCoverview$Cab1_MaxHD[1] = sum(v6B()$MaxHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103)],v6B()$MaxHDtotal[124:135]/2)
+       CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$IdlePCtotal[124:135]/2)
+       CabPCoverview$Cab1_TypPC[1] = sum(v6B()$TypPCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$TypPCtotal[124:135]/2)
+       CabPCoverview$Cab1_HighPC[1] = sum(v6B()$HighPCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$HighPCtotal[124:135]/2)
+       CabPCoverview$Cab1_MaxPC[1] = sum(v6B()$MaxPCtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$MaxPCtotal[124:135]/2)
+       CabPCoverview$Cab1_IdleOP[1] = sum(v6B()$IdleOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$IdleOPtotal[124:135]/2)
+       CabPCoverview$Cab1_TypOP[1] = sum(v6B()$TypOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$TypOPtotal[124:135]/2)
+       CabPCoverview$Cab1_HighOP[1] = sum(v6B()$HighOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$HighOPtotal[124:135]/2)
+       CabPCoverview$Cab1_MaxOP[1] = sum(v6B()$MaxOPtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$MaxOPtotal[124:135]/2)
+       CabPCoverview$Cab1_IdleHD[1] = sum(v6B()$IdleHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$IdleHDtotal[124:135]/2)
+       CabPCoverview$Cab1_TypHD[1] = sum(v6B()$TypHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$TypHDtotal[124:135]/2)
+       CabPCoverview$Cab1_HighHD[1] = sum(v6B()$HighHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$HighHDtotal[124:135]/2)
+       CabPCoverview$Cab1_MaxHD[1] = sum(v6B()$MaxHDtotal[c(1:5,6,13:16,23,26:30,33:34,44:45,55:75,99:103,139:149,82:92)],v6B()$MaxHDtotal[124:135]/2)
        
        CabPCoverview$Cab2_IdlePC[1] = sum(v6B()$IdlePCtotal[c(7:12,17:22,24:25,31:32,35:43,46:54,76:81,104:112)],v6B()$IdlePCtotal[124:135]/2)
        CabPCoverview$Cab2_TypPC[1] = sum(v6B()$TypPCtotal[c(7:12,17:22,24:25,31:32,35:43,46:54,76:81,104:112)],v6B()$TypPCtotal[124:135]/2)
@@ -5468,49 +6293,49 @@ v21 <- reactive({
        else if(((vSCD() == "B1-B3" & DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B1B3_YL)
                 | (vSCD() == "B2-B3" & DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B2B3_YL)) & substr(v6A2(), 46,47) == "of")   # RBS 6102 + Lancaster
        {
-         CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$IdlePCtotal[124:135]/2)
-         CabPCoverview$Cab1_TypPC[1] = sum(v6B()$TypPCtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$TypPCtotal[124:135]/2)
-         CabPCoverview$Cab1_HighPC[1] = sum(v6B()$HighPCtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$HighPCtotal[124:135]/2)
-         CabPCoverview$Cab1_MaxPC[1] = sum(v6B()$MaxPCtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$MaxPCtotal[124:135]/2)
-         CabPCoverview$Cab1_IdleOP[1] = sum(v6B()$IdleOPtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$IdleOPtotal[124:135]/2)
-         CabPCoverview$Cab1_TypOP[1] = sum(v6B()$TypOPtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$TypOPtotal[124:135]/2)
-         CabPCoverview$Cab1_HighOP[1] = sum(v6B()$HighOPtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$HighOPtotal[124:135]/2)
-         CabPCoverview$Cab1_MaxOP[1] = sum(v6B()$MaxOPtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$MaxOPtotal[124:135]/2)
-         CabPCoverview$Cab1_IdleHD[1] = sum(v6B()$IdleHDtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$IdleHDtotal[124:135]/2)
-         CabPCoverview$Cab1_TypHD[1] = sum(v6B()$TypHDtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$TypHDtotal[124:135]/2)
-         CabPCoverview$Cab1_HighHD[1] = sum(v6B()$HighHDtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$HighHDtotal[124:135]/2)
-         CabPCoverview$Cab1_MaxHD[1] = sum(v6B()$MaxHDtotal[c(4,5,14:16,56:60,62,63,99:103)],v6B()$MaxHDtotal[124:135]/2)
+         CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$IdlePCtotal[124:135]/2)
+         CabPCoverview$Cab1_TypPC[1] = sum(v6B()$TypPCtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$TypPCtotal[124:135]/2)
+         CabPCoverview$Cab1_HighPC[1] = sum(v6B()$HighPCtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$HighPCtotal[124:135]/2)
+         CabPCoverview$Cab1_MaxPC[1] = sum(v6B()$MaxPCtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$MaxPCtotal[124:135]/2)
+         CabPCoverview$Cab1_IdleOP[1] = sum(v6B()$IdleOPtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$IdleOPtotal[124:135]/2)
+         CabPCoverview$Cab1_TypOP[1] = sum(v6B()$TypOPtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$TypOPtotal[124:135]/2)
+         CabPCoverview$Cab1_HighOP[1] = sum(v6B()$HighOPtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$HighOPtotal[124:135]/2)
+         CabPCoverview$Cab1_MaxOP[1] = sum(v6B()$MaxOPtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$MaxOPtotal[124:135]/2)
+         CabPCoverview$Cab1_IdleHD[1] = sum(v6B()$IdleHDtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$IdleHDtotal[124:135]/2)
+         CabPCoverview$Cab1_TypHD[1] = sum(v6B()$TypHDtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$TypHDtotal[124:135]/2)
+         CabPCoverview$Cab1_HighHD[1] = sum(v6B()$HighHDtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$HighHDtotal[124:135]/2)
+         CabPCoverview$Cab1_MaxHD[1] = sum(v6B()$MaxHDtotal[c(4,5,14:16,56:60,62,63,139:149,82:92,99:103)],v6B()$MaxHDtotal[124:135]/2)
          
-         CabPCoverview$Cab2_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$IdlePCtotal[124:135]/2)
-         CabPCoverview$Cab2_TypPC[1] = sum(v6B()$TypPCtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$TypPCtotal[124:135]/2)
-         CabPCoverview$Cab2_HighPC[1] = sum(v6B()$HighPCtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$HighPCtotal[124:135]/2)
-         CabPCoverview$Cab2_MaxPC[1] = sum(v6B()$MaxPCtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$MaxPCtotal[124:135]/2)
-         CabPCoverview$Cab2_IdleOP[1] = sum(v6B()$IdleOPtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$IdleOPtotal[124:135]/2)
-         CabPCoverview$Cab2_TypOP[1] = sum(v6B()$TypOPtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$TypOPtotal[124:135]/2)
-         CabPCoverview$Cab2_HighOP[1] = sum(v6B()$HighOPtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$HighOPtotal[124:135]/2)
-         CabPCoverview$Cab2_MaxOP[1] = sum(v6B()$MaxOPtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$MaxOPtotal[124:135]/2)
-         CabPCoverview$Cab2_IdleHD[1] = sum(v6B()$IdleHDtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$IdleHDtotal[124:135]/2)
-         CabPCoverview$Cab2_TypHD[1] = sum(v6B()$TypHDtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$TypHDtotal[124:135]/2)
-         CabPCoverview$Cab2_HighHD[1] = sum(v6B()$HighHDtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$HighHDtotal[124:135]/2)
-         CabPCoverview$Cab2_MaxHD[1] = sum(v6B()$MaxHDtotal[c(1:3,6:13,17:55,61,64:98,104:112)],v6B()$MaxHDtotal[124:135]/2)
+         CabPCoverview$Cab2_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$IdlePCtotal[124:135]/2)
+         CabPCoverview$Cab2_TypPC[1] = sum(v6B()$TypPCtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$TypPCtotal[124:135]/2)
+         CabPCoverview$Cab2_HighPC[1] = sum(v6B()$HighPCtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$HighPCtotal[124:135]/2)
+         CabPCoverview$Cab2_MaxPC[1] = sum(v6B()$MaxPCtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$MaxPCtotal[124:135]/2)
+         CabPCoverview$Cab2_IdleOP[1] = sum(v6B()$IdleOPtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$IdleOPtotal[124:135]/2)
+         CabPCoverview$Cab2_TypOP[1] = sum(v6B()$TypOPtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$TypOPtotal[124:135]/2)
+         CabPCoverview$Cab2_HighOP[1] = sum(v6B()$HighOPtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$HighOPtotal[124:135]/2)
+         CabPCoverview$Cab2_MaxOP[1] = sum(v6B()$MaxOPtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$MaxOPtotal[124:135]/2)
+         CabPCoverview$Cab2_IdleHD[1] = sum(v6B()$IdleHDtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$IdleHDtotal[124:135]/2)
+         CabPCoverview$Cab2_TypHD[1] = sum(v6B()$TypHDtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$TypHDtotal[124:135]/2)
+         CabPCoverview$Cab2_HighHD[1] = sum(v6B()$HighHDtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$HighHDtotal[124:135]/2)
+         CabPCoverview$Cab2_MaxHD[1] = sum(v6B()$MaxHDtotal[c(1:3,6:13,17:55,61,64:81,104:112)],v6B()$MaxHDtotal[124:135]/2)
          return (CabPCoverview) 
        }
        else if(((vSCD() == "B1-B3" & DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B1B3_YL)
                 | (vSCD() == "B2-B3" & DS6456[which(DS6456$TelefonicaConfiguration == input$Config),1] %in% cabsx2_B2B3_YL)) & substr(v6A2(), 46,47) == "oy")    # RBS 6102 + York
        {
          #CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(4,5,14:16,56:60,99:112)],v6B()$IdlePCtotal[124:135]/2)     # old indices used, CW has updated and all units powered from RBS 6102, I have left here as a note in case that needs to change
-         CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:112)],v6B()$IdlePCtotal[124:135]/2)
-         CabPCoverview$Cab1_TypPC[1] = sum(v6B()$TypPCtotal[c(1:112)],v6B()$TypPCtotal[124:135]/2)
-         CabPCoverview$Cab1_HighPC[1] = sum(v6B()$HighPCtotal[c(1:112)],v6B()$HighPCtotal[124:135]/2)
-         CabPCoverview$Cab1_MaxPC[1] = sum(v6B()$MaxPCtotal[c(1:112)],v6B()$MaxPCtotal[124:135]/2)
-         CabPCoverview$Cab1_IdleOP[1] = sum(v6B()$IdleOPtotal[c(1:112)],v6B()$IdleOPtotal[124:135]/2)
-         CabPCoverview$Cab1_TypOP[1] = sum(v6B()$TypOPtotal[c(1:112)],v6B()$TypOPtotal[124:135]/2)
-         CabPCoverview$Cab1_HighOP[1] = sum(v6B()$HighOPtotal[c(1:112)],v6B()$HighOPtotal[124:135]/2)
-         CabPCoverview$Cab1_MaxOP[1] = sum(v6B()$MaxOPtotal[c(1:112)],v6B()$MaxOPtotal[124:135]/2)
-         CabPCoverview$Cab1_IdleHD[1] = sum(v6B()$IdleHDtotal[c(1:112)],v6B()$IdleHDtotal[124:135]/2)
-         CabPCoverview$Cab1_TypHD[1] = sum(v6B()$TypHDtotal[c(1:112)],v6B()$TypHDtotal[124:135]/2)
-         CabPCoverview$Cab1_HighHD[1] = sum(v6B()$HighHDtotal[c(1:112)],v6B()$HighHDtotal[124:135]/2)
-         CabPCoverview$Cab1_MaxHD[1] = sum(v6B()$MaxHDtotal[c(1:112)],v6B()$MaxHDtotal[124:135]/2)
+         CabPCoverview$Cab1_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:112,139:149)],v6B()$IdlePCtotal[124:135]/2)
+         CabPCoverview$Cab1_TypPC[1] = sum(v6B()$TypPCtotal[c(1:112,139:149)],v6B()$TypPCtotal[124:135]/2)
+         CabPCoverview$Cab1_HighPC[1] = sum(v6B()$HighPCtotal[c(1:112,139:149)],v6B()$HighPCtotal[124:135]/2)
+         CabPCoverview$Cab1_MaxPC[1] = sum(v6B()$MaxPCtotal[c(1:112,139:149)],v6B()$MaxPCtotal[124:135]/2)
+         CabPCoverview$Cab1_IdleOP[1] = sum(v6B()$IdleOPtotal[c(1:112,139:149)],v6B()$IdleOPtotal[124:135]/2)
+         CabPCoverview$Cab1_TypOP[1] = sum(v6B()$TypOPtotal[c(1:112,139:149)],v6B()$TypOPtotal[124:135]/2)
+         CabPCoverview$Cab1_HighOP[1] = sum(v6B()$HighOPtotal[c(1:112,139:149)],v6B()$HighOPtotal[124:135]/2)
+         CabPCoverview$Cab1_MaxOP[1] = sum(v6B()$MaxOPtotal[c(1:112,139:149)],v6B()$MaxOPtotal[124:135]/2)
+         CabPCoverview$Cab1_IdleHD[1] = sum(v6B()$IdleHDtotal[c(1:112,139:149)],v6B()$IdleHDtotal[124:135]/2)
+         CabPCoverview$Cab1_TypHD[1] = sum(v6B()$TypHDtotal[c(1:112,139:149)],v6B()$TypHDtotal[124:135]/2)
+         CabPCoverview$Cab1_HighHD[1] = sum(v6B()$HighHDtotal[c(1:112,139:149)],v6B()$HighHDtotal[124:135]/2)
+         CabPCoverview$Cab1_MaxHD[1] = sum(v6B()$MaxHDtotal[c(1:112,139:149)],v6B()$MaxHDtotal[124:135]/2)
          
          #CabPCoverview$Cab2_IdlePC[1] = sum(v6B()$IdlePCtotal[c(1:3,6:13,17:55,61:98)],v6B()$IdlePCtotal[124:135]/2)       # old indices used, CW has updated and all units powered from RBS 6102, I have left here as a note in case that needs to change
          CabPCoverview$Cab2_IdlePC[1] = sum(v6B()$IdlePCtotal[124:135])/2
@@ -5610,7 +6435,7 @@ v21 <- reactive({
   bomlist_subset <- reactive({
     a <- subset(bomlist, OrderingCode == v7() | OrderingCode == v8() | OrderingCode == v9() | OrderingCode == v10() | OrderingCode == v11()
                 | OrderingCode == v12() | OrderingCode == v13() | OrderingCode == v14() | OrderingCode == v15() | OrderingCode == v16() 
-                | OrderingCode == v17() | OrderingCode == v18() | OrderingCode == v19() | OrderingCode == v20())
+                | OrderingCode == v17() | OrderingCode == v18() | OrderingCode == v19() | OrderingCode == v20() | OrderingCode == vAddUG1() |OrderingCode == vAddUG2() |OrderingCode == vAddUG3() |OrderingCode == vAddUG4())
     return(a)
   })
 
@@ -5690,6 +6515,7 @@ v21 <- reactive({
       wd <- getwd()
       tempReport <- file.path(wd, "report.Rmd")
       #file.copy("report.Rmd", tempReport, overwrite = TRUE)                          # leave commented, dangerous, will wipe report.RMD
+      dgpath <- paste0(wd, "/www/", vDGpage())
       hldpath <- paste0(wd, "/www/", v1())
       cab1path <- paste0(wd, "/www/", v1A())
       cab2path <- paste0(wd, "/www/", v1B())
@@ -5700,6 +6526,9 @@ v21 <- reactive({
       cd3path <- paste0(wd, "/www/", v1Ea())
       cd4path <- paste0(wd, "/www/", v1Eb())
       cd5path <- paste0(wd, "/www/", v1Ec())
+      cd6path <- paste0(wd, "/www/", vCDSIU())
+      cd7path <- paste0(wd, "/www/", vCDPowSubInt())
+      cd8path <- paste0(wd, "/www/", vCDPowSubSHU())
       
       cpri1path <- paste0(wd, "/www/", v1F())
       cpri2path <- paste0(wd, "/www/", v1G())
@@ -5737,18 +6566,20 @@ v21 <- reactive({
       
       # Set up parameters to pass to Rmd document
       params <- list(vc = VC[1,1], siteid = input$SiteID, sname = input$SiteName, asp = input$ASP, saddr = input$SiteAddr, postcode = input$PostCode,
-                     sacc = input$Access, img = re1(), hw=v6B()[,c(1,5,6,10)], config = input$Config, SFpole = input$SFtype, build = input$BuildType, 
+                     sacc = input$Access, sidnotes = input$sidnotes,img = re1(), hw=v6B()[,c(1,5,6,10)], config = input$Config, SFpole = input$SFtype, build = input$BuildType, 
                      l26 = input$L26, l23 = input$T23, l184x4 = input$L18_4x4, l8swap = input$L8_swap, L21_4415 = input$L21_4415,
                      TEF_5G_T34_8x8 = input$TEF_5G_T34_8x8, TEF_5G_T34_64M = input$TEF_5G_T34_64M, MORAN_5G_T34_8x8 = input$MORAN_5G_T34_8x8, MORAN_5G_T34_64M = input$MORAN_5G_T34_64M,
                      ESS_5G_N21_4x4 = input$ESS_5G_N21_4x4, T23BB_ESS_5G_N21_4x4 = input$T23BB_ESS_5G_N21_4x4, N7_2x2_MMBB = input$N7_2x2_MMBB, N7_2x2_MMBB_T23BB = input$N7_2x2_MMBB_T23BB,
-                     hld = hldpath, cab1 = cab1path, cab2 = cab2path,
-                     cd1 = cd1path, cd2 = cd2path, cd3 = cd3path, cd4 = cd4path, cd5 = cd5path, 
+                     cmts1 = vCom1(), cmts2 = vCom2(), cmts3 = vCom3(), cmts4 = vCom4(), cmts5 = vCom5(), cmts6 = vCom6(), cmts7 = vCom7(), cmts8 = vCom8(), cmts9 = vCom9(),
+                     dg = dgpath, hld = hldpath, cab1 = cab1path, cab2 = cab2path,
+                     cd1 = cd1path, cd2 = cd2path, cd3 = cd3path, cd4 = cd4path, cd5 = cd5path, cd6 = cd6path, cd7 = cd7path, cd8 = cd8path,
                      cpri1 = cpri1path, cpri2 = cpri2path, cpri3 = cpri3path, cpri4 = cpri4path, 
                      gsmq = v2(), umtsq = v3(), lteq = v5A(), ngq = v6A1(),
                      baseoc = v7(), l8swapoc = v8(), l184x4oc = v9(), l214415oc = v10(), l23oc = v11(), l26oc = v12(), NRT348x8oc = v13(), NRT3464Moc = v14(),  NRMor348x8oc = v15(), NRMor3464Moc = v16(),
-                     NR214x4oc = v17(), NR21T23BB4x4oc = v18(), NR72x2oc = v19(), NR7T23BB2x2oc = v20(),
+                     AddUGDGopt1 = input$AddUGDG_opt1, AddUGDGopt2 = input$AddUGDG_opt2, AddUGDGopt3 = input$AddUGDG_opt3, AddUGDGopt4 = input$AddUGDG_opt4, 
+                     NR214x4oc = v17(), NR21T23BB4x4oc = v18(), NR72x2oc = v19(), NR7T23BB2x2oc = v20(), AddUG1oc = vAddUG1(), AddUG2oc = vAddUG2(), AddUG3oc = vAddUG3(), AddUG4oc = vAddUG4(),
                      radio = radiokeep, dubb = dubbkeep, cabs = cabskeep, pca = v21a(), pcb = v21b(), pcc = v21c(), pcd = v21d(), pce = v22a(), pcf = v22b(), cab1label = v22Cab1(), cab2label = v22Cab2(),
-                     bom = bomlist_subset()[,-c(4,6,7,8,9)],
+                     bom = bomlist_subset()[,-c(6,7)],
                      ce1 = vF1()[,3:11], ce2 = vF1()[,13:21], ce3 = vF1()[,23:31], dtm = vM1())
       
       # Knit the document, passing in the `params` list, and eval it in a
@@ -5769,6 +6600,7 @@ v21 <- reactive({
 #   saddr: NA
 #   postcode: NA
 #   sacc: NA
+#   sidnotes: NA
 #   asp: NA
 #   img: NA
 #   hw: NA
@@ -5808,7 +6640,25 @@ v21 <- reactive({
 #   NR214x4oc: NA
 #   NR21T23BB4x4oc: NA
 #   NR72x2oc: NA
-#   NR7T23BB2x2oc: NA 
+#   NR7T23BB2x2oc: NA
+#   AddUGDGopt1: NA
+#   AddUGDGopt2: NA
+#   AddUGDGopt3: NA
+#   AddUGDGopt4: NA
+#   AddUG1oc: NA
+#   AddUG2oc: NA
+#   AddUG3oc: NA
+#   AddUG4oc: NA
+  
+#   cmts1: NA
+#   cmts2: NA
+#   cmts3: NA
+#   cmts4: NA
+#   cmts5: NA
+#   cmts6: NA
+#   cmts7: NA
+#   cmts8: NA
+#   cmts9: NA
   
 #   cabs: NA
 #   dubb: NA
@@ -5822,6 +6672,7 @@ v21 <- reactive({
 #   cab1label: NA
 #   cab2label: NA
 #   bom: NA
+#   dg: NA
 #   hld: NA
 #   cab1: NA
 #   cab2: NA
@@ -5831,6 +6682,9 @@ v21 <- reactive({
 #   cd3: NA
 #   cd4: NA
 #   cd5: NA
+#   cd6: NA
+#   cd7: NA
+#   cd8: NA
 
 #   cpri1: NA
 #   cpri2: NA

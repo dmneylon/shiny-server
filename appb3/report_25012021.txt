@@ -1,0 +1,463 @@
+---
+# title: '`r paste("Site Installation Document", params$siteid, "_", "params$build","_", params$vc)`'
+# To create a line break (<br>) in the title, end a line with two or more spaces, and then type return.(line 8 here)
+
+title: |
+  ![](www/EricssonLogo.png){width=2in}                                                  
+  **`r paste0("Site Installation Document Beacon 3:")`**  
+  **`r paste0(params$siteid,"_",params$build,"_",params$vc)`**
+Comment: >
+  link referenced for rendering logo (in above title) on title page below
+  https://bookdown.org/yihui/rmarkdown-cookbook/latex-logo.html
+author: '*`r paste("ASP: ", params$asp)`*'                                       
+date: '`r format(Sys.time(), "%d %B %Y")`'
+output:
+  rmarkdown::pdf_document:
+    #number_sections: true
+    extra_dependencies: ["xcolor"]
+
+highlight: tango
+params:
+ vc: NA
+ siteid: NA
+ sname: NA
+ saddr: NA
+ postcode: NA
+ sacc: NA
+ asp: NA
+ img: NA
+ hw: NA
+ config: NA
+ SFpole: NA
+ build: NA
+  
+ l26: NA
+ l23: NA
+ l184x4: NA
+ l8swap: NA
+ L21_4415: NA
+ TEF_5G_T34_8x8: NA
+ TEF_5G_T34_64M: NA
+ MORAN_5G_T34_8x8: NA
+ MORAN_5G_T34_64M: NA  
+ ESS_5G_N21_4x4: NA
+ T23BB_ESS_5G_N21_4x4: NA
+ N7_2x2_MMBB: NA
+ N7_2x2_MMBB_T23BB: NA  
+  
+ gsmq: NA
+ umtsq: NA
+ lteq: NA
+ ngq: NA
+  
+ baseoc: NA
+ l26oc: NA
+ l23oc: NA
+ l184x4oc: NA
+ l8swapoc: NA
+ l214415oc: NA
+ NRT348x8oc: NA
+ NRT3464Moc: NA
+ NRMor348x8oc: NA
+ NRMor3464Moc: NA
+ NR214x4oc: NA
+ NR21T23BB4x4oc: NA
+ NR72x2oc: NA
+ NR7T23BB2x2oc: NA 
+  
+ cabs: NA
+ dubb: NA
+ radio: NA
+ pca: NA
+ pcb: NA
+ pcc: NA
+ pcd: NA
+ pce: NA
+ pcf: NA
+ cab1label: NA
+ cab2label: NA
+ 
+ bom: NA
+ hld: NA
+ cab1: NA
+ cab2: NA
+
+ cd1: NA
+ cd2: NA
+ cd3: NA
+ cd4: NA
+ cd5: NA
+
+ cpri1: NA
+ cpri2: NA
+ cpri3: NA
+ cpri4: NA
+  
+ ce1: NA
+ ce2: NA
+ ce3: NA
+ dtm: NA
+ spealloc: NA
+ pi: NA
+ 
+always_allow_html: yes
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{xcolor}
+- \usepackage{indentfirst}
+---
+
+
+
+```{r setup, echo = FALSE, include=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.margin = TRUE)
+#fig.pos = 'H' will hold position of images and figures as intended with flow of document
+library(knitr)
+library(kableExtra)
+library(magick)
+
+```
+
+
+# Introduction
+
+Site Installation Document (SID) for Telefonica Beacon 3 Upgrade Rollout. 
+
+
+
+# 1. Site Overview
+
+```{r, echo=FALSE, out.width = "80%",fig.align='center', fig.cap='Site General Photo', fig.show='HOLD_position'}
+if(params$img == "No image uploaded"){paste("No image uploaded")}else{knitr::include_graphics(params$img)}
+#knitr::include_graphics(params$img)
+
+```
+\newpage
+
+
+# 2. Site Details
+
+## `r paste("Site Name: ", text_spec(params$sname, color = "blue", ))`<br>
+## `r paste("Site Address: ", text_spec(params$saddr, color = "blue"))`<br>
+## `r paste0("Google Maps: ", text_spec("https://www.google.com/maps/place/", color = "blue"), text_spec(gsub(" ", "", params$postcode, fixed = TRUE), color = "green"))`<br>
+## `r paste("Access Details: ", text_spec(params$sacc, color = "blue"))`<br>
+&nbsp;
+
+
+# 3. Proposed Build
+
+## `r paste("Configuration: ", text_spec(params$config, color = "blue"))`<br>
+## `r paste("Street Furniture Pole: ", text_spec(params$SFpole, color = "red"))`<br>
+## `r paste("Decision Tree: ", text_spec(params$dtm, color = ifelse(params$dtm == "Matched", "green", "red")))`<br>
+## `r paste("Build Type: ", text_spec(params$build, color = "blue"))`<br>
+## `r paste("L26 UG Option: ", text_spec(params$l26, color = "blue"))`<br>
+## `r paste("L23 UG Option: ", text_spec(params$l23, color = "blue"))`<br>
+## `r paste("L18 4x4 UG Option: ", text_spec(params$l184x4, color = "blue"))`<br>
+## `r paste("L8 RRU-2217 Swap: ", text_spec(params$l8swap, color = "blue"))`<br>
+## `r paste("L21 4415 Option: ", text_spec(params$L21_4415, color = "blue"))`<br>
+## `r paste("NR34 8x8 TEF only UG Option: ", text_spec(params$TEF_5G_T34_8x8, color = "blue"))`<br>
+## `r paste("NR34 64M TEF only UG Option: ", text_spec(params$TEF_5G_T34_64M, color = "blue"))`<br>
+## `r paste("NR34 8x8 MoRAN UG Option: ", text_spec(params$MORAN_5G_T34_8x8, color = "blue"))`<br>
+## `r paste("NR34 64M MoRAN UG Option: ", text_spec(params$MORAN_5G_T34_64M, color = "blue"))`<br>
+## `r paste("NR21 4x4 ESS UG Option: ", text_spec(params$ESS_5G_N21_4x4, color = "blue"))`<br>
+## `r paste("NR21 4x4 ESS + T23BB UG Option: ", text_spec(params$T23BB_ESS_5G_N21_4x4, color = "blue"))`<br>
+## `r paste("NR7 2x2 MMBB UG Option: ", text_spec(params$N7_2x2_MMBB, color = "blue"))`<br>
+## `r paste("NR7 2x2 MMBB + T23BB UG Option: ", text_spec(params$N7_2x2_MMBB_T23BB, color = "blue"))`
+&nbsp;
+
+
+
+# 4. Ordering Codes
+
+## `r paste("Baseline Ordering code: ", text_spec(params$baseoc, color = "blue"))`<br>
+## `r paste("L26 Ordering code: ", text_spec(params$l26oc, color = "blue"))`<br>
+## `r paste("L23 Ordering code: ", text_spec(params$l23oc, color = "blue"))`<br>
+## `r paste("L18 4x4 Ordering code: ", text_spec(params$l184x4oc, color = "blue"))`<br>
+## `r paste("L8 RRU-2217 Swap Ordering code: ", text_spec(params$l8swapoc, color = "blue"))`<br>
+## `r paste("L21 4415 Ordering code: ", text_spec(params$l214415oc, color = "blue"))`<br>
+## `r paste("NR34 8x8 TEF only Ordering code: ", text_spec(params$NRT348x8oc, color = "blue"))`<br>
+## `r paste("NR34 64M TEF only Ordering code: ", text_spec(params$NRT3464Moc, color = "blue"))`<br>
+## `r paste("NR34 8x8 MoRAN Ordering code: ", text_spec(params$NRMor348x8oc, color = "blue"))`<br>
+## `r paste("NR34 64M MoRAN Ordering code: ", text_spec(params$NRMor3464Moc, color = "blue"))`<br>
+## `r paste("NR21 4x4 ESS Ordering code: ", text_spec(params$NR214x4oc, color = "blue"))`<br>
+## `r paste("NR21 4x4 ESS + T23BB Ordering code: ", text_spec(params$NR21T23BB4x4oc, color = "blue"))`<br>
+## `r paste("NR7 2x2 MMBB Swap Ordering code: ", text_spec(params$NR72x2oc, color = "blue"))`<br>
+## `r paste("NR7 2x2 MMBB + T23BB Ordering code: ", text_spec(params$NR7T23BB2x2oc, color = "blue"))`
+&nbsp;
+
+
+
+# 5. Q-codes
+
+## `r paste(text_spec("2G Q-code: ", background = "green", color = "white", bold = TRUE), text_spec(params$gsmq, color = "blue"))`<br>
+## `r paste(text_spec("3G Q-code: ", background = "blue", color = "white", bold = TRUE), text_spec(params$umtsq, color = "blue"))`<br>
+## `r paste(text_spec("4G Q-code: ", background = "orange", color = "white", bold = TRUE), text_spec(params$lteq, color = "blue"))`<br>
+## `r paste(text_spec("5G Q-code: ", background = "purple", color = "white", bold = TRUE), text_spec(params$ngq, color = "blue"))`
+
+\newpage
+
+
+
+# 6. Hardware
+
+## 6.1 Cabinets and Enclosures
+```{r, echo=FALSE}
+kable(params$cabs, "latex", longtable = F, caption = "Cabinets/Enclosures", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = T) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% column_spec(1, width = "6cm")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+
+
+## 6.2 Digital Units and Basebands
+```{r, echo=FALSE}
+kable(params$dubb, "latex", longtable = F, caption = "Digital Units/Basebands", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = T) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% column_spec(1, width = "6cm")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+
+
+## 6.3 Radio Units
+```{r, echo=FALSE}
+kable(params$radio, "latex", longtable = F, caption = "Radio Units", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = T) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% column_spec(1, width = "6cm")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+\newpage
+
+
+# 7. Power Consumption data
+
+```{r, echo=FALSE}
+kable(params$pca, "latex", longtable = F, caption = "Radio Power Consumption data", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(2, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+```{r, echo=FALSE}
+kable(params$pcb, "latex", longtable = F, caption = "Baseband Power Consumption data", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(2, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+```{r, echo=FALSE}
+kable(params$pcc, "latex", longtable = F, caption = "Cabinet Support System Power Consumption data", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(2, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+```{r, echo=FALSE}
+kable(params$pcd, "latex", longtable = F, caption = "Total Power Consumption data", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(2, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+\newpage
+
+```{r, echo=FALSE}
+kable(params$pce, "latex", longtable = F, caption = params$cab1label, booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(1, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% column_spec(7, bold=T, color = "red") %>% column_spec(10, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+```{r, echo=FALSE}
+kable(params$pcf, "latex", longtable = F, caption = params$cab2label, booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% column_spec(1, bold=T, color = "red") %>% column_spec(4, bold=T, color = "red") %>% column_spec(7, bold=T, color = "red") %>% column_spec(10, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+
+ <!-- %>%  -->
+ <!--  landscape(margin = c('1cm')) # can use as this pipe to landscape a table-->
+
+\newpage
+
+
+# 8. Bill of Materials
+
+```{r, echo=FALSE}
+kable(params$bom, "latex", longtable = T, caption = "BOM", booktabs = T, row.names = FALSE) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position"), full_width = F) %>% column_spec(1, bold=T, color = "red") %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title")
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+\newpage
+
+
+# 9. HLD reference
+
+```{r, echo=FALSE, out.width = "100%", fig.align='center', fig.cap='HLD reference', fig.show='HOLD_position' }
+knitr::include_graphics(params$hld)
+
+```
+\newpage
+
+
+
+# 10. Cabinet Layout
+
+## 10.1 Cabinet 1
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Cabinet 1 Layout', fig.show='HOLD_position'}
+knitr::include_graphics(params$cab1)
+
+```
+\newpage
+
+
+## 10.2 Cabinet 2
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Cabinet 2 Layout', fig.show='HOLD_position'}
+knitr::include_graphics(params$cab2)
+
+```
+\newpage
+
+
+<!-- ## 11.3 Cabinet 3 -->
+<!-- ```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Cabinet 3 Layout', fig.show='HOLD_position'} -->
+<!-- knitr::include_graphics(params$cab3) -->
+
+<!-- ``` -->
+
+
+
+# 11. Connectivity Diagrams
+
+## 11.1 Connectivity Diagram Baseline
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram Baseline', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd1)
+
+```
+\newpage
+
+## 11.2 Connectivity Diagram GU900
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram GU900', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd2)
+
+```
+\newpage
+
+## 11.3 Connectivity Diagram NR34
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram NR34', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd3)
+
+```
+\newpage
+
+## 11.4 Connectivity Diagram NR21/NR7
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram NR21/NR7', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd4)
+
+```
+\newpage
+
+## 11.5 Connectivity Diagram TX
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='Connectivity Diagram TX', fig.show='HOLD_position'}
+knitr::include_graphics(params$cd5)
+
+```
+\newpage
+
+
+# 12. CPRI allocation
+
+## 12.1 CPRI Baseline
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI Baseline', fig.show='HOLD_position'}
+knitr::include_graphics(params$cpri1)
+
+```
+\newpage
+
+## 12.2 CPRI GU900
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI GU900', fig.show='HOLD_position'}
+knitr::include_graphics(params$cpri2)
+
+```
+\newpage
+
+## 12.3 CPRI NR34
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI NR34', fig.show='HOLD_position'}
+knitr::include_graphics(params$cpri3)
+
+```
+\newpage
+
+## 12.4 CPRI NR21/NR7
+```{r, echo=FALSE, out.width = "90%", fig.align='center', fig.cap='CPRI NR21/NR7', fig.show='HOLD_position'}
+knitr::include_graphics(params$cpri4)
+
+```
+\newpage
+
+
+# 13. Cabinet Environment Settings
+
+## 13.1 Cabinet 1
+```{r, echo=FALSE}
+kable(params$ce1, "latex", longtable = F, caption = "Cabinet 1 Environment", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% add_header_above(c("CAB 1" = 9), bold = T)
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+
+## 13.2 Cabinet 2
+```{r, echo=FALSE}
+kable(params$ce2, "latex", longtable = F, caption = "Cabinet 2 Environment", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% add_header_above(c("CAB 2" = 9), bold = T)
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+
+## 13.3 3rd Part Cabinet (3PP Cab)
+```{r, echo=FALSE}
+kable(params$ce3, "latex", longtable = F, caption = "3PP Cab Environment", booktabs = T) %>% kable_styling(latex_options = c("striped", "repeat_header", "HOLD_position", "scale_down")) %>% footnote(general = "Any footnote comments go here!", general_title = "Footnote Title") %>% add_header_above(c("TEF LTE BB" = 3, "VFE LTE BB" = 3, "U21 DUW + 6601" = 3), bold = T) %>% add_header_above(c("3PP Cab" = 9), bold = T)
+
+#{r app1, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+```
+
+\newpage
+
+
+
+
+
+
+
+# Appendix.  Data Sources
+
+- DRAFT DS6456 Ericsson Beacon 3 New Build and Upgrade Configurations Issue 1.0 PA7 LLD
+- UKRE_19_143 Ericsson B3 New Build SCD
+- UKRE_19_141 Ericsson B1 to B3 Site Upgrades SCD
+- UKRE_19_142 Ericsson B2 to B3 Site Upgrades SCD
+- Configuration Builder Decision Tree
+- Quantum Code Structures, 2G Q-codes, 3G Q-codes, 4G Q-codes, 5G Q-codes
+- Q-code Selector
+- Ordering Codes
+- BoM HLD for creation of BoM List
+- Power Consumption & Heat Dissipation data, Indoor Power, Outdoor Power, Cabinet Power
+- Radio Number & Type
+

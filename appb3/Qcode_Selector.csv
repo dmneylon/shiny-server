@@ -1,439 +1,475 @@
-Column_Header,Column_Letter,1,Col_Header_Row,Index,Base,1a,2a,2b,3,4,5,6,7,8,9,10,11,12,4G_Qcode_lookup,4G_Qcode_lookup_copy,OrderCode_1a,OrderCode_2a,OrderCode_2b,OrderCode_3,OrderCode_4,4G_OrderCodes_selected,5G_Qcode_lookup,5G_Qcode_lookup_copy,OrderCode_5,OrderCode_6,OrderCode_7,OrderCode_8,OrderCode_9,OrderCode_10,OrderCode_11,OrderCode_12,5G_OrderCodes_selected,LTE_Qcode_pattern,LTE_Qcode_Match,NR_Qcode_pattern,NR_Qcode_Match,Column_Letter_cc,Index_cc,Duplicate
+Column_Header,Column_Letter,1,Col_Header_Row,Index,Base,1a,2a,2b,3,4,5,6,7,8,9,10,11,12,4G_Qcode_lookup,4G_Qcode_lookup_copy,OrderCode_1a,OrderCode_2a,OrderCode_2b,OrderCode_3,OrderCode_4,4G_OrderCodes_selected,5G_Qcode_lookup,5G_Qcode_lookup_copy,OrderCode_5,OrderCode_6,OrderCode_7,OrderCode_8,OrderCode_9,OrderCode_10,OrderCode_11,OrderCode_12,5G_OrderCodes_selected,LTE_Qcode_pattern,LTE_Qcode_Match,NR_Qcode_pattern,NR_Qcode_Match,Column_Letter_cc,Index_cc
 "B3 SCD Slide no.
 B3-CCR (Pg) no.",A,2,"B3 SCD Slide no.
-B3-CCR (Pg) no. (2)",1,B,D,D,D,D,D,D,D,D,D,D,D,D,D,DDDDD,DDDDD,,,,,,", , , , ",DDDDDDDD,DDDDDDDD,,,,,,,,,", , , , , , , ",BDDDDDDDDDDDDD,,XXXXXXXXXXXXXX,,A,1,
-Telefonica Configuration,B,3,Telefonica Configuration (3),2,B,E,E,E,E,E,E,E,E,E,E,E,E,E,EEEEE,EEEEE,,,,,,", , , , ",EEEEEEEE,EEEEEEEE,,,,,,,,,", , , , , , , ",BEEEEEEEEEEEEE,,XXXXXXXXXXXXXX,,B,2,
+B3-CCR (Pg) no. (2)",1,B,D,D,D,D,D,D,D,D,D,D,D,D,D,DDDDD,DDDDD,,,,,,", , , , ",DDDDDDDD,DDDDDDDD,,,,,,,,,", , , , , , , ",BDDDDDDDDDDDDD,,XXXXXXXXXXXXXX,,A,1
+Telefonica Configuration,B,3,Telefonica Configuration (3),2,B,E,E,E,E,E,E,E,E,E,E,E,E,E,EEEEE,EEEEE,,,,,,", , , , ",EEEEEEEE,EEEEEEEE,,,,,,,,,", , , , , , , ",BEEEEEEEEEEEEE,,XXXXXXXXXXXXXX,,B,2
 "GSM
 12W/
 20W",C,4,"GSM
 12W/
-20W (4)",3,B,F,F,F,F,F,F,F,F,F,F,F,F,F,FFFFF,FFFFF,,,,,,", , , , ",FFFFFFFF,FFFFFFFF,,,,,,,,,", , , , , , , ",BFFFFFFFFFFFFF,,XXXXXXXXXXXXXX,,C,3,
-2G Q-Code,D,5,2G Q-Code (5),4,B,G,G,G,G,G,G,G,G,G,G,G,G,G,GGGGG,GGGGG,,,,,,", , , , ",GGGGGGGG,GGGGGGGG,,,,,,,,,", , , , , , , ",BGGGGGGGGGGGGG,,XXXXXXXXXXXXXX,,D,4,
-3G Q-Code,E,6,3G Q-Code (6),5,B,H,H,H,H,H,H,H,H,H,H,H,H,H,HHHHH,HHHHH,,,,,,", , , , ",HHHHHHHH,HHHHHHHH,,,,,,,,,", , , , , , , ",BHHHHHHHHHHHHH,,XXXXXXXXXXXXXX,,E,5,
+20W (4)",3,B,F,F,F,F,F,F,F,F,F,F,F,F,F,FFFFF,FFFFF,,,,,,", , , , ",FFFFFFFF,FFFFFFFF,,,,,,,,,", , , , , , , ",BFFFFFFFFFFFFF,,XXXXXXXXXXXXXX,,C,3
+2G Q-Code,D,5,2G Q-Code (5),4,B,G,G,G,G,G,G,G,G,G,G,G,G,G,GGGGG,GGGGG,,,,,,", , , , ",GGGGGGGG,GGGGGGGG,,,,,,,,,", , , , , , , ",BGGGGGGGGGGGGG,,XXXXXXXXXXXXXX,,D,4
+3G Q-Code,E,6,3G Q-Code (6),5,B,H,H,H,H,H,H,H,H,H,H,H,H,H,HHHHH,HHHHH,,,,,,", , , , ",HHHHHHHH,HHHHHHHH,,,,,,,,,", , , , , , , ",BHHHHHHHHHHHHH,,XXXXXXXXXXXXXX,,E,5
 "4G (L8 / L9 / L18 / L21)
 Q-Code",F,7,"4G (L8 / L9 / L18 / L21)
-Q-Code (7)",6,B,.,N,N,N,N,.,.,.,.,.,.,.,.,.NNNN,.NNNN,,,,,,", , , , ",........,........,,,,,,,,,", , , , , , , ",B.NNNN........,,XXXXXXXXXXXXXX,,F,6,
-4G (L18 4x4) Q-Code,G,8,4G (L18 4x4) Q-Code (8),7,B,.,Y,N,N,N,.,.,.,.,.,.,.,.,.YNNN,.YNNN,,2a,,,,", 2a, , , ",........,........,,,,,,,,,", , , , , , , ",B.YNNN........,,XXXXXXXXXXXXXX,,G,7,
-4G (L21 4415) Q-Code,H,9,4G (L21 4415) Q-Code (9),8,B,.,N,Y,N,N,.,.,.,.,.,.,.,.,.NYNN,.NYNN,,,2b,,,", , 2b, , ",........,........,,,,,,,,,", , , , , , , ",B.NYNN........,,XXXXXXXXXXXXXX,,H,8,
-1. Baseline B3 Ordering Code,I,10,1. Baseline B3 Ordering Code (10),9,B,I,I,I,I,I,I,I,I,I,I,I,I,I,IIIII,IIIII,,,,,,", , , , ",IIIIIIII,IIIIIIII,,,,,,,,,", , , , , , , ",BIIIIIIIIIIIII,,XXXXXXXXXXXXXX,,I,9,
-Comments Relating to 'B3' Upgrade,J,11,Comments Relating to 'B3' Upgrade (11),10,B,J,J,J,J,J,J,J,J,J,J,J,J,J,JJJJJ,JJJJJ,,,,,,", , , , ",JJJJJJJJ,JJJJJJJJ,,,,,,,,,", , , , , , , ",BJJJJJJJJJJJJJ,,XXXXXXXXXXXXXX,,J,10,
-1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code,K,12,1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code (12),11,B,K,K,K,K,K,K,K,K,K,K,K,K,K,KKKKK,KKKKK,,,,,,", , , , ",KKKKKKKK,KKKKKKKK,,,,,,,,,", , , , , , , ",BKKKKKKKKKKKKK,,XXXXXXXXXXXXXX,,K,11,
-4G L9 + L26 Q-Code,L,13,4G L9 + L26 Q-Code (13),12,B,.,N,N,N,Y,.,.,.,.,.,.,.,.,.NNNY,.NNNY,,,,,4,", , , , 4",........,........,,,,,,,,,", , , , , , , ",B.NNNY........,,XXXXXXXXXXXXXX,,L,12,
+Q-Code (7)",6,B,.,N,N,N,N,.,.,.,.,.,.,.,.,.NNNN,.NNNN,,,,,,", , , , ",........,........,,,,,,,,,", , , , , , , ",B.NNNN........,,XXXXXXXXXXXXXX,,F,6
+4G (L18 4x4) Q-Code,G,8,4G (L18 4x4) Q-Code (8),7,B,.,Y,N,N,N,.,.,.,.,.,.,.,.,.YNNN,.YNNN,,2a,,,,", 2a, , , ",........,........,,,,,,,,,", , , , , , , ",B.YNNN........,,XXXXXXXXXXXXXX,,G,7
+4G (L21 4415) Q-Code,H,9,4G (L21 4415) Q-Code (9),8,B,.,N,Y,N,N,.,.,.,.,.,.,.,.,.NYNN,.NYNN,,,2b,,,", , 2b, , ",........,........,,,,,,,,,", , , , , , , ",B.NYNN........,,XXXXXXXXXXXXXX,,H,8
+1. Baseline B3 Ordering Code,I,10,1. Baseline B3 Ordering Code (10),9,B,I,I,I,I,I,I,I,I,I,I,I,I,I,IIIII,IIIII,,,,,,", , , , ",IIIIIIII,IIIIIIII,,,,,,,,,", , , , , , , ",BIIIIIIIIIIIII,,XXXXXXXXXXXXXX,,I,9
+Comments Relating to 'B3' Upgrade,J,11,Comments Relating to 'B3' Upgrade (11),10,B,J,J,J,J,J,J,J,J,J,J,J,J,J,JJJJJ,JJJJJ,,,,,,", , , , ",JJJJJJJJ,JJJJJJJJ,,,,,,,,,", , , , , , , ",BJJJJJJJJJJJJJ,,XXXXXXXXXXXXXX,,J,10
+1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code,K,12,1a. L800 RRUS 11 to Radio 2217 Swap Ordering Code (12),11,B,K,K,K,K,K,K,K,K,K,K,K,K,K,KKKKK,KKKKK,,,,,,", , , , ",KKKKKKKK,KKKKKKKK,,,,,,,,,", , , , , , , ",BKKKKKKKKKKKKK,,XXXXXXXXXXXXXX,,K,11
+4G L9 + L26 Q-Code,L,13,4G L9 + L26 Q-Code (13),12,B,.,N,N,N,Y,.,.,.,.,.,.,.,.,.NNNY,.NNNY,,,,,4,", , , , 4",........,........,,,,,,,,,", , , , , , , ",B.NNNY........,,XXXXXXXXXXXXXX,,L,12
 "4G L9 + L26
 (L18 4x4) Q-Code",M,14,"4G L9 + L26
-(L18 4x4) Q-Code (14)",13,B,.,Y,N,N,Y,.,.,.,.,.,.,.,.,.YNNY,.YNNY,,2a,,,4,", 2a, , , 4",........,........,,,,,,,,,", , , , , , , ",B.YNNY........,,XXXXXXXXXXXXXX,,M,13,
+(L18 4x4) Q-Code (14)",13,B,.,Y,N,N,Y,.,.,.,.,.,.,.,.,.YNNY,.YNNY,,2a,,,4,", 2a, , , 4",........,........,,,,,,,,,", , , , , , , ",B.YNNY........,,XXXXXXXXXXXXXX,,M,13
 "4G L9 + L26
 (L21 4415) Q-Code",N,15,"4G L9 + L26
-(L21 4415) Q-Code (15)",14,B,.,N,Y,N,Y,.,.,.,.,.,.,.,.,.NYNY,.NYNY,,,2b,,4,", , 2b, , 4",........,........,,,,,,,,,", , , , , , , ",B.NYNY........,,XXXXXXXXXXXXXX,,N,14,
-4. L26 UG Ordering Code,O,16,4. L26 UG Ordering Code (16),15,B,L,L,L,L,L,L,L,L,L,L,L,L,L,LLLLL,LLLLL,,,,,,", , , , ",LLLLLLLL,LLLLLLLL,,,,,,,,,", , , , , , , ",BLLLLLLLLLLLLL,,XXXXXXXXXXXXXX,,O,15,
+(L21 4415) Q-Code (15)",14,B,.,N,Y,N,Y,.,.,.,.,.,.,.,.,.NYNY,.NYNY,,,2b,,4,", , 2b, , 4",........,........,,,,,,,,,", , , , , , , ",B.NYNY........,,XXXXXXXXXXXXXX,,N,14
+4. L26 UG Ordering Code,O,16,4. L26 UG Ordering Code (16),15,B,L,L,L,L,L,L,L,L,L,L,L,L,L,LLLLL,LLLLL,,,,,,", , , , ",LLLLLLLL,LLLLLLLL,,,,,,,,,", , , , , , , ",BLLLLLLLLLLLLL,,XXXXXXXXXXXXXX,,O,15
 "4G L9 + T23 4x4
 (No N7/N21) Q-Code",P,17,"4G L9 + T23 4x4
-(No N7/N21) Q-Code (17)",16,B,.,N,N,Y,N,.,.,.,.,N,N,N,N,.NNYN,.NNYN,,,,3,,", , , 3, ",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NNYN....NNNN,,XXXXXXXXXXXXXX,,P,16,
+(No N7/N21) Q-Code (17)",16,B,.,N,N,Y,N,.,.,.,.,N,N,N,N,.NNYN,.NNYN,,,,3,,", , , 3, ",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NNYN....NNNN,,XXXXXXXXXXXXXX,,P,16
 "4G L9 + T23 4x4 
 (L18 4x4) (No N7/N21) Q-Code",Q,18,"4G L9 + T23 4x4 
-(L18 4x4) (No N7/N21) Q-Code (18)",17,B,.,Y,N,Y,N,.,.,.,.,N,N,N,N,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.YNYN....NNNN,,XXXXXXXXXXXXXX,,Q,17,
+(L18 4x4) (No N7/N21) Q-Code (18)",17,B,.,Y,N,Y,N,.,.,.,.,N,N,N,N,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.YNYN....NNNN,,XXXXXXXXXXXXXX,,Q,17
 "4G L9 + T23 4x4 
 (L21 4415) (No N7/N21) Q-Code",R,19,"4G L9 + T23 4x4 
-(L21 4415) (No N7/N21) Q-Code (19)",18,B,.,N,Y,Y,N,.,.,.,.,N,N,N,N,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NYYN....NNNN,,XXXXXXXXXXXXXX,,R,18,
+(L21 4415) (No N7/N21) Q-Code (19)",18,B,.,N,Y,Y,N,.,.,.,.,N,N,N,N,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NYYN....NNNN,,XXXXXXXXXXXXXX,,R,18
 "4G L9 + T23 4x4
 (N7/N21) Q-Code",S,20,"4G L9 + T23 4x4
-(N7/N21) Q-Code (20)",19,B,.,N,N,Y,N,.,.,.,.,N,Y,N,N,.NNYN,.NNYN,,,,3,,", , , 3, ",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NNYN....NYNN,,XXXXXXXXXXXXXX,,S,19,
+(N7/N21) Q-Code (20)",19,B,.,N,N,Y,N,.,.,.,.,N,Y,N,N,.NNYN,.NNYN,,,,3,,", , , 3, ",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NNYN....NYNN,,XXXXXXXXXXXXXX,,S,19
 "4G L9 + T23 4x4
 (N7/N21) Q-Code",S,21,"4G L9 + T23 4x4
-(N7/N21) Q-Code (21)",19,B,.,N,N,Y,N,.,.,.,.,N,N,N,Y,.NNYN,.NNYN,,,,3,,", , , 3, ",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NNYN....NNNY,,XXXXXXXXXXXXXX,,S,19,
+(N7/N21) Q-Code (21)",19,B,.,N,N,Y,N,.,.,.,.,N,N,N,Y,.NNYN,.NNYN,,,,3,,", , , 3, ",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NNYN....NNNY,,XXXXXXXXXXXXXX,,S,19
+"4G L9 + T23 4x4
+(N7/N21) Q-Code",S,22,"4G L9 + T23 4x4
+(N7/N21) Q-Code (22)",19,B,.,N,N,Y,N,.,.,.,.,N,Y,Y,N,.NNYN,.NNYN,,,,3,,", , , 3, ",....NYYN,....NYYN,,,,,,10,11,,", , , , , 10, 11, ",B.NNYN....NYYN,,XXXXXXXXXXXXXX,,S,19
+"4G L9 + T23 4x4
+(N7/N21) Q-Code",S,23,"4G L9 + T23 4x4
+(N7/N21) Q-Code (23)",19,B,.,N,N,Y,N,.,.,.,.,Y,N,N,Y,.NNYN,.NNYN,,,,3,,", , , 3, ",....YNNY,....YNNY,,,,,9,,,12,", , , , 9, , , 12",B.NNYN....YNNY,,XXXXXXXXXXXXXX,,S,19
 "4G L9 + T23 4x4 
-(L18 4x4) (N7/N21) Q-Code",T,22,"4G L9 + T23 4x4 
-(L18 4x4) (N7/N21) Q-Code (22)",20,B,.,Y,N,Y,N,.,.,.,.,N,Y,N,N,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.YNYN....NYNN,,XXXXXXXXXXXXXX,,T,20,
+(L18 4x4) (N7/N21) Q-Code",T,24,"4G L9 + T23 4x4 
+(L18 4x4) (N7/N21) Q-Code (24)",20,B,.,Y,N,Y,N,.,.,.,.,N,Y,N,N,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.YNYN....NYNN,,XXXXXXXXXXXXXX,,T,20
 "4G L9 + T23 4x4 
-(L18 4x4) (N7/N21) Q-Code",T,23,"4G L9 + T23 4x4 
-(L18 4x4) (N7/N21) Q-Code (23)",20,B,.,Y,N,Y,N,.,.,.,.,N,N,N,Y,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.YNYN....NNNY,,XXXXXXXXXXXXXX,,T,20,
+(L18 4x4) (N7/N21) Q-Code",T,25,"4G L9 + T23 4x4 
+(L18 4x4) (N7/N21) Q-Code (25)",20,B,.,Y,N,Y,N,.,.,.,.,N,N,N,Y,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.YNYN....NNNY,,XXXXXXXXXXXXXX,,T,20
 "4G L9 + T23 4x4 
-(L21 4415) (N7/N21) Q-Code",U,24,"4G L9 + T23 4x4 
-(L21 4415) (N7/N21) Q-Code (24)",21,B,.,N,Y,Y,N,.,.,.,.,N,Y,N,N,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NYYN....NYNN,,XXXXXXXXXXXXXX,,U,21,
+(L18 4x4) (N7/N21) Q-Code",T,26,"4G L9 + T23 4x4 
+(L18 4x4) (N7/N21) Q-Code (26)",20,B,.,Y,N,Y,N,.,.,.,.,N,Y,Y,N,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....NYYN,....NYYN,,,,,,10,11,,", , , , , 10, 11, ",B.YNYN....NYYN,,XXXXXXXXXXXXXX,,T,20
 "4G L9 + T23 4x4 
-(L21 4415) (N7/N21) Q-Code",U,25,"4G L9 + T23 4x4 
-(L21 4415) (N7/N21) Q-Code (25)",21,B,.,N,Y,Y,N,.,.,.,.,N,N,N,Y,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NYYN....NNNY,,XXXXXXXXXXXXXX,,U,21,
+(L18 4x4) (N7/N21) Q-Code",T,27,"4G L9 + T23 4x4 
+(L18 4x4) (N7/N21) Q-Code (27)",20,B,.,Y,N,Y,N,.,.,.,.,Y,N,N,Y,.YNYN,.YNYN,,2a,,3,,", 2a, , 3, ",....YNNY,....YNNY,,,,,9,,,12,", , , , 9, , , 12",B.YNYN....YNNY,,XXXXXXXXXXXXXX,,T,20
+"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code",U,28,"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code (28)",21,B,.,N,Y,Y,N,.,.,.,.,N,Y,N,N,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NYYN....NYNN,,XXXXXXXXXXXXXX,,U,21
+"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code",U,29,"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code (29)",21,B,.,N,Y,Y,N,.,.,.,.,N,N,N,Y,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NYYN....NNNY,,XXXXXXXXXXXXXX,,U,21
+"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code",U,30,"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code (30)",21,B,.,N,Y,Y,N,.,.,.,.,N,Y,Y,N,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....NYYN,....NYYN,,,,,,10,11,,", , , , , 10, 11, ",B.NYYN....NYYN,,XXXXXXXXXXXXXX,,U,21
+"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code",U,31,"4G L9 + T23 4x4 
+(L21 4415) (N7/N21) Q-Code (31)",21,B,.,N,Y,Y,N,.,.,.,.,Y,N,N,Y,.NYYN,.NYYN,,,2b,3,,", , 2b, 3, ",....YNNY,....YNNY,,,,,9,,,12,", , , , 9, , , 12",B.NYYN....YNNY,,XXXXXXXXXXXXXX,,U,21
 "3. 4x4 T23 UG
 Ordering Code
-(Macro / Orion)",V,26,"3. 4x4 T23 UG
+(Macro / Orion)",V,32,"3. 4x4 T23 UG
 Ordering Code
-(Macro / Orion) (26)",22,B,M,M,M,M,M,M,M,M,M,M,M,M,M,MMMMM,MMMMM,,,,,,", , , , ",MMMMMMMM,MMMMMMMM,,,,,,,,,", , , , , , , ",BMMMMMMMMMMMMM,,XXXXXXXXXXXXXX,,V,22,
+(Macro / Orion) (32)",22,B,M,M,M,M,M,M,M,M,M,M,M,M,M,MMMMM,MMMMM,,,,,,", , , , ",MMMMMMMM,MMMMMMMM,,,,,,,,,", , , , , , , ",BMMMMMMMMMMMMM,,XXXXXXXXXXXXXX,,V,22
 "4G L9 + L26 + T23 4x4
-(No N7/N21) Q-Code",W,27,"4G L9 + L26 + T23 4x4
-(No N7/N21) Q-Code (27)",23,B,.,N,N,Y,Y,.,.,.,.,N,N,N,N,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NNYY....NNNN,,XXXXXXXXXXXXXX,,W,23,
+(No N7/N21) Q-Code",W,33,"4G L9 + L26 + T23 4x4
+(No N7/N21) Q-Code (33)",23,B,.,N,N,Y,Y,.,.,.,.,N,N,N,N,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NNYY....NNNN,,XXXXXXXXXXXXXX,,W,23
 "4G L9 + L26 + T23 4x4
-(L18 4x4) (No N7/N21) Q-Code",X,28,"4G L9 + L26 + T23 4x4
-(L18 4x4) (No N7/N21) Q-Code (28)",24,B,.,Y,N,Y,Y,.,.,.,.,N,N,N,N,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.YNYY....NNNN,,XXXXXXXXXXXXXX,,X,24,
+(L18 4x4) (No N7/N21) Q-Code",X,34,"4G L9 + L26 + T23 4x4
+(L18 4x4) (No N7/N21) Q-Code (34)",24,B,.,Y,N,Y,Y,.,.,.,.,N,N,N,N,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.YNYY....NNNN,,XXXXXXXXXXXXXX,,X,24
 "4G L9 + L26 + T23 4x4
-(L21 4415) (No N7/N21) Q-Code",Y,29,"4G L9 + L26 + T23 4x4
-(L21 4415) (No N7/N21) Q-Code (29)",25,B,.,N,Y,Y,Y,.,.,.,.,N,N,N,N,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NYYY....NNNN,,XXXXXXXXXXXXXX,,Y,25,
+(L21 4415) (No N7/N21) Q-Code",Y,35,"4G L9 + L26 + T23 4x4
+(L21 4415) (No N7/N21) Q-Code (35)",25,B,.,N,Y,Y,Y,.,.,.,.,N,N,N,N,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NNNN,....NNNN,,,,,,,,,", , , , , , , ",B.NYYY....NNNN,,XXXXXXXXXXXXXX,,Y,25
 "4G L9 + L26 +
-T23 4x4 (N7/N21) Q-Code",Z,30,"4G L9 + L26 +
-T23 4x4 (N7/N21) Q-Code (30)",26,B,.,N,N,Y,Y,.,.,.,.,N,Y,N,N,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NNYY....NYNN,,XXXXXXXXXXXXXX,,Z,26,
+T23 4x4 (N7/N21) Q-Code",Z,36,"4G L9 + L26 +
+T23 4x4 (N7/N21) Q-Code (36)",26,B,.,N,N,Y,Y,.,.,.,.,N,Y,N,N,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NNYY....NYNN,,XXXXXXXXXXXXXX,,Z,26
 "4G L9 + L26 +
-T23 4x4 (N7/N21) Q-Code",Z,31,"4G L9 + L26 +
-T23 4x4 (N7/N21) Q-Code (31)",26,B,.,N,N,Y,Y,.,.,.,.,N,N,N,Y,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NNYY....NNNY,,XXXXXXXXXXXXXX,,Z,26,
+T23 4x4 (N7/N21) Q-Code",Z,37,"4G L9 + L26 +
+T23 4x4 (N7/N21) Q-Code (37)",26,B,.,N,N,Y,Y,.,.,.,.,N,N,N,Y,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NNYY....NNNY,,XXXXXXXXXXXXXX,,Z,26
+"4G L9 + L26 +
+T23 4x4 (N7/N21) Q-Code",Z,38,"4G L9 + L26 +
+T23 4x4 (N7/N21) Q-Code (38)",26,B,.,N,N,Y,Y,.,.,.,.,N,Y,Y,N,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....NYYN,....NYYN,,,,,,10,11,,", , , , , 10, 11, ",B.NNYY....NYYN,,XXXXXXXXXXXXXX,,Z,26
+"4G L9 + L26 +
+T23 4x4 (N7/N21) Q-Code",Z,39,"4G L9 + L26 +
+T23 4x4 (N7/N21) Q-Code (39)",26,B,.,N,N,Y,Y,.,.,.,.,Y,N,N,Y,.NNYY,.NNYY,,,,3,4,", , , 3, 4",....YNNY,....YNNY,,,,,9,,,12,", , , , 9, , , 12",B.NNYY....YNNY,,XXXXXXXXXXXXXX,,Z,26
 "4G L9 + L26 + T23 4x4
-(L18 4x4) (N7/N21) Q-Code",AA,32,"4G L9 + L26 + T23 4x4
-(L18 4x4) (N7/N21) Q-Code (32)",27,B,.,Y,N,Y,Y,.,.,.,.,N,Y,N,N,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.YNYY....NYNN,,XXXXXXXXXXXXXX,,AA,27,
+(L18 4x4) (N7/N21) Q-Code",AA,40,"4G L9 + L26 + T23 4x4
+(L18 4x4) (N7/N21) Q-Code (40)",27,B,.,Y,N,Y,Y,.,.,.,.,N,Y,N,N,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.YNYY....NYNN,,XXXXXXXXXXXXXX,,AA,27
 "4G L9 + L26 + T23 4x4
-(L18 4x4) (N7/N21) Q-Code",AA,33,"4G L9 + L26 + T23 4x4
-(L18 4x4) (N7/N21) Q-Code (33)",27,B,.,Y,N,Y,Y,.,.,.,.,N,N,N,Y,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.YNYY....NNNY,,XXXXXXXXXXXXXX,,AA,27,
+(L18 4x4) (N7/N21) Q-Code",AA,41,"4G L9 + L26 + T23 4x4
+(L18 4x4) (N7/N21) Q-Code (41)",27,B,.,Y,N,Y,Y,.,.,.,.,N,N,N,Y,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.YNYY....NNNY,,XXXXXXXXXXXXXX,,AA,27
 "4G L9 + L26 + T23 4x4
-(L21 4415) (N7/N21) Q-Code",AB,34,"4G L9 + L26 + T23 4x4
-(L21 4415) (N7/N21) Q-Code (34)",28,B,.,N,Y,Y,Y,.,.,.,.,N,Y,N,N,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NYYY....NYNN,,XXXXXXXXXXXXXX,,AB,28,
+(L18 4x4) (N7/N21) Q-Code",AA,42,"4G L9 + L26 + T23 4x4
+(L18 4x4) (N7/N21) Q-Code (42)",27,B,.,Y,N,Y,Y,.,.,.,.,N,Y,Y,N,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....NYYN,....NYYN,,,,,,10,11,,", , , , , 10, 11, ",B.YNYY....NYYN,,XXXXXXXXXXXXXX,,AA,27
 "4G L9 + L26 + T23 4x4
-(L21 4415) (N7/N21) Q-Code",AB,35,"4G L9 + L26 + T23 4x4
-(L21 4415) (N7/N21) Q-Code (35)",28,B,.,N,Y,Y,Y,.,.,.,.,N,N,N,Y,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NYYY....NNNY,,XXXXXXXXXXXXXX,,AB,28,
+(L18 4x4) (N7/N21) Q-Code",AA,43,"4G L9 + L26 + T23 4x4
+(L18 4x4) (N7/N21) Q-Code (43)",27,B,.,Y,N,Y,Y,.,.,.,.,Y,N,N,Y,.YNYY,.YNYY,,2a,,3,4,", 2a, , 3, 4",....YNNY,....YNNY,,,,,9,,,12,", , , , 9, , , 12",B.YNYY....YNNY,,XXXXXXXXXXXXXX,,AA,27
+"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code",AB,44,"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code (44)",28,B,.,N,Y,Y,Y,.,.,.,.,N,Y,N,N,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NYNN,....NYNN,,,,,,10,,,", , , , , 10, , ",B.NYYY....NYNN,,XXXXXXXXXXXXXX,,AB,28
+"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code",AB,45,"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code (45)",28,B,.,N,Y,Y,Y,.,.,.,.,N,N,N,Y,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NNNY,....NNNY,,,,,,,,12,", , , , , , , 12",B.NYYY....NNNY,,XXXXXXXXXXXXXX,,AB,28
+"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code",AB,46,"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code (46)",28,B,.,N,Y,Y,Y,.,.,.,.,N,Y,Y,N,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....NYYN,....NYYN,,,,,,10,11,,", , , , , 10, 11, ",B.NYYY....NYYN,,XXXXXXXXXXXXXX,,AB,28
+"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code",AB,47,"4G L9 + L26 + T23 4x4
+(L21 4415) (N7/N21) Q-Code (47)",28,B,.,N,Y,Y,Y,.,.,.,.,Y,N,N,Y,.NYYY,.NYYY,,,2b,3,4,", , 2b, 3, 4",....YNNY,....YNNY,,,,,9,,,12,", , , , 9, , , 12",B.NYYY....YNNY,,XXXXXXXXXXXXXX,,AB,28
 "2a. L1800 UG Ordering
-Code",AC,36,"2a. L1800 UG Ordering
-Code (36)",29,B,N,N,N,N,N,N,N,N,N,N,N,N,N,NNNNN,NNNNN,,,,,,", , , , ",NNNNNNNN,NNNNNNNN,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,XXXXXXXXXXXXXX,,AC,29,
+Code",AC,48,"2a. L1800 UG Ordering
+Code (48)",29,B,N,N,N,N,N,N,N,N,N,N,N,N,N,NNNNN,NNNNN,,,,,,", , , , ",NNNNNNNN,NNNNNNNN,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,XXXXXXXXXXXXXX,,AC,29
 "2b. 4415 L2100 UG Ordering
-Code",AD,37,"2b. 4415 L2100 UG Ordering
-Code (37)",30,B,O,O,O,O,O,O,O,O,O,O,O,O,O,OOOOO,OOOOO,,,,,,", , , , ",OOOOOOOO,OOOOOOOO,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,XXXXXXXXXXXXXX,,AD,30,
+Code",AD,49,"2b. 4415 L2100 UG Ordering
+Code (49)",30,B,O,O,O,O,O,O,O,O,O,O,O,O,O,OOOOO,OOOOO,,,,,,", , , , ",OOOOOOOO,OOOOOOOO,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,XXXXXXXXXXXXXX,,AD,30
 "TEF Only 5G
-T34 8x8 Q-Code",AE,38,"TEF Only 5G
-T34 8x8 Q-Code (38)",31,B,.,.,.,.,.,Y,N,N,N,N,N,N,N,.....,.....,,,,,,", , , , ",YNNNNNNN,YNNNNNNN,5,,,,,,,,"5, , , , , , , ",XXXXXXXXXXXXXX,,B.....YNNNNNNN,,AE,31,
+T34 8x8 Q-Code",AE,50,"TEF Only 5G
+T34 8x8 Q-Code (50)",31,B,.,.,.,.,.,Y,N,N,N,N,N,N,N,.....,.....,,,,,,", , , , ",YNNNNNNN,YNNNNNNN,5,,,,,,,,"5, , , , , , , ",XXXXXXXXXXXXXX,,B.....YNNNNNNN,,AE,31
 "5. TEF Only 5G
-T34 8x8 UG Ordering Code",AF,39,"5. TEF Only 5G
-T34 8x8 UG Ordering Code (39)",32,B,P,P,P,P,P,P,P,P,P,P,P,P,P,PPPPP,PPPPP,,,,,,", , , , ",PPPPPPPP,PPPPPPPP,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BPPPPPPPPPPPPP,,AF,32,
+T34 8x8 UG Ordering Code",AF,51,"5. TEF Only 5G
+T34 8x8 UG Ordering Code (51)",32,B,P,P,P,P,P,P,P,P,P,P,P,P,P,PPPPP,PPPPP,,,,,,", , , , ",PPPPPPPP,PPPPPPPP,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BPPPPPPPPPPPPP,,AF,32
 "TEF Only 5G T34
-M-MiMo Q-Code",AG,40,"TEF Only 5G T34
-M-MiMo Q-Code (40)",33,B,.,.,.,.,.,N,Y,N,N,N,N,N,N,.....,.....,,,,,,", , , , ",NYNNNNNN,NYNNNNNN,,6,,,,,,,", 6, , , , , , ",XXXXXXXXXXXXXX,,B.....NYNNNNNN,,AG,33,
+M-MiMo Q-Code",AG,52,"TEF Only 5G T34
+M-MiMo Q-Code (52)",33,B,.,.,.,.,.,N,Y,N,N,N,N,N,N,.....,.....,,,,,,", , , , ",NYNNNNNN,NYNNNNNN,,6,,,,,,,", 6, , , , , , ",XXXXXXXXXXXXXX,,B.....NYNNNNNN,,AG,33
 "6. TEF Only 5G
 T34 M-MiMo UG
-Ordering Code",AH,41,"6. TEF Only 5G
+Ordering Code",AH,53,"6. TEF Only 5G
 T34 M-MiMo UG
-Ordering Code (41)",34,B,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,QQQQQ,QQQQQ,,,,,,", , , , ",QQQQQQQQ,QQQQQQQQ,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BQQQQQQQQQQQQQ,,AH,34,
+Ordering Code (53)",34,B,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,Q,QQQQQ,QQQQQ,,,,,,", , , , ",QQQQQQQQ,QQQQQQQQ,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BQQQQQQQQQQQQQ,,AH,34
 "TEF & VF 5G MoRAN
-T34 8x8 Q-Code",AI,42,"TEF & VF 5G MoRAN
-T34 8x8 Q-Code (42)",35,B,.,.,.,.,.,N,N,Y,N,N,N,N,N,.....,.....,,,,,,", , , , ",NNYNNNNN,NNYNNNNN,,,7,,,,,,", , 7, , , , , ",XXXXXXXXXXXXXX,,B.....NNYNNNNN,,AI,35,
+T34 8x8 Q-Code",AI,54,"TEF & VF 5G MoRAN
+T34 8x8 Q-Code (54)",35,B,.,.,.,.,.,Y,N,Y,N,N,N,N,N,.....,.....,,,,,,", , , , ",YNYNNNNN,YNYNNNNN,5,,7,,,,,,"5, , 7, , , , , ",XXXXXXXXXXXXXX,,B.....YNYNNNNN,,AI,35
 "7. VF 5G T34 8x8 MoRAN UG
-Ordering Code",AJ,43,"7. VF 5G T34 8x8 MoRAN UG
-Ordering Code (43)",36,B,.,0,0,0,0,.,.,.,.,.,.,.,.,0,0,,,,,,", , , , ",........,........,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,B.0000........,,AJ,36,
+Ordering Code",AJ,55,"7. VF 5G T34 8x8 MoRAN UG
+Ordering Code (55)",36,B,.,0,0,0,0,.,.,.,.,.,.,.,.,0,0,,,,,,", , , , ",........,........,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,B.0000........,,AJ,36
 "TEF & VF 5G MoRAN
-T34 M-MiMo Q-Code",AK,44,"TEF & VF 5G MoRAN
-T34 M-MiMo Q-Code (44)",37,B,.,.,.,.,.,N,N,N,Y,N,N,N,N,.....,.....,,,,,,", , , , ",NNNYNNNN,NNNYNNNN,,,,8,,,,,", , , 8, , , , ",XXXXXXXXXXXXXX,,B.....NNNYNNNN,,AK,37,
+T34 M-MiMo Q-Code",AK,56,"TEF & VF 5G MoRAN
+T34 M-MiMo Q-Code (56)",37,B,.,.,.,.,.,N,Y,N,Y,N,N,N,N,.....,.....,,,,,,", , , , ",NYNYNNNN,NYNYNNNN,,6,,8,,,,,", 6, , 8, , , , ",XXXXXXXXXXXXXX,,B.....NYNYNNNN,,AK,37
 "8. VF 5G T34
 M-MiMo MoRAN UG
-Ordering Code",AL,45,"8. VF 5G T34
+Ordering Code",AL,57,"8. VF 5G T34
 M-MiMo MoRAN UG
-Ordering Code (45)",38,B,R,R,R,R,R,R,R,R,R,R,R,R,R,RRRRR,RRRRR,,,,,,", , , , ",RRRRRRRR,RRRRRRRR,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BRRRRRRRRRRRRR,,AL,38,
+Ordering Code (57)",38,B,R,R,R,R,R,R,R,R,R,R,R,R,R,RRRRR,RRRRR,,,,,,", , , , ",RRRRRRRR,RRRRRRRR,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BRRRRRRRRRRRRR,,AL,38
 "TEF Only
 5G N21 4x4
-Q-Code",AM,46,"TEF Only
+Q-Code",AM,58,"TEF Only
 5G N21 4x4
-Q-Code (46)",39,B,.,.,N,N,.,N,N,N,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NNNNYNNN,NNNNYNNN,,,,,9,,,,", , , , 9, , , ",XXXXXXXXXXXXXX,,B..NN.NNNNYNNN,,AM,39,
+Q-Code (58)",39,B,.,.,N,N,.,N,N,N,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NNNNYNNN,NNNNYNNN,,,,,9,,,,", , , , 9, , , ",XXXXXXXXXXXXXX,,B..NN.NNNNYNNN,,AM,39
 "TEF Only
 5G N21 4x4
-Q-Code",AM,47,"TEF Only
+Q-Code",AM,59,"TEF Only
 5G N21 4x4
-Q-Code (47)",39,B,.,.,N,Y,.,N,N,N,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNYNN,NNNNNYNN,,,,,,10,,,", , , , , 10, , ",XXXXXXXXXXXXXX,,B..NY.NNNNNYNN,,AM,39,
+Q-Code (59)",39,B,.,.,N,Y,.,N,N,N,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNYNN,NNNNNYNN,,,,,,10,,,", , , , , 10, , ",XXXXXXXXXXXXXX,,B..NY.NNNNNYNN,,AM,39
 "TEF Only
 5G N21 4x4
-(4415) Q-Code",AN,48,"TEF Only
+(4415) Q-Code",AN,60,"TEF Only
 5G N21 4x4
-(4415) Q-Code (48)",40,B,.,.,Y,N,.,N,N,N,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNNNYNNN,NNNNYNNN,,,,,9,,,,", , , , 9, , , ",XXXXXXXXXXXXXX,,B..YN.NNNNYNNN,,AN,40,
+(4415) Q-Code (60)",40,B,.,.,Y,N,.,N,N,N,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNNNYNNN,NNNNYNNN,,,,,9,,,,", , , , 9, , , ",XXXXXXXXXXXXXX,,B..YN.NNNNYNNN,,AN,40
 "TEF Only
 5G N21 4x4
-(4415) Q-Code",AN,49,"TEF Only
+(4415) Q-Code",AN,61,"TEF Only
 5G N21 4x4
-(4415) Q-Code (49)",40,B,.,.,Y,Y,.,N,N,N,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNNYNN,NNNNNYNN,,,,,,10,,,", , , , , 10, , ",XXXXXXXXXXXXXX,,B..YY.NNNNNYNN,,AN,40,
+(4415) Q-Code (61)",40,B,.,.,Y,Y,.,N,N,N,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNNYNN,NNNNNYNN,,,,,,10,,,", , , , , 10, , ",XXXXXXXXXXXXXX,,B..YY.NNNNNYNN,,AN,40
 "TEF Only 5G T34 8x8 +
-N21 4x4 Q-Code",AO,50,"TEF Only 5G T34 8x8 +
-N21 4x4 Q-Code (50)",41,B,.,.,N,N,.,Y,N,N,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",YNNNYNNN,YNNNYNNN,5,,,,9,,,,"5, , , , 9, , , ",XXXXXXXXXXXXXX,,B..NN.YNNNYNNN,,AO,41,
+N21 4x4 Q-Code",AO,62,"TEF Only 5G T34 8x8 +
+N21 4x4 Q-Code (62)",41,B,.,.,N,N,.,Y,N,N,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",YNNNYNNN,YNNNYNNN,5,,,,9,,,,"5, , , , 9, , , ",XXXXXXXXXXXXXX,,B..NN.YNNNYNNN,,AO,41
 "TEF Only 5G T34 8x8 +
-N21 4x4 Q-Code",AO,51,"TEF Only 5G T34 8x8 +
-N21 4x4 Q-Code (51)",41,B,.,.,N,Y,.,Y,N,N,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",YNNNNYNN,YNNNNYNN,5,,,,,10,,,"5, , , , , 10, , ",XXXXXXXXXXXXXX,,B..NY.YNNNNYNN,,AO,41,
+N21 4x4 Q-Code",AO,63,"TEF Only 5G T34 8x8 +
+N21 4x4 Q-Code (63)",41,B,.,.,N,Y,.,Y,N,N,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",YNNNNYNN,YNNNNYNN,5,,,,,10,,,"5, , , , , 10, , ",XXXXXXXXXXXXXX,,B..NY.YNNNNYNN,,AO,41
 "TEF Only 5G T34 8x8 +
-N21 4x4 (4415) Q-Code",AP,52,"TEF Only 5G T34 8x8 +
-N21 4x4 (4415) Q-Code (52)",42,B,.,.,Y,N,.,Y,N,N,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",YNNNYNNN,YNNNYNNN,5,,,,9,,,,"5, , , , 9, , , ",XXXXXXXXXXXXXX,,B..YN.YNNNYNNN,,AP,42,
+N21 4x4 (4415) Q-Code",AP,64,"TEF Only 5G T34 8x8 +
+N21 4x4 (4415) Q-Code (64)",42,B,.,.,Y,N,.,Y,N,N,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",YNNNYNNN,YNNNYNNN,5,,,,9,,,,"5, , , , 9, , , ",XXXXXXXXXXXXXX,,B..YN.YNNNYNNN,,AP,42
 "TEF Only 5G T34 8x8 +
-N21 4x4 (4415) Q-Code",AP,53,"TEF Only 5G T34 8x8 +
-N21 4x4 (4415) Q-Code (53)",42,B,.,.,Y,Y,.,Y,N,N,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNNYNN,YNNNNYNN,5,,,,,10,,,"5, , , , , 10, , ",XXXXXXXXXXXXXX,,B..YY.YNNNNYNN,,AP,42,
+N21 4x4 (4415) Q-Code",AP,65,"TEF Only 5G T34 8x8 +
+N21 4x4 (4415) Q-Code (65)",42,B,.,.,Y,Y,.,Y,N,N,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNNYNN,YNNNNYNN,5,,,,,10,,,"5, , , , , 10, , ",XXXXXXXXXXXXXX,,B..YY.YNNNNYNN,,AP,42
 "TEF Only 5G T34 M-MiMo +
-N21 4x4 Q-Code",AQ,54,"TEF Only 5G T34 M-MiMo +
-N21 4x4 Q-Code (54)",43,B,.,.,N,N,.,N,Y,N,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NYNNYNNN,NYNNYNNN,,6,,,9,,,,", 6, , , 9, , , ",XXXXXXXXXXXXXX,,B..NN.NYNNYNNN,,AQ,43,
+N21 4x4 Q-Code",AQ,66,"TEF Only 5G T34 M-MiMo +
+N21 4x4 Q-Code (66)",43,B,.,.,N,N,.,N,Y,N,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NYNNYNNN,NYNNYNNN,,6,,,9,,,,", 6, , , 9, , , ",XXXXXXXXXXXXXX,,B..NN.NYNNYNNN,,AQ,43
 "TEF Only 5G T34 M-MiMo +
-N21 4x4 Q-Code",AQ,55,"TEF Only 5G T34 M-MiMo +
-N21 4x4 Q-Code (55)",43,B,.,.,N,Y,.,N,Y,N,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NYNNNYNN,NYNNNYNN,,6,,,,10,,,", 6, , , , 10, , ",XXXXXXXXXXXXXX,,B..NY.NYNNNYNN,,AQ,43,
+N21 4x4 Q-Code",AQ,67,"TEF Only 5G T34 M-MiMo +
+N21 4x4 Q-Code (67)",43,B,.,.,N,Y,.,N,Y,N,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NYNNNYNN,NYNNNYNN,,6,,,,10,,,", 6, , , , 10, , ",XXXXXXXXXXXXXX,,B..NY.NYNNNYNN,,AQ,43
 "TEF Only 5G T34 M-MiMo +
-N21 4x4 (4415) Q-Code",AR,56,"TEF Only 5G T34 M-MiMo +
-N21 4x4 (4415) Q-Code (56)",44,B,.,.,Y,N,.,N,Y,N,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NYNNYNNN,NYNNYNNN,,6,,,9,,,,", 6, , , 9, , , ",XXXXXXXXXXXXXX,,B..YN.NYNNYNNN,,AR,44,
+N21 4x4 (4415) Q-Code",AR,68,"TEF Only 5G T34 M-MiMo +
+N21 4x4 (4415) Q-Code (68)",44,B,.,.,Y,N,.,N,Y,N,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NYNNYNNN,NYNNYNNN,,6,,,9,,,,", 6, , , 9, , , ",XXXXXXXXXXXXXX,,B..YN.NYNNYNNN,,AR,44
 "TEF Only 5G T34 M-MiMo +
-N21 4x4 (4415) Q-Code",AR,57,"TEF Only 5G T34 M-MiMo +
-N21 4x4 (4415) Q-Code (57)",44,B,.,.,Y,Y,.,N,Y,N,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNNYNN,NYNNNYNN,,6,,,,10,,,", 6, , , , 10, , ",XXXXXXXXXXXXXX,,B..YY.NYNNNYNN,,AR,44,
+N21 4x4 (4415) Q-Code",AR,69,"TEF Only 5G T34 M-MiMo +
+N21 4x4 (4415) Q-Code (69)",44,B,.,.,Y,Y,.,N,Y,N,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNNYNN,NYNNNYNN,,6,,,,10,,,", 6, , , , 10, , ",XXXXXXXXXXXXXX,,B..YY.NYNNNYNN,,AR,44
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 
-Q-Code",AS,58,"TEF & VF 5G MoRAN T34 8x8 +
+Q-Code",AS,70,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 
-Q-Code (58)",45,B,.,.,N,N,.,N,N,Y,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NNYNYNNN,NNYNYNNN,,,7,,9,,,,", , 7, , 9, , , ",XXXXXXXXXXXXXX,,B..NN.NNYNYNNN,,AS,45,
+Q-Code (70)",45,B,.,.,N,N,.,Y,N,Y,N,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",YNYNYNNN,YNYNYNNN,5,,7,,9,,,,"5, , 7, , 9, , , ",XXXXXXXXXXXXXX,,B..NN.YNYNYNNN,,AS,45
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 
-Q-Code",AS,59,"TEF & VF 5G MoRAN T34 8x8 +
+Q-Code",AS,71,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 
-Q-Code (59)",45,B,.,.,N,Y,.,N,N,Y,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NNYNNYNN,NNYNNYNN,,,7,,,10,,,", , 7, , , 10, , ",XXXXXXXXXXXXXX,,B..NY.NNYNNYNN,,AS,45,
+Q-Code (71)",45,B,.,.,N,Y,.,Y,N,Y,N,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",YNYNNYNN,YNYNNYNN,5,,7,,,10,,,"5, , 7, , , 10, , ",XXXXXXXXXXXXXX,,B..NY.YNYNNYNN,,AS,45
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415)
-Q-Code",AT,60,"TEF & VF 5G MoRAN T34 8x8 +
+Q-Code",AT,72,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415)
-Q-Code (60)",46,B,.,.,Y,N,.,N,N,Y,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNYNYNNN,NNYNYNNN,,,7,,9,,,,", , 7, , 9, , , ",XXXXXXXXXXXXXX,,B..YN.NNYNYNNN,,AT,46,
+Q-Code (72)",46,B,.,.,Y,N,.,Y,N,Y,N,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",YNYNYNNN,YNYNYNNN,5,,7,,9,,,,"5, , 7, , 9, , , ",XXXXXXXXXXXXXX,,B..YN.YNYNYNNN,,AT,46
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415)
-Q-Code",AT,61,"TEF & VF 5G MoRAN T34 8x8 +
+Q-Code",AT,73,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415)
-Q-Code (61)",46,B,.,.,Y,Y,.,N,N,Y,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNYNNYNN,NNYNNYNN,,,7,,,10,,,", , 7, , , 10, , ",XXXXXXXXXXXXXX,,B..YY.NNYNNYNN,,AT,46,
+Q-Code (73)",46,B,.,.,Y,Y,.,Y,N,Y,N,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNYNNYNN,YNYNNYNN,5,,7,,,10,,,"5, , 7, , , 10, , ",XXXXXXXXXXXXXX,,B..YY.YNYNNYNN,,AT,46
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 
-Q-Code",AU,62,"TEF & VF 5G MoRAN T34 M-MiMo +
+Q-Code",AU,74,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 
-Q-Code (62)",47,B,.,.,N,N,.,N,N,N,Y,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NNNYYNNN,NNNYYNNN,,,,8,9,,,,", , , 8, 9, , , ",XXXXXXXXXXXXXX,,B..NN.NNNYYNNN,,AU,47,
+Q-Code (74)",47,B,.,.,N,N,.,N,Y,N,Y,Y,N,N,N,..NN.,..NN.,,,,,,", , , , ",NYNYYNNN,NYNYYNNN,,6,,8,9,,,,", 6, , 8, 9, , , ",XXXXXXXXXXXXXX,,B..NN.NYNYYNNN,,AU,47
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 
-Q-Code",AU,63,"TEF & VF 5G MoRAN T34 M-MiMo +
+Q-Code",AU,75,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 
-Q-Code (63)",47,B,.,.,N,Y,.,N,N,N,Y,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NNNYNYNN,NNNYNYNN,,,,8,,10,,,", , , 8, , 10, , ",XXXXXXXXXXXXXX,,B..NY.NNNYNYNN,,AU,47,
+Q-Code (75)",47,B,.,.,N,Y,.,N,Y,N,Y,N,Y,N,N,..NY.,..NY.,,,,3,,", , , 3, ",NYNYNYNN,NYNYNYNN,,6,,8,,10,,,", 6, , 8, , 10, , ",XXXXXXXXXXXXXX,,B..NY.NYNYNYNN,,AU,47
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) 
-Q-Code",AV,64,"TEF & VF 5G MoRAN T34 M-MiMo +
+Q-Code",AV,76,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) 
-Q-Code (64)",48,B,.,.,Y,N,.,N,N,N,Y,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNNYYNNN,NNNYYNNN,,,,8,9,,,,", , , 8, 9, , , ",XXXXXXXXXXXXXX,,B..YN.NNNYYNNN,,AV,48,
+Q-Code (76)",48,B,.,.,Y,N,.,N,Y,N,Y,Y,N,N,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NYNYYNNN,NYNYYNNN,,6,,8,9,,,,", 6, , 8, 9, , , ",XXXXXXXXXXXXXX,,B..YN.NYNYYNNN,,AV,48
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) 
-Q-Code",AV,65,"TEF & VF 5G MoRAN T34 M-MiMo +
+Q-Code",AV,77,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) 
-Q-Code (65)",48,B,.,.,Y,Y,.,N,N,N,Y,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNYNYNN,NNNYNYNN,,,,8,,10,,,", , , 8, , 10, , ",XXXXXXXXXXXXXX,,B..YY.NNNYNYNN,,AV,48,
-9. ESS 5G N21 4x4 UG Ordering Code,AW,66,9. ESS 5G N21 4x4 UG Ordering Code (66),49,B,S,S,S,S,S,S,S,S,S,S,S,S,S,SSSSS,SSSSS,,,,,,", , , , ",SSSSSSSS,SSSSSSSS,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BSSSSSSSSSSSSS,,AW,49,
+Q-Code (77)",48,B,.,.,Y,Y,.,N,Y,N,Y,N,Y,N,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNYNYNN,NYNYNYNN,,6,,8,,10,,,", 6, , 8, , 10, , ",XXXXXXXXXXXXXX,,B..YY.NYNYNYNN,,AV,48
+9. ESS 5G N21 4x4 UG Ordering Code,AW,78,9. ESS 5G N21 4x4 UG Ordering Code (78),49,B,S,S,S,S,S,S,S,S,S,S,S,S,S,SSSSS,SSSSS,,,,,,", , , , ",SSSSSSSS,SSSSSSSS,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BSSSSSSSSSSSSS,,AW,49
 "10. T23 BB + ESS
 5G N21 4x4 UG
-Ordering Code",AX,67,"10. T23 BB + ESS
+Ordering Code",AX,79,"10. T23 BB + ESS
 5G N21 4x4 UG
-Ordering Code (67)",50,B,T,T,T,T,T,T,T,T,T,T,T,T,T,TTTTT,TTTTT,,,,,,", , , , ",TTTTTTTT,TTTTTTTT,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BTTTTTTTTTTTTT,,AX,50,
+Ordering Code (79)",50,B,T,T,T,T,T,T,T,T,T,T,T,T,T,TTTTT,TTTTT,,,,,,", , , , ",TTTTTTTT,TTTTTTTT,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BTTTTTTTTTTTTT,,AX,50
 "TEF Only
 5G N7 2x2
-Q-Code",AY,68,"TEF Only
+Q-Code",AY,80,"TEF Only
 5G N7 2x2
-Q-Code (68)",51,B,.,.,N,N,.,N,N,N,N,N,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NNNNNNYN,NNNNNNYN,,,,,,,11,,", , , , , , 11, ",XXXXXXXXXXXXXX,,B..NN.NNNNNNYN,,AY,51,
+Q-Code (80)",51,B,.,.,N,N,.,N,N,N,N,N,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NNNNNNYN,NNNNNNYN,,,,,,,11,,", , , , , , 11, ",XXXXXXXXXXXXXX,,B..NN.NNNNNNYN,,AY,51
 "TEF Only
 5G N7 2x2
-Q-Code",AY,69,"TEF Only
+Q-Code",AY,81,"TEF Only
 5G N7 2x2
-Q-Code (69)",51,B,.,.,N,Y,.,N,N,N,N,N,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNNNY,NNNNNNNY,,,,,,,,12,", , , , , , , 12",XXXXXXXXXXXXXX,,B..NY.NNNNNNNY,,AY,51,
+Q-Code (81)",51,B,.,.,.,Y,.,N,N,N,N,N,N,N,Y,...Y.,..NY.,,,,3,,", , , 3, ",NNNNNNNY,NNNNNNNY,,,,,,,,12,", , , , , , , 12",XXXXXXXXXXXXXX,,B...Y.NNNNNNNY,,AY,51
 "TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code",AZ,70,"TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code (70)",52,B,.,.,N,N,.,N,N,N,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NNNNYNYN,NNNNYNYN,,,,,9,,11,,", , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NNNNYNYN,,AZ,52,
+TEF Only N7 2x2 Q-Code",AZ,82,"TEF Only 5G N21 4x4 +
+TEF Only N7 2x2 Q-Code (82)",52,B,.,.,N,N,.,N,N,N,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NNNNYNYN,NNNNYNYN,,,,,9,,11,,", , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NNNNYNYN,,AZ,52
 "TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code",AZ,71,"TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code (71)",52,B,.,.,N,Y,.,N,N,N,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNYNY,NNNNNYNY,,,,,,10,,12,", , , , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NNNNNYNY,,AZ,52,
+TEF Only N7 2x2 Q-Code",AZ,83,"TEF Only 5G N21 4x4 +
+TEF Only N7 2x2 Q-Code (83)",52,B,.,.,N,Y,.,N,N,N,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNYNY,NNNNNYNY,,,,,,10,,12,", , , , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NNNNNYNY,,AZ,52
 "TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code",AZ,72,"TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code (72)",52,B,.,.,N,Y,.,N,N,N,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNNYNNY,NNNNYNNY,,,,,9,,,12,", , , , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NNNNYNNY,,AZ,52,
+TEF Only N7 2x2 Q-Code",AZ,84,"TEF Only 5G N21 4x4 +
+TEF Only N7 2x2 Q-Code (84)",52,B,.,.,N,Y,.,N,N,N,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNNYNNY,NNNNYNNY,,,,,9,,,12,", , , , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NNNNYNNY,,AZ,52
 "TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code",AZ,73,"TEF Only 5G N21 4x4 +
-TEF Only N7 2x2 Q-Code (73)",52,B,.,.,N,Y,.,N,N,N,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNYYN,NNNNNYYN,,,,,,10,11,,", , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NNNNNYYN,,AZ,52,
+TEF Only N7 2x2 Q-Code",AZ,85,"TEF Only 5G N21 4x4 +
+TEF Only N7 2x2 Q-Code (85)",52,B,.,.,N,Y,.,N,N,N,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NNNNNYYN,NNNNNYYN,,,,,,10,11,,", , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NNNNNYYN,,AZ,52
 "TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BA,74,"TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (74)",53,B,.,.,Y,N,.,N,N,N,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNNNYNYN,NNNNYNYN,,,,,9,,11,,", , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NNNNYNYN,,BA,53,
+TEF Only N7 2x2 Q-Code",BA,86,"TEF Only 5G N21 4x4 (4415) +
+TEF Only N7 2x2 Q-Code (86)",53,B,.,.,Y,N,.,N,N,N,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNNNYNYN,NNNNYNYN,,,,,9,,11,,", , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NNNNYNYN,,BA,53
 "TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BA,75,"TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (75)",53,B,.,.,Y,Y,.,N,N,N,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNNYNY,NNNNNYNY,,,,,,10,,12,", , , , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NNNNNYNY,,BA,53,
+TEF Only N7 2x2 Q-Code",BA,87,"TEF Only 5G N21 4x4 (4415) +
+TEF Only N7 2x2 Q-Code (87)",53,B,.,.,Y,Y,.,N,N,N,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNNYNY,NNNNNYNY,,,,,,10,,12,", , , , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NNNNNYNY,,BA,53
 "TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BA,76,"TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (76)",53,B,.,.,Y,Y,.,N,N,N,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNYNNY,NNNNYNNY,,,,,9,,,12,", , , , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NNNNYNNY,,BA,53,
+TEF Only N7 2x2 Q-Code",BA,88,"TEF Only 5G N21 4x4 (4415) +
+TEF Only N7 2x2 Q-Code (88)",53,B,.,.,Y,Y,.,N,N,N,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNYNNY,NNNNYNNY,,,,,9,,,12,", , , , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NNNNYNNY,,BA,53
 "TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BA,77,"TEF Only 5G N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (77)",53,B,.,.,Y,Y,.,N,N,N,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNNYYN,NNNNNYYN,,,,,,10,11,,", , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NNNNNYYN,,BA,53,
+TEF Only N7 2x2 Q-Code",BA,89,"TEF Only 5G N21 4x4 (4415) +
+TEF Only N7 2x2 Q-Code (89)",53,B,.,.,Y,Y,.,N,N,N,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNNNYYN,NNNNNYYN,,,,,,10,11,,", , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NNNNNYYN,,BA,53
 "TEF Only 5G T34 8x8 +
-TEF Only N7 2x2 Q-Code",BB,78,"TEF Only 5G T34 8x8 +
-TEF Only N7 2x2 Q-Code (78)",54,B,.,.,.,N,.,Y,N,N,N,N,N,Y,N,...N.,...N.,,,,,,", , , , ",YNNNNNYN,YNNNNNYN,5,,,,,,11,,"5, , , , , , 11, ",XXXXXXXXXXXXXX,,B...N.YNNNNNYN,,BB,54,
+TEF Only N7 2x2 Q-Code",BB,90,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code (90)",54,B,.,.,.,N,.,Y,N,N,N,N,N,Y,N,...N.,...N.,,,,,,", , , , ",YNNNNNYN,YNNNNNYN,5,,,,,,11,,"5, , , , , , 11, ",XXXXXXXXXXXXXX,,B...N.YNNNNNYN,,BB,54
 "TEF Only 5G T34 8x8 +
-TEF Only N7 2x2 Q-Code",BB,79,"TEF Only 5G T34 8x8 +
-TEF Only N7 2x2 Q-Code (79)",54,B,.,.,.,Y,.,Y,N,N,N,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",YNNNNNNY,YNNNNNNY,5,,,,,,,12,"5, , , , , , , 12",XXXXXXXXXXXXXX,,B...Y.YNNNNNNY,,BB,54,
+TEF Only N7 2x2 Q-Code",BB,91,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code (91)",54,B,.,.,.,Y,.,Y,N,N,N,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",YNNNNNNY,YNNNNNNY,5,,,,,,,12,"5, , , , , , , 12",XXXXXXXXXXXXXX,,B...Y.YNNNNNNY,,BB,54
 "TEF Only 5G T34 M-MiMo +
-TEF Only N7 2x2 Q-Code",BC,80,"TEF Only 5G T34 M-MiMo +
-TEF Only N7 2x2 Q-Code (80)",55,B,.,.,.,N,.,N,Y,N,N,N,N,Y,N,...N.,...N.,,,,,,", , , , ",NYNNNNYN,NYNNNNYN,,6,,,,,11,,", 6, , , , , 11, ",XXXXXXXXXXXXXX,,B...N.NYNNNNYN,,BC,55,
+TEF Only N7 2x2 Q-Code",BC,92,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code (92)",55,B,.,.,.,N,.,N,Y,N,N,N,N,Y,N,...N.,...N.,,,,,,", , , , ",NYNNNNYN,NYNNNNYN,,6,,,,,11,,", 6, , , , , 11, ",XXXXXXXXXXXXXX,,B...N.NYNNNNYN,,BC,55
 "TEF Only 5G T34 M-MiMo +
-TEF Only N7 2x2 Q-Code",BC,81,"TEF Only 5G T34 M-MiMo +
-TEF Only N7 2x2 Q-Code (81)",55,B,.,.,.,Y,.,N,Y,N,N,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",NYNNNNNY,NYNNNNNY,,6,,,,,,12,", 6, , , , , , 12",XXXXXXXXXXXXXX,,B...Y.NYNNNNNY,,BC,55,
-"TEF Only 5G T34 8x8 +
-TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BD,82,"TEF Only 5G T34 8x8 +
-TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (82)",56,B,.,.,N,N,.,Y,N,N,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",YNNNYNYN,YNNNYNYN,5,,,,9,,11,,"5, , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.YNNNYNYN,,BD,56,
+TEF Only N7 2x2 Q-Code",BC,93,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code (93)",55,B,.,.,.,Y,.,N,Y,N,N,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",NYNNNNNY,NYNNNNNY,,6,,,,,,12,", 6, , , , , , 12",XXXXXXXXXXXXXX,,B...Y.NYNNNNNY,,BC,55
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BD,83,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BD,94,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (83)",56,B,.,.,N,Y,.,Y,N,N,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",YNNNNYNY,YNNNNYNY,5,,,,,10,,12,"5, , , , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.YNNNNYNY,,BD,56,
+TEF Only N7 2x2 Q-Code (94)",56,B,.,.,N,N,.,Y,N,N,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",YNNNYNYN,YNNNYNYN,5,,,,9,,11,,"5, , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.YNNNYNYN,,BD,56
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BD,84,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BD,95,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (84)",56,B,.,.,N,Y,.,Y,N,N,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",YNNNYNNY,YNNNYNNY,5,,,,9,,,12,"5, , , , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.YNNNYNNY,,BD,56,
+TEF Only N7 2x2 Q-Code (95)",56,B,.,.,N,Y,.,Y,N,N,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",YNNNNYNY,YNNNNYNY,5,,,,,10,,12,"5, , , , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.YNNNNYNY,,BD,56
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BD,85,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BD,96,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (85)",56,B,.,.,N,Y,.,Y,N,N,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",YNNNNYYN,YNNNNYYN,5,,,,,10,11,,"5, , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.YNNNNYYN,,BD,56,
+TEF Only N7 2x2 Q-Code (96)",56,B,.,.,N,Y,.,Y,N,N,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",YNNNYNNY,YNNNYNNY,5,,,,9,,,12,"5, , , , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.YNNNYNNY,,BD,56
+"TEF Only 5G T34 8x8 +
+TEF Only N21 4x4 +
+TEF Only N7 2x2 Q-Code",BD,97,"TEF Only 5G T34 8x8 +
+TEF Only N21 4x4 +
+TEF Only N7 2x2 Q-Code (97)",56,B,.,.,N,Y,.,Y,N,N,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",YNNNNYYN,YNNNNYYN,5,,,,,10,11,,"5, , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.YNNNNYYN,,BD,56
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BE,86,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BE,98,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (86)",57,B,.,.,Y,N,.,Y,N,N,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",YNNNYNYN,YNNNYNYN,5,,,,9,,11,,"5, , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.YNNNYNYN,,BE,57,
+TEF Only N7 2x2 Q-Code (98)",57,B,.,.,Y,N,.,Y,N,N,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",YNNNYNYN,YNNNYNYN,5,,,,9,,11,,"5, , , , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.YNNNYNYN,,BE,57
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BE,87,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BE,99,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (87)",57,B,.,.,Y,Y,.,Y,N,N,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNNYNY,YNNNNYNY,5,,,,,10,,12,"5, , , , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.YNNNNYNY,,BE,57,
+TEF Only N7 2x2 Q-Code (99)",57,B,.,.,Y,Y,.,Y,N,N,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNNYNY,YNNNNYNY,5,,,,,10,,12,"5, , , , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.YNNNNYNY,,BE,57
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BE,88,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BE,100,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (88)",57,B,.,.,Y,Y,.,Y,N,N,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNYNNY,YNNNYNNY,5,,,,9,,,12,"5, , , , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.YNNNYNNY,,BE,57,
+TEF Only N7 2x2 Q-Code (100)",57,B,.,.,Y,Y,.,Y,N,N,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNYNNY,YNNNYNNY,5,,,,9,,,12,"5, , , , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.YNNNYNNY,,BE,57
 "TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BE,89,"TEF Only 5G T34 8x8 +
+TEF Only N7 2x2 Q-Code",BE,101,"TEF Only 5G T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (89)",57,B,.,.,Y,Y,.,Y,N,N,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNNYYN,YNNNNYYN,5,,,,,10,11,,"5, , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.YNNNNYYN,,BE,57,
+TEF Only N7 2x2 Q-Code (101)",57,B,.,.,Y,Y,.,Y,N,N,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNNNNYYN,YNNNNYYN,5,,,,,10,11,,"5, , , , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.YNNNNYYN,,BE,57
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BF,90,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BF,102,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (90)",58,B,.,.,N,N,.,N,Y,N,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NYNNYNYN,NYNNYNYN,,6,,,9,,11,,", 6, , , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NYNNYNYN,,BF,58,
+TEF Only N7 2x2 Q-Code (102)",58,B,.,.,N,N,.,N,Y,N,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NYNNYNYN,NYNNYNYN,,6,,,9,,11,,", 6, , , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NYNNYNYN,,BF,58
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BF,91,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BF,103,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (91)",58,B,.,.,N,Y,.,N,Y,N,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NYNNNYNY,NYNNNYNY,,6,,,,10,,12,", 6, , , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NYNNNYNY,,BF,58,
+TEF Only N7 2x2 Q-Code (103)",58,B,.,.,N,Y,.,N,Y,N,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NYNNNYNY,NYNNNYNY,,6,,,,10,,12,", 6, , , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NYNNNYNY,,BF,58
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BF,92,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BF,104,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (92)",58,B,.,.,N,Y,.,N,Y,N,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NYNNYNNY,NYNNYNNY,,6,,,9,,,12,", 6, , , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NYNNYNNY,,BF,58,
+TEF Only N7 2x2 Q-Code (104)",58,B,.,.,N,Y,.,N,Y,N,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NYNNYNNY,NYNNYNNY,,6,,,9,,,12,", 6, , , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NYNNYNNY,,BF,58
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BF,93,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BF,105,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (93)",58,B,.,.,N,Y,.,N,Y,N,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NYNNNYYN,NYNNNYYN,,6,,,,10,11,,", 6, , , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NYNNNYYN,,BF,58,
+TEF Only N7 2x2 Q-Code (105)",58,B,.,.,N,Y,.,N,Y,N,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NYNNNYYN,NYNNNYYN,,6,,,,10,11,,", 6, , , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NYNNNYYN,,BF,58
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BG,94,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BG,106,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (94)",59,B,.,.,Y,N,.,N,Y,N,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NYNNYNYN,NYNNYNYN,,6,,,9,,11,,", 6, , , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NYNNYNYN,,BG,59,
+TEF Only N7 2x2 Q-Code (106)",59,B,.,.,Y,N,.,N,Y,N,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NYNNYNYN,NYNNYNYN,,6,,,9,,11,,", 6, , , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NYNNYNYN,,BG,59
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BG,95,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BG,107,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (95)",59,B,.,.,Y,Y,.,N,Y,N,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNNYNY,NYNNNYNY,,6,,,,10,,12,", 6, , , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NYNNNYNY,,BG,59,
+TEF Only N7 2x2 Q-Code (107)",59,B,.,.,Y,Y,.,N,Y,N,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNNYNY,NYNNNYNY,,6,,,,10,,12,", 6, , , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NYNNNYNY,,BG,59
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BG,96,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BG,108,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (96)",59,B,.,.,Y,Y,.,N,Y,N,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNYNNY,NYNNYNNY,,6,,,9,,,12,", 6, , , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NYNNYNNY,,BG,59,
+TEF Only N7 2x2 Q-Code (108)",59,B,.,.,Y,Y,.,N,Y,N,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNYNNY,NYNNYNNY,,6,,,9,,,12,", 6, , , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NYNNYNNY,,BG,59
 "TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BG,97,"TEF Only 5G T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BG,109,"TEF Only 5G T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (97)",59,B,.,.,Y,Y,.,N,Y,N,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNNYYN,NYNNNYYN,,6,,,,10,11,,", 6, , , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NYNNNYYN,,BG,59,
+TEF Only N7 2x2 Q-Code (109)",59,B,.,.,Y,Y,.,N,Y,N,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNNNYYN,NYNNNYYN,,6,,,,10,11,,", 6, , , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NYNNNYYN,,BG,59
 "TEF & VF 5G MoRAN T34 8x8 +
-TEF Only N7 2x2 Q-Code",BH,98,"TEF & VF 5G MoRAN T34 8x8 +
-TEF Only N7 2x2 Q-Code (98)",60,B,.,.,.,N,.,N,N,Y,N,N,N,Y,N,...N.,...N.,,,,,,", , , , ",NNYNNNYN,NNYNNNYN,,,7,,,,11,,", , 7, , , , 11, ",XXXXXXXXXXXXXX,,B...N.NNYNNNYN,,BH,60,
+TEF Only N7 2x2 Q-Code",BH,110,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code (110)",60,B,.,.,.,N,.,Y,N,Y,N,N,N,Y,N,...N.,...N.,,,,,,", , , , ",YNYNNNYN,YNYNNNYN,5,,7,,,,11,,"5, , 7, , , , 11, ",XXXXXXXXXXXXXX,,B...N.YNYNNNYN,,BH,60
 "TEF & VF 5G MoRAN T34 8x8 +
-TEF Only N7 2x2 Q-Code",BH,99,"TEF & VF 5G MoRAN T34 8x8 +
-TEF Only N7 2x2 Q-Code (99)",60,B,.,.,.,Y,.,N,N,Y,N,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",NNYNNNNY,NNYNNNNY,,,7,,,,,12,", , 7, , , , , 12",XXXXXXXXXXXXXX,,B...Y.NNYNNNNY,,BH,60,
+TEF Only N7 2x2 Q-Code",BH,111,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code (111)",60,B,.,.,.,Y,.,Y,N,Y,N,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",YNYNNNNY,YNYNNNNY,5,,7,,,,,12,"5, , 7, , , , , 12",XXXXXXXXXXXXXX,,B...Y.YNYNNNNY,,BH,60
 "TEF & VF 5G MoRAN T34 M-MiMo +
-TEF Only N7 2x2 Q-Code",BI,100,"TEF & VF 5G MoRAN T34 M-MiMo +
-TEF Only N7 2x2 Q-Code (100)",61,B,.,.,.,N,.,N,N,N,Y,N,N,Y,N,...N.,...N.,,,,,,", , , , ",NNNYNNYN,NNNYNNYN,,,,8,,,11,,", , , 8, , , 11, ",XXXXXXXXXXXXXX,,B...N.NNNYNNYN,,BI,61,
+TEF Only N7 2x2 Q-Code",BI,112,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code (112)",61,B,.,.,.,N,.,N,Y,N,Y,N,N,Y,N,...N.,...N.,,,,,,", , , , ",NYNYNNYN,NYNYNNYN,,6,,8,,,11,,", 6, , 8, , , 11, ",XXXXXXXXXXXXXX,,B...N.NYNYNNYN,,BI,61
 "TEF & VF 5G MoRAN T34 M-MiMo +
-TEF Only N7 2x2 Q-Code",BI,101,"TEF & VF 5G MoRAN T34 M-MiMo +
-TEF Only N7 2x2 Q-Code (101)",61,B,.,.,.,Y,.,N,N,N,Y,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",NNNYNNNY,NNNYNNNY,,,,8,,,,12,", , , 8, , , , 12",XXXXXXXXXXXXXX,,B...Y.NNNYNNNY,,BI,61,
-"TEF & VF 5G MoRAN T34 8x8 +
-TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BJ,102,"TEF & VF 5G MoRAN T34 8x8 +
-TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (102)",62,B,.,.,N,N,.,N,N,Y,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NNYNYNYN,NNYNYNYN,,,7,,9,,11,,", , 7, , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NNYNYNYN,,BJ,62,
+TEF Only N7 2x2 Q-Code",BI,113,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code (113)",61,B,.,.,.,Y,.,N,Y,N,Y,N,N,N,Y,...Y.,...Y.,,,,3,,", , , 3, ",NYNYNNNY,NYNYNNNY,,6,,8,,,,12,", 6, , 8, , , , 12",XXXXXXXXXXXXXX,,B...Y.NYNYNNNY,,BI,61
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BJ,103,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BJ,114,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (103)",62,B,.,.,N,Y,.,N,N,Y,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNYNNYNY,NNYNNYNY,,,7,,,10,,12,", , 7, , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NNYNNYNY,,BJ,62,
+TEF Only N7 2x2 Q-Code (114)",62,B,.,.,N,N,.,Y,N,Y,N,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",YNYNYNYN,YNYNYNYN,5,,7,,9,,11,,"5, , 7, , 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.YNYNYNYN,,BJ,62
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BJ,104,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BJ,115,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (104)",62,B,.,.,N,Y,.,N,N,Y,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNYNYNNY,NNYNYNNY,,,7,,9,,,12,", , 7, , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NNYNYNNY,,BJ,62,
+TEF Only N7 2x2 Q-Code (115)",62,B,.,.,N,Y,.,Y,N,Y,N,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",YNYNNYNY,YNYNNYNY,5,,7,,,10,,12,"5, , 7, , , 10, , 12",XXXXXXXXXXXXXX,,B..NY.YNYNNYNY,,BJ,62
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BJ,105,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BJ,116,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (105)",62,B,.,.,N,Y,.,N,N,Y,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NNYNNYYN,NNYNNYYN,,,7,,,10,11,,", , 7, , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NNYNNYYN,,BJ,62,
+TEF Only N7 2x2 Q-Code (116)",62,B,.,.,N,Y,.,Y,N,Y,N,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",YNYNYNNY,YNYNYNNY,5,,7,,9,,,12,"5, , 7, , 9, , , 12",XXXXXXXXXXXXXX,,B..NY.YNYNYNNY,,BJ,62
+"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N21 4x4 +
+TEF Only N7 2x2 Q-Code",BJ,117,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N21 4x4 +
+TEF Only N7 2x2 Q-Code (117)",62,B,.,.,N,Y,.,Y,N,Y,N,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",YNYNNYYN,YNYNNYYN,5,,7,,,10,11,,"5, , 7, , , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.YNYNNYYN,,BJ,62
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BK,106,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BK,118,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (106)",63,B,.,.,Y,N,.,N,N,Y,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNYNYNYN,NNYNYNYN,,,7,,9,,11,,", , 7, , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NNYNYNYN,,BK,63,
+TEF Only N7 2x2 Q-Code (118)",63,B,.,.,Y,N,.,Y,N,Y,N,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",YNYNYNYN,YNYNYNYN,5,,7,,9,,11,,"5, , 7, , 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.YNYNYNYN,,BK,63
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BK,107,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BK,119,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (107)",63,B,.,.,Y,Y,.,N,N,Y,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNYNNYNY,NNYNNYNY,,,7,,,10,,12,", , 7, , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NNYNNYNY,,BK,63,
+TEF Only N7 2x2 Q-Code (119)",63,B,.,.,Y,Y,.,Y,N,Y,N,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNYNNYNY,YNYNNYNY,5,,7,,,10,,12,"5, , 7, , , 10, , 12",XXXXXXXXXXXXXX,,B..YY.YNYNNYNY,,BK,63
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BK,108,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BK,120,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (108)",63,B,.,.,Y,Y,.,N,N,Y,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNYNYNNY,NNYNYNNY,,,7,,9,,,12,", , 7, , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NNYNYNNY,,BK,63,
+TEF Only N7 2x2 Q-Code (120)",63,B,.,.,Y,Y,.,Y,N,Y,N,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNYNYNNY,YNYNYNNY,5,,7,,9,,,12,"5, , 7, , 9, , , 12",XXXXXXXXXXXXXX,,B..YY.YNYNYNNY,,BK,63
 "TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BK,109,"TEF & VF 5G MoRAN T34 8x8 +
+TEF Only N7 2x2 Q-Code",BK,121,"TEF & VF 5G MoRAN T34 8x8 +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (109)",63,B,.,.,Y,Y,.,N,N,Y,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNYNNYYN,NNYNNYYN,,,7,,,10,11,,", , 7, , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NNYNNYYN,,BK,63,
+TEF Only N7 2x2 Q-Code (121)",63,B,.,.,Y,Y,.,Y,N,Y,N,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",YNYNNYYN,YNYNNYYN,5,,7,,,10,11,,"5, , 7, , , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.YNYNNYYN,,BK,63
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BL,110,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BL,122,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (110)",64,B,.,.,N,N,.,N,N,N,Y,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NNNYYNYN,NNNYYNYN,,,,8,9,,11,,", , , 8, 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NNNYYNYN,,BL,64,
+TEF Only N7 2x2 Q-Code (122)",64,B,.,.,N,N,.,N,Y,N,Y,Y,N,Y,N,..NN.,..NN.,,,,,,", , , , ",NYNYYNYN,NYNYYNYN,,6,,8,9,,11,,", 6, , 8, 9, , 11, ",XXXXXXXXXXXXXX,,B..NN.NYNYYNYN,,BL,64
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BL,111,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BL,123,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (111)",64,B,.,.,N,Y,.,N,N,N,Y,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNYNYNY,NNNYNYNY,,,,8,,10,,12,", , , 8, , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NNNYNYNY,,BL,64,
-"TEF & VF 5G MoRAN T34 M-MiMo +
-TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BL,112,"TEF & VF 5G MoRAN T34 M-MiMo +
-TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (112)",64,B,.,.,N,Y,.,N,N,N,Y,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NNNYYNNY,NNNYYNNY,,,,8,9,,,12,", , , 8, 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NNNYYNNY,,BL,64,
+TEF Only N7 2x2 Q-Code (123)",64,B,.,.,N,Y,.,N,Y,N,Y,N,Y,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NYNYNYNY,NYNYNYNY,,6,,8,,10,,12,", 6, , 8, , 10, , 12",XXXXXXXXXXXXXX,,B..NY.NYNYNYNY,,BL,64
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code",BL,113,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BL,124,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 +
-TEF Only N7 2x2 Q-Code (113)",64,B,.,.,N,Y,.,N,N,N,Y,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NNNYNYYN,NNNYNYYN,,,,8,,10,11,,", , , 8, , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NNNYNYYN,,BL,64,
+TEF Only N7 2x2 Q-Code (124)",64,B,.,.,N,Y,.,N,Y,N,Y,Y,N,N,Y,..NY.,..NY.,,,,3,,", , , 3, ",NYNYYNNY,NYNYYNNY,,6,,8,9,,,12,", 6, , 8, 9, , , 12",XXXXXXXXXXXXXX,,B..NY.NYNYYNNY,,BL,64
+"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N21 4x4 +
+TEF Only N7 2x2 Q-Code",BL,125,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N21 4x4 +
+TEF Only N7 2x2 Q-Code (125)",64,B,.,.,N,Y,.,N,Y,N,Y,N,Y,Y,N,..NY.,..NY.,,,,3,,", , , 3, ",NYNYNYYN,NYNYNYYN,,6,,8,,10,11,,", 6, , 8, , 10, 11, ",XXXXXXXXXXXXXX,,B..NY.NYNYNYYN,,BL,64
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BM,114,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BM,126,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (114)",65,B,.,.,Y,N,.,N,N,N,Y,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NNNYYNYN,NNNYYNYN,,,,8,9,,11,,", , , 8, 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NNNYYNYN,,BM,65,
+TEF Only N7 2x2 Q-Code (126)",65,B,.,.,Y,N,.,N,Y,N,Y,Y,N,Y,N,..YN.,..YN.,,,2b,,,", , 2b, , ",NYNYYNYN,NYNYYNYN,,6,,8,9,,11,,", 6, , 8, 9, , 11, ",XXXXXXXXXXXXXX,,B..YN.NYNYYNYN,,BM,65
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BM,115,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BM,127,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (115)",65,B,.,.,Y,Y,.,N,N,N,Y,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNYNYNY,NNNYNYNY,,,,8,,10,,12,", , , 8, , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NNNYNYNY,,BM,65,
+TEF Only N7 2x2 Q-Code (127)",65,B,.,.,Y,Y,.,N,Y,N,Y,N,Y,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNYNYNY,NYNYNYNY,,6,,8,,10,,12,", 6, , 8, , 10, , 12",XXXXXXXXXXXXXX,,B..YY.NYNYNYNY,,BM,65
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BM,116,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BM,128,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (116)",65,B,.,.,Y,Y,.,N,N,N,Y,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNYYNNY,NNNYYNNY,,,,8,9,,,12,", , , 8, 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NNNYYNNY,,BM,65,
+TEF Only N7 2x2 Q-Code (128)",65,B,.,.,Y,Y,.,N,Y,N,Y,Y,N,N,Y,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNYYNNY,NYNYYNNY,,6,,8,9,,,12,", 6, , 8, 9, , , 12",XXXXXXXXXXXXXX,,B..YY.NYNYYNNY,,BM,65
 "TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code",BM,117,"TEF & VF 5G MoRAN T34 M-MiMo +
+TEF Only N7 2x2 Q-Code",BM,129,"TEF & VF 5G MoRAN T34 M-MiMo +
 TEF Only N21 4x4 (4415) +
-TEF Only N7 2x2 Q-Code (117)",65,B,.,.,Y,Y,.,N,N,N,Y,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NNNYNYYN,NNNYNYYN,,,,8,,10,11,,", , , 8, , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NNNYNYYN,,BM,65,
+TEF Only N7 2x2 Q-Code (129)",65,B,.,.,Y,Y,.,N,Y,N,Y,N,Y,Y,N,..YY.,..YY.,,,2b,3,,", , 2b, 3, ",NYNYNYYN,NYNYNYYN,,6,,8,,10,11,,", 6, , 8, , 10, 11, ",XXXXXXXXXXXXXX,,B..YY.NYNYNYYN,,BM,65
 "11.  5G N7 2x2 +
 4G/5G MM BB UG
-Ordering Code",BN,118,"11.  5G N7 2x2 +
+Ordering Code",BN,130,"11.  5G N7 2x2 +
 4G/5G MM BB UG
-Ordering Code (118)",66,B,U,U,U,U,U,U,U,U,U,U,U,U,U,UUUUU,UUUUU,,,,,,", , , , ",UUUUUUUU,UUUUUUUU,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BUUUUUUUUUUUUU,,BN,66,
+Ordering Code (130)",66,B,U,U,U,U,U,U,U,U,U,U,U,U,U,UUUUU,UUUUU,,,,,,", , , , ",UUUUUUUU,UUUUUUUU,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BUUUUUUUUUUUUU,,BN,66
 "12. 5G N7 2x2 + T23
 BB + 4G/5G MM BB
-UG Ordering Code",BO,119,"12. 5G N7 2x2 + T23
+UG Ordering Code",BO,131,"12. 5G N7 2x2 + T23
 BB + 4G/5G MM BB
-UG Ordering Code (119)",67,B,V,V,V,V,V,V,V,V,V,V,V,V,V,VVVVV,VVVVV,,,,,,", , , , ",VVVVVVVV,VVVVVVVV,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BVVVVVVVVVVVVV,,BO,67,
+UG Ordering Code (131)",67,B,V,V,V,V,V,V,V,V,V,V,V,V,V,VVVVV,VVVVV,,,,,,", , , , ",VVVVVVVV,VVVVVVVV,,,,,,,,,", , , , , , , ",XXXXXXXXXXXXXX,,BVVVVVVVVVVVVV,,BO,67
